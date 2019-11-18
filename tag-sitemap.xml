@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/Bash/</loc>
+        <lastmod>2019-11-18T06:19:46.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Hexo/</loc>
+        <lastmod>2019-11-18T06:19:46.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Firebase/</loc>
         <lastmod>2019-11-18T06:15:54.817Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,20 +40,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/tags/Git/</loc>
         <lastmod>2019-11-18T06:15:51.055Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Bash/</loc>
-        <lastmod>2019-11-18T06:15:32.754Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Hexo/</loc>
-        <lastmod>2019-11-18T06:15:32.754Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
