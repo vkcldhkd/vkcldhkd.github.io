@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>I iOS You</title>
+  
+  <subtitle>iOS정복하는 그날까지!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://vkcldhkd.github.io/"/>
+  <updated>2019-11-18T06:15:54.817Z</updated>
+  <id>https://vkcldhkd.github.io/</id>
+  
+  <author>
+    <name>SUNG9</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Firebase Missing dSYM</title>
+    <link href="https://vkcldhkd.github.io/2019/11/18/dsym/"/>
+    <id>https://vkcldhkd.github.io/2019/11/18/dsym/</id>
+    <published>2019-11-18T06:10:49.000Z</published>
+    <updated>2019-11-18T06:15:54.817Z</updated>
+    
+    <content type="html"><![CDATA[<p>Fastlane을 통해 앱을 앱스토어에 업로드하고, 이미 앱스토어에서 판매중인 상태인데 Friebase Crashlytics에서 누락된 dSYM 파일이 있다고 나올경우에는 AppStore Connect에 들어가서 모든 빌드에서 해당 버전을 클릭 후 기호포함의 dSYM다운로드 클릭!</p><p>그런 후 Crashlytics에 가서 업로드를 수동으로 진행해주면 된다! 다행 ㅠ</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Fastlane을 통해 앱을 앱스토어에 업로드하고, 이미 앱스토어에서 판매중인 상태인데 Friebase Crashlytics에서 누락된 dSYM 파일이 있다고 나올경우에는 AppStore Connect에 들어가서 모든 빌드에서 해당 버전을 클릭 
+      
+    
+    </summary>
+    
+    
+      <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
+    
+    
+      <category term="dSYM" scheme="https://vkcldhkd.github.io/tags/dSYM/"/>
+    
+      <category term="Firebase" scheme="https://vkcldhkd.github.io/tags/Firebase/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo+bash = :)</title>
+    <link href="https://vkcldhkd.github.io/2019/11/14/hexo-bash/"/>
+    <id>https://vkcldhkd.github.io/2019/11/14/hexo-bash/</id>
+    <published>2019-11-14T07:45:39.000Z</published>
+    <updated>2019-11-18T06:19:46.844Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#Hexo</span><br><span class="line">alias hexo_home=&quot;cd /Users/a1/Desktop/Workspace/SUNG9BLOG&quot;</span><br><span class="line">alias hexo_deploy=&apos;cd /Users/a1/Desktop/Workspace/SUNG9BLOG; hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy&apos;</span><br><span class="line">alias hexo_server=&apos;cd /Users/a1/Desktop/Workspace/SUNG9BLOG; hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server&apos;</span><br></pre></td></tr></table></figure><p>귀찮은 명령어들을 한방에 뙇!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://vkcldhkd.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://vkcldhkd.github.io/tags/Hexo/"/>
+    
+      <category term="Bash" scheme="https://vkcldhkd.github.io/tags/Bash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo GitConfig</title>
+    <link href="https://vkcldhkd.github.io/2019/11/14/hexoGitConfig/"/>
+    <id>https://vkcldhkd.github.io/2019/11/14/hexoGitConfig/</id>
+    <published>2019-11-14T04:59:35.000Z</published>
+    <updated>2019-11-18T06:15:51.055Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hexo deploy안에 name과 email을 설정해도 글로벌으로 설정되어있지 않다면 깃헙에 잔디가 심어지지않았다 (name,email이 설정되지 않았다는 뜻)</p><p>.deploy_git 폴더로 이동 후 아래의 명령어를 추가했다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name vkcldhkd</span><br><span class="line">git config user.email vkcldhkd@gmail.com</span><br></pre></td></tr></table></figure><p>잔디 성공!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hexo deploy안에 name과 email을 설정해도 글로벌으로 설정되어있지 않다면 깃헙에 잔디가 심어지지않았다 (name,email이 설정되지 않았다는 뜻)&lt;/p&gt;
+&lt;p&gt;.deploy_git 폴더로 이동 후 아래의 명령어를 추가했다.&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://vkcldhkd.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Git" scheme="https://vkcldhkd.github.io/tags/Git/"/>
+    
+      <category term="Config" scheme="https://vkcldhkd.github.io/tags/Config/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Remote 변경하기</title>
+    <link href="https://vkcldhkd.github.io/2019/11/14/Git1/"/>
+    <id>https://vkcldhkd.github.io/2019/11/14/Git1/</id>
+    <published>2019-11-14T03:50:36.000Z</published>
+    <updated>2019-11-14T06:50:35.145Z</updated>
+    
+    <content type="html"><![CDATA[<p>깃 리모트 제거</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote remove &lt;이름&gt;</span><br></pre></td></tr></table></figure><p>리모트 추가</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/계정/Repo</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;깃 리모트 제거&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://vkcldhkd.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://vkcldhkd.github.io/tags/Git/"/>
+    
+      <category term="Remote" scheme="https://vkcldhkd.github.io/tags/Remote/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>앱스토어 업로드 State 오류</title>
+    <link href="https://vkcldhkd.github.io/2019/11/14/AppStoreError2/"/>
+    <id>https://vkcldhkd.github.io/2019/11/14/AppStoreError2/</id>
+    <published>2019-11-14T03:41:41.000Z</published>
+    <updated>2019-11-14T06:56:34.066Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Cannot proceed with delivery: an existing transporter instance is currently uploading this package</span><br><span class="line">Return status of iTunes Transporter was 1: Cannot proceed with delivery: an existing transporter instance is currently uploading this package</span><br><span class="line">The call to the iTMSTransporter completed with a non-zero exit status: 1. This indicates a failure.</span><br></pre></td></tr></table></figure><p>위와같은 에러가 날 경우 앱스토어 커넥트에서 해당버전의 상태가 제출준비중 인지 확인할 것!!<br>바보같이 심사완료된걸 취소안하고 재업로드했다 -_-</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+      <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
+    
+    
+      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
+    
+      <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>앱스토어 업로드 Token 오류</title>
+    <link href="https://vkcldhkd.github.io/2019/11/14/AppStoreError1/"/>
+    <id>https://vkcldhkd.github.io/2019/11/14/AppStoreError1/</id>
+    <published>2019-11-14T03:40:17.000Z</published>
+    <updated>2019-11-14T06:56:23.862Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cannot proceed with delivery: an existing transporter instance is currently uploading this package</span><br></pre></td></tr></table></figure><p>위와같은 에러가 날 경우 /Users/유저명/.itmstransporter/UploadTokens/ 경로로 들어가서<br>토큰값을 지워준 후 다시 시도하면 깔끔하게 성공!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla
+      
+    
+    </summary>
+    
+    
+      <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
+    
+    
+      <category term="Token Error" scheme="https://vkcldhkd.github.io/tags/Token-Error/"/>
+    
+      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
+    
+  </entry>
+  
+</feed>
