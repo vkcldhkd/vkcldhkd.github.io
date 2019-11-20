@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2019-11-20T02:51:56.270Z</updated>
+  <updated>2019-11-20T02:53:26.747Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://vkcldhkd.github.io/2019/11/20/R-Swift/"/>
     <id>https://vkcldhkd.github.io/2019/11/20/R-Swift/</id>
     <published>2019-11-20T02:36:58.000Z</published>
-    <updated>2019-11-20T02:51:56.270Z</updated>
+    <updated>2019-11-20T02:53:26.747Z</updated>
     
-    <content type="html"><![CDATA[<p>R.swift를 다른프로젝트에서 설치해야할일이 있어서 설치를 한 후 이와같은 에러가 발생했다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cycle inside building could produce unreliable results</span><br><span class="line">`</span><br></pre></td></tr></table></figure><p>이럴떈 Build Phases에서 추가한 Run Script의 순서를 상단으로 올려주면 된다.</p><p>Tip : [CP] Check Pods Manifest.lock 아래로 옮기면 수월하다.</p>]]></content>
+    <content type="html"><![CDATA[<p>R.swift를 다른프로젝트에서 설치해야할일이 있어서 설치를 한 후 이와같은 에러가 발생했다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cycle inside building could produce unreliable results</span><br></pre></td></tr></table></figure><p>이럴떈 Build Phases에서 추가한 Run Script의 순서를 [CP] Check Pods Manifest.lock 아래로 상단으로 올려주면 된다.</p>]]></content>
     
     <summary type="html">
     
