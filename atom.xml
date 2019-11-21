@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2019-11-21T02:42:46.118Z</updated>
+  <updated>2019-11-21T08:58:45.771Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="https://vkcldhkd.github.io/2019/11/21/iOS13/"/>
     <id>https://vkcldhkd.github.io/2019/11/21/iOS13/</id>
     <published>2019-11-21T02:38:11.000Z</published>
-    <updated>2019-11-21T02:42:46.118Z</updated>
+    <updated>2019-11-21T08:58:45.771Z</updated>
     
-    <content type="html"><![CDATA[<p>Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!<br>컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찼았다!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Show the Size Inspector 에서 UICollectionView의 Estimate Size를 None으로 변경!!</span><br></pre></td></tr></table></figure><p>아주 잘된다 :)</p>]]></content>
+    <content type="html"><![CDATA[<p>Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!<br>컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찾았다ㅠㅠ</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Show the Size Inspector 에서 UICollectionView의 Estimate Size를 None으로 변경!!</span><br></pre></td></tr></table></figure><p>아주 잘된다 :)</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!&lt;br&gt;컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찼았다!&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;
+        &lt;p&gt;Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!&lt;br&gt;컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찾았다ㅠㅠ&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;
       
     
     </summary>
