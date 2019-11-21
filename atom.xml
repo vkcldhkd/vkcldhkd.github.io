@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2019-11-20T02:53:26.747Z</updated>
+  <updated>2019-11-21T02:42:46.118Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UICollectionView on iOS13</title>
+    <link href="https://vkcldhkd.github.io/2019/11/21/iOS13/"/>
+    <id>https://vkcldhkd.github.io/2019/11/21/iOS13/</id>
+    <published>2019-11-21T02:38:11.000Z</published>
+    <updated>2019-11-21T02:42:46.118Z</updated>
+    
+    <content type="html"><![CDATA[<p>Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!<br>컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찼았다!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Show the Size Inspector 에서 UICollectionView의 Estimate Size를 None으로 변경!!</span><br></pre></td></tr></table></figure><p>아주 잘된다 :)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!&lt;br&gt;컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찼았다!&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="UICollectionView" scheme="https://vkcldhkd.github.io/tags/UICollectionView/"/>
+    
+      <category term="iOS13" scheme="https://vkcldhkd.github.io/tags/iOS13/"/>
+    
+      <category term="UICollectionView cell size" scheme="https://vkcldhkd.github.io/tags/UICollectionView-cell-size/"/>
+    
+      <category term="iOS13 cell size" scheme="https://vkcldhkd.github.io/tags/iOS13-cell-size/"/>
+    
+  </entry>
   
   <entry>
     <title>R.Swift</title>
