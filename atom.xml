@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2019-11-21T08:58:45.771Z</updated>
+  <updated>2019-11-29T02:07:29.800Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CocoaPods Unable to find a specification for</title>
+    <link href="https://vkcldhkd.github.io/2019/11/29/CocoaPodsError/"/>
+    <id>https://vkcldhkd.github.io/2019/11/29/CocoaPodsError/</id>
+    <published>2019-11-29T02:04:38.000Z</published>
+    <updated>2019-11-29T02:07:29.800Z</updated>
+    
+    <content type="html"><![CDATA[<p>간만에 개인 맥북으로 프로젝트에 Cocoapods로 라이브러리를 설치하다가 아래와 같은 에러가 발생했다. </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Unable to find a specification for ~~~~</span><br></pre></td></tr></table></figure><p>pod setup<br>pod install</p><p>setup 후 install을 하게되면 잘된다 :)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;간만에 개인 맥북으로 프로젝트에 Cocoapods로 라이브러리를 설치하다가 아래와 같은 에러가 발생했다. &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span 
+      
+    
+    </summary>
+    
+    
+      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/categories/CocoaPods/"/>
+    
+    
+      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/tags/CocoaPods/"/>
+    
+      <category term="CocoaPods Error" scheme="https://vkcldhkd.github.io/tags/CocoaPods-Error/"/>
+    
+      <category term="Unable to find a specification for" scheme="https://vkcldhkd.github.io/tags/Unable-to-find-a-specification-for/"/>
+    
+  </entry>
   
   <entry>
     <title>UICollectionView on iOS13</title>
