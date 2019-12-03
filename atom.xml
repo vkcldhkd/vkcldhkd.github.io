@@ -77,6 +77,35 @@
   </entry>
   
   <entry>
+    <title>정수 내림차순으로 정렬하기</title>
+    <link href="https://vkcldhkd.github.io/2019/11/25/desc/"/>
+    <id>https://vkcldhkd.github.io/2019/11/25/desc/</id>
+    <published>2019-11-25T04:03:13.000Z</published>
+    <updated>2019-12-03T09:07:08.417Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12933" target="_blank" rel="noopener">문제 설명</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">함수 solution은 정수 n을 매개변수로 입력받습니다. n의 각 자릿수를 큰것부터 작은 순으로 정렬한 새로운 정수를 리턴해주세요. 예를들어 n이 118372면 873211을 리턴하면 됩니다.</span><br><span class="line"></span><br><span class="line">제한 조건</span><br><span class="line">n은 1이상 8000000000 이하인 자연수입니다.</span><br></pre></td></tr></table></figure><p>Swift 코드</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">func solution(_ n:Int64) -&gt; Int64 &#123;</span><br><span class="line">        return Int64(</span><br><span class="line">        String(n)</span><br><span class="line">            .sorted(by: &gt;)</span><br><span class="line">            .map&#123; String($0) &#125;</span><br><span class="line">            .reduce(&quot;&quot;, +)</span><br><span class="line">        )!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12933&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;문제 설명&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight 
+      
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="https://vkcldhkd.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://vkcldhkd.github.io/tags/Algorithm/"/>
+    
+      <category term="Desc" scheme="https://vkcldhkd.github.io/tags/Desc/"/>
+    
+  </entry>
+  
+  <entry>
     <title>UICollectionView on iOS13</title>
     <link href="https://vkcldhkd.github.io/2019/11/21/iOS13/"/>
     <id>https://vkcldhkd.github.io/2019/11/21/iOS13/</id>
