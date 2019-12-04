@@ -3,6 +3,62 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/maskedCorners/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMaxXMaxYCorner/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMaxXMinYCorner/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMinXMaxYCorner/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMinXMinYCorner/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Cusom-CornerRadius/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Layer-CornerRadius/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/iOS-CornerRadius/</loc>
+        <lastmod>2019-12-04T06:29:01.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Desc/</loc>
         <lastmod>2019-12-03T09:07:08.417Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -136,14 +192,14 @@
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
         <lastmod>2019-11-14T06:56:34.066Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
         <lastmod>2019-11-14T06:56:34.066Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

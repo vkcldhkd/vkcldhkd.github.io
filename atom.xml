@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2019-12-03T08:58:34.033Z</updated>
+  <updated>2019-12-04T06:29:01.287Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>특정 부분에만 CornerRadius 적용하기</title>
+    <link href="https://vkcldhkd.github.io/2019/12/04/CornerRadius/"/>
+    <id>https://vkcldhkd.github.io/2019/12/04/CornerRadius/</id>
+    <published>2019-12-04T06:24:54.000Z</published>
+    <updated>2019-12-04T06:29:01.287Z</updated>
+    
+    <content type="html"><![CDATA[<p>저번에 사용했었는데 구글에 또 검색하고 있어서 아예 포스팅 해버리기!<br>특정 부분만 제외 하고 CornerRadius를 적용하는 방법은 아래와 같다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">containerView.layer.cornerRadius = 16</span><br><span class="line">containerView.layer.maskedCorners = [</span><br><span class="line">    .layerMinXMaxYCorner,</span><br><span class="line">    .layerMaxXMinYCorner,</span><br><span class="line">    .layerMaxXMaxYCorner</span><br><span class="line">]</span><br></pre></td></tr></table></figure><ul><li>layerMinXMinYCorner : 상단 왼쪽</li><li>layerMinXMaxYCorner : 상단 오른쪽</li><li>layerMaxXMinYCorner : 하단 왼쪽</li><li>layerMaxXMaxYCorner : 하단 오른쪽</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;저번에 사용했었는데 구글에 또 검색하고 있어서 아예 포스팅 해버리기!&lt;br&gt;특정 부분만 제외 하고 CornerRadius를 적용하는 방법은 아래와 같다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td 
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS CornerRadius" scheme="https://vkcldhkd.github.io/tags/iOS-CornerRadius/"/>
+    
+      <category term="Layer CornerRadius" scheme="https://vkcldhkd.github.io/tags/Layer-CornerRadius/"/>
+    
+      <category term="Cusom  CornerRadius" scheme="https://vkcldhkd.github.io/tags/Cusom-CornerRadius/"/>
+    
+      <category term="layerMinXMinYCorner" scheme="https://vkcldhkd.github.io/tags/layerMinXMinYCorner/"/>
+    
+      <category term="layerMinXMaxYCorner" scheme="https://vkcldhkd.github.io/tags/layerMinXMaxYCorner/"/>
+    
+      <category term="layerMaxXMinYCorner" scheme="https://vkcldhkd.github.io/tags/layerMaxXMinYCorner/"/>
+    
+      <category term="layerMaxXMaxYCorner" scheme="https://vkcldhkd.github.io/tags/layerMaxXMaxYCorner/"/>
+    
+      <category term="maskedCorners" scheme="https://vkcldhkd.github.io/tags/maskedCorners/"/>
+    
+  </entry>
   
   <entry>
     <title>예산 알고리즘</title>
@@ -336,9 +377,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
-    
       <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
+    
+      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
     
   </entry>
   
@@ -364,9 +405,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="Token Error" scheme="https://vkcldhkd.github.io/tags/Token-Error/"/>
-    
       <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
+    
+      <category term="Token Error" scheme="https://vkcldhkd.github.io/tags/Token-Error/"/>
     
   </entry>
   
