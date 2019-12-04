@@ -377,9 +377,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
-    
       <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
+    
+      <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
     
   </entry>
   
@@ -405,9 +405,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
-    
       <category term="Token Error" scheme="https://vkcldhkd.github.io/tags/Token-Error/"/>
+    
+      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
     
   </entry>
   
