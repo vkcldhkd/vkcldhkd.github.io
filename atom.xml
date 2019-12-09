@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2019-12-04T06:29:01.287Z</updated>
+  <updated>2019-12-09T05:00:33.989Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Description</title>
+    <link href="https://vkcldhkd.github.io/2019/12/09/Description/"/>
+    <id>https://vkcldhkd.github.io/2019/12/09/Description/</id>
+    <published>2019-12-09T04:44:55.000Z</published>
+    <updated>2019-12-09T05:00:33.989Z</updated>
+    
+    <content type="html"><![CDATA[<p>나도모르게 또 검색하길래 아예 정리해놓기!! <a href="https://kka7.tistory.com/40" target="_blank" rel="noopener">참고한 블로그</a></p><table><thead><tr><th>Data Class</th><th>XCode Key</th><th>Raw Info.plist Key</th></tr></thead><tbody><tr><td>Apple Music</td><td>Privacy - Media Library Usage Description</td><td>NSAppleMusicUsageDescription</td></tr><tr><td>Bluetooth</td><td>Privacy - Bluetooth Peripheral Usage Description</td><td>NSBluetoothPeripheralUsageDescription</td></tr><tr><td>Calendar</td><td>Privacy - Calendars Usage Description</td><td>NSCalendarsUsageDescription</td></tr><tr><td>Camera</td><td>Privacy - Camera Usage Description</td><td>NSCameraUsageDescription</td></tr><tr><td>Contacts</td><td>Privacy - Contacts Usage Description</td><td>NSContactsUsageDescription</td></tr><tr><td>Health</td><td>Privacy - Health Share Usage Description Privacy - Health Update Usage Description</td><td>NSHealthShareUsageDescription NSHealthUpdateUsageDescription</td></tr><tr><td>Home</td><td>Privacy - HomeKit Usage Description</td><td>NSHomeKitUsageDescription</td></tr><tr><td>Location</td><td>Privacy - Location Always Usage Description Privacy - Location When In Use Usage Description</td><td>NSLocationAlwaysUsageDescription NSLocationWhenInUseUsageDescription</td></tr><tr><td>Microphone</td><td>Privacy - Microphone Usage Description</td><td>NSMicrophoneUsageDescription</td></tr><tr><td>Motion</td><td>Privacy - Motion Usage Description</td><td>NSMotionUsageDescription</td></tr><tr><td>Photos</td><td>Privacy - Photo Library Usage Description</td><td>NSPhotoLibraryUsageDescription</td></tr><tr><td>Reminders</td><td>Privacy - Reminders Usage Description</td><td>NSRemindersUsageDescription</td></tr><tr><td>Siri</td><td>Privacy - Siri Usage Description</td><td>NSSiriUsageDescription</td></tr><tr><td>Speech Recognition</td><td>Privacy - Speech Recognition Usage Description</td><td>NSSpeechRecognitionUsageDescription</td></tr><tr><td>TV Provider Account</td><td>Privacy - TV Provider Usage Description</td><td>NSVideoSubscriberAccountUsageDescription</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;나도모르게 또 검색하길래 아예 정리해놓기!! &lt;a href=&quot;https://kka7.tistory.com/40&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;참고한 블로그&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Da
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="Privacy" scheme="https://vkcldhkd.github.io/tags/Privacy/"/>
+    
+  </entry>
   
   <entry>
     <title>특정 부분에만 CornerRadius 적용하기</title>
