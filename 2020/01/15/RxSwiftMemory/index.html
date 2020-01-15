@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-archives">
+  <html class="light page-post">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | I iOS You</title>
+  <title>RxSwift 메모리 누수 | I iOS You</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="RxSwift, ReactorKit, Swift, IAP, AutoLayout, Open Source" />
+    <meta name="keywords" content="RxSwift,Memory Leaks,Leaks," />
   
 
-  <meta name="keywords" content="RxSwift, Swift, AutoLayout, StoryBoard, IAP, UX&#x2F;UI">
-<meta property="og:type" content="website">
-<meta property="og:title" content="I iOS You">
-<meta property="og:url" content="https:&#x2F;&#x2F;vkcldhkd.github.io&#x2F;archives&#x2F;page&#x2F;2&#x2F;index.html">
+  <meta name="description" content="이직한 회사에서 TagListView에 Rx를 extension 하다가 문득 바인더에서 메모리 누수에 대해 궁금했다보통 Subscribe나 filter, map 의 경우에서만 [weak self] 를 통해 메모리 누수를 방지했는데 조금 더 자세히 알고 사용하기 위해 구글링을 시작했다. 링크를 보니 내가 딱 궁금한것들이 정리되어있었다. 결론은 바인더에서는 기">
+<meta name="keywords" content="RxSwift,Memory Leaks,Leaks">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RxSwift 메모리 누수">
+<meta property="og:url" content="https:&#x2F;&#x2F;vkcldhkd.github.io&#x2F;2020&#x2F;01&#x2F;15&#x2F;RxSwiftMemory&#x2F;index.html">
 <meta property="og:site_name" content="I iOS You">
+<meta property="og:description" content="이직한 회사에서 TagListView에 Rx를 extension 하다가 문득 바인더에서 메모리 누수에 대해 궁금했다보통 Subscribe나 filter, map 의 경우에서만 [weak self] 를 통해 메모리 누수를 방지했는데 조금 더 자세히 알고 사용하기 위해 구글링을 시작했다. 링크를 보니 내가 딱 궁금한것들이 정리되어있었다. 결론은 바인더에서는 기">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-01-15T00:46:35.242Z">
 <meta name="twitter:card" content="summary">
 
   
@@ -58,12 +61,8 @@
     <span id="toolbox-mobile" class="toolbox-mobile">Menu</span>
   
 
-  <div class="content content-archive">
-  <div class="page-header">
-
-  
-
-  
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">Menu</span>
@@ -131,96 +130,70 @@
   </div>
 
 
-
-  <div class="box-blog-info">
-    <a class="avatar" href="/">
-      <img src="https://avatars0.githubusercontent.com/u/6158125?s=460&amp;v=4" alt="" />
-    </a>
-    <div class="info">
-      <h3 class="name" style="font-family: calligraffittiregular">
-        SUNG9
-      </h3>
-      <div class="slogan">
-        I iOS You
-      </div>
-    </div>
-  </div>
-
 </div>
 
 
-  <div class="post-list-box archive-body">
-    <ul class="list-post">  <li class="item-year item item-title item-title-4">
-    <a href="/archives/2019" class="text-year">
-      2019
-      <i class="icon-zhu"></i>
+
+
+<div class="content content-post CENTER">
+   <article id="post-RxSwiftMemory" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">RxSwift 메모리 누수</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2020.01.15</span>
+      </span>
+
       
-    </a>
-  </li>
-<li class="item-post item">
-  <span class="post-date">11-18</span>
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>SUNG9</span>
+        </span>
+      
 
-  
-  <a class="post-title" href="/2019/11/18/dsym/">Firebase Missing dSYM</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-14</span>
-
-  
-  <a class="post-title" href="/2019/11/14/hexo-bash/">hexo+bash = :)</a>
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/RxSwift/">RxSwift</a>
+  </span>
 
 
-</li>
-<li class="item-post item">
-  <span class="post-date">11-14</span>
 
-  
-  <a class="post-title" href="/2019/11/14/hexoGitConfig/">Hexo GitConfig</a>
+      
 
+      
+      
+    </div>
+  </header>
 
-</li>
-<li class="item-post item">
-  <span class="post-date">11-14</span>
-
-  
-  <a class="post-title" href="/2019/11/14/Git1/">Git Remote 변경하기</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-14</span>
-
-  
-  <a class="post-title" href="/2019/11/14/AppStoreError2/">앱스토어 업로드 State 오류</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">11-14</span>
-
-  
-  <a class="post-title" href="/2019/11/14/AppStoreError1/">앱스토어 업로드 Token 오류</a>
-
-
-</li>
-</ul>
-  </div>
-
-  <div class="archive-footer">
+  <div class="article-content">
     
-  <div class="pagination">
-    <nav class="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&lt;</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
+      <p>이직한 회사에서 TagListView에 Rx를 extension 하다가 문득 바인더에서 메모리 누수에 대해 궁금했다<br>보통 Subscribe나 filter, map 의 경우에서만 [weak self] 를 통해 메모리 누수를 방지했는데 조금 더 자세히 알고 사용하기 위해 구글링을 시작했다.</p>
+<p><a href="https://medium.com/flawless-app-stories/guarantee-rx-memory-leaks-absence-3a90636ec49e" target="_blank" rel="noopener">링크</a>를 보니 내가 딱 궁금한것들이 정리되어있었다.</p>
+<p>결론은 바인더에서는 기본적으로 약한참조를 하기때문에 신경쓰지않아도되서 아래와 같은 코드로 변경하였다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import TagListView</span><br><span class="line">import RxCocoa</span><br><span class="line"></span><br><span class="line">extension Reactive where Base: TagListView&#123;</span><br><span class="line">    private var addTags: Binder&lt;[String]&gt;&#123;</span><br><span class="line">        return Binder(self.base) &#123; (tagListView, tags) in</span><br><span class="line">            tagListView.addTags(tags)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+    
   </div>
 
-  </div>
+</article>
+
+
+   
+
+   
+
+
+
 </div>
 
 
-
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
 
 
 
@@ -297,6 +270,24 @@
 </div>
 
 
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
 
   
 
