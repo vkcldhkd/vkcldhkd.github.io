@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-01-15T00:46:35.242Z</updated>
+  <updated>2020-01-15T00:50:25.779Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://vkcldhkd.github.io/2020/01/15/RxSwiftMemory/"/>
     <id>https://vkcldhkd.github.io/2020/01/15/RxSwiftMemory/</id>
     <published>2020-01-15T00:36:29.000Z</published>
-    <updated>2020-01-15T00:46:35.242Z</updated>
+    <updated>2020-01-15T00:50:25.779Z</updated>
     
-    <content type="html"><![CDATA[<p>이직한 회사에서 TagListView에 Rx를 extension 하다가 문득 바인더에서 메모리 누수에 대해 궁금했다<br>보통 Subscribe나 filter, map 의 경우에서만 [weak self] 를 통해 메모리 누수를 방지했는데 조금 더 자세히 알고 사용하기 위해 구글링을 시작했다.</p><p><a href="https://medium.com/flawless-app-stories/guarantee-rx-memory-leaks-absence-3a90636ec49e" target="_blank" rel="noopener">링크</a>를 보니 내가 딱 궁금한것들이 정리되어있었다.</p><p>결론은 바인더에서는 기본적으로 약한참조를 하기때문에 신경쓰지않아도되서 아래와 같은 코드로 변경하였다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import TagListView</span><br><span class="line">import RxCocoa</span><br><span class="line"></span><br><span class="line">extension Reactive where Base: TagListView&#123;</span><br><span class="line">    private var addTags: Binder&lt;[String]&gt;&#123;</span><br><span class="line">        return Binder(self.base) &#123; (tagListView, tags) in</span><br><span class="line">            tagListView.addTags(tags)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>이직한 회사에서 TagListView에 Rx를 extension 하다가 문득 바인더에서 메모리 누수에 대해 궁금했다<br>보통 Subscribe나 filter, map 의 경우에서만 [weak self] 를 통해 메모리 누수를 방지했는데 조금 더 자세히 알고 사용하기 위해 구글링을 시작했다.</p><p><a href="https://medium.com/flawless-app-stories/guarantee-rx-memory-leaks-absence-3a90636ec49e" target="_blank" rel="noopener">링크</a>를 보니 딱 궁금한것들이 정리되어있었다.</p><p>결론은 바인더에서는 기본적으로 약한참조를 하기때문에 신경쓰지않아도되서 아래와 같은 코드로 변경하였다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import TagListView</span><br><span class="line">import RxCocoa</span><br><span class="line"></span><br><span class="line">extension Reactive where Base: TagListView&#123;</span><br><span class="line">    private var addTags: Binder&lt;[String]&gt;&#123;</span><br><span class="line">        return Binder(self.base) &#123; (tagListView, tags) in</span><br><span class="line">            tagListView.addTags(tags)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
