@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://vkcldhkd.github.io/categories/Git/</loc>
+        <lastmod>2020-02-03T00:19:14.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/categories/RxSwift/</loc>
         <lastmod>2020-01-15T00:50:25.779Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -45,13 +52,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/categories/AppStore/</loc>
         <lastmod>2019-11-18T06:15:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/categories/Git/</loc>
-        <lastmod>2019-11-14T06:50:35.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

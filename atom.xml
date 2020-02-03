@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-01-15T00:50:25.779Z</updated>
+  <updated>2020-02-03T00:19:14.970Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git Flow</title>
+    <link href="https://vkcldhkd.github.io/2020/02/03/gitflow/"/>
+    <id>https://vkcldhkd.github.io/2020/02/03/gitflow/</id>
+    <published>2020-02-03T00:17:10.000Z</published>
+    <updated>2020-02-03T00:19:14.970Z</updated>
+    
+    <content type="html"><![CDATA[<p>Git Flow에 대해서 공부하려고 보니 아주 설명이 잘되어있어서 메모!<br>언제쯤 깃을 잘쓸수있을까 ㄷ…</p><p><a href="http://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html" target="_blank" rel="noopener">http://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Git Flow에 대해서 공부하려고 보니 아주 설명이 잘되어있어서 메모!&lt;br&gt;언제쯤 깃을 잘쓸수있을까 ㄷ…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://woowabros.github.io/experience/2017/10/30/baemin-mobi
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://vkcldhkd.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://vkcldhkd.github.io/tags/Git/"/>
+    
+      <category term="Gif Flow" scheme="https://vkcldhkd.github.io/tags/Gif-Flow/"/>
+    
+      <category term="Baemin" scheme="https://vkcldhkd.github.io/tags/Baemin/"/>
+    
+  </entry>
   
   <entry>
     <title>RxSwift 메모리 누수</title>
