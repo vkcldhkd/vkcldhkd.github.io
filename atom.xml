@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-02-03T00:19:14.970Z</updated>
+  <updated>2020-02-06T04:39:19.045Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PublishSubject VS BehaviorSubject</title>
+    <link href="https://vkcldhkd.github.io/2020/02/06/subject/"/>
+    <id>https://vkcldhkd.github.io/2020/02/06/subject/</id>
+    <published>2020-02-06T04:34:55.000Z</published>
+    <updated>2020-02-06T04:39:19.045Z</updated>
+    
+    <content type="html"><![CDATA[<p>싱글톤 구조에서 subject를 subscribe해서 사용하던 중, 새로운 화면에서 싱글톤의 subject를 subscribe했을 때, 이전의 값을 받고싶어서 찾던 중 BehaviorSubject를 발견하게 되었다.</p><p>가장 큰 차이점은 PublishSubject는 next이벤트가 발생한 뒤에 다른곳에서 subscribe를 했을 경우 마지막 이벤트가 전달되지 않지만, BehaviorSubject는 마지막 이벤트를 전해준다는것이다!! 딱 원하는 기능이었다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;싱글톤 구조에서 subject를 subscribe해서 사용하던 중, 새로운 화면에서 싱글톤의 subject를 subscribe했을 때, 이전의 값을 받고싶어서 찾던 중 BehaviorSubject를 발견하게 되었다.&lt;/p&gt;
+&lt;p&gt;가장 큰 차이점은
+      
+    
+    </summary>
+    
+    
+      <category term="RxSwift" scheme="https://vkcldhkd.github.io/categories/RxSwift/"/>
+    
+    
+      <category term="RxSwift" scheme="https://vkcldhkd.github.io/tags/RxSwift/"/>
+    
+      <category term="Publishsubject" scheme="https://vkcldhkd.github.io/tags/Publishsubject/"/>
+    
+      <category term="Behaviorsubject" scheme="https://vkcldhkd.github.io/tags/Behaviorsubject/"/>
+    
+  </entry>
   
   <entry>
     <title>Git Flow</title>
@@ -497,9 +528,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
-    
       <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
+    
+      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
     
   </entry>
   
@@ -525,9 +556,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="Token Error" scheme="https://vkcldhkd.github.io/tags/Token-Error/"/>
-    
       <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
+    
+      <category term="Token Error" scheme="https://vkcldhkd.github.io/tags/Token-Error/"/>
     
   </entry>
   
