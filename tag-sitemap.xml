@@ -3,6 +3,34 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/Button-Action/</loc>
+        <lastmod>2020-02-11T10:08:04.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Button-Merge/</loc>
+        <lastmod>2020-02-11T10:08:04.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Button-rx-tap/</loc>
+        <lastmod>2020-02-11T10:08:04.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/RxSwift/</loc>
+        <lastmod>2020-02-11T10:08:04.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Behaviorsubject/</loc>
         <lastmod>2020-02-06T04:39:19.045Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -11,13 +39,6 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Publishsubject/</loc>
-        <lastmod>2020-02-06T04:39:19.045Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/RxSwift/</loc>
         <lastmod>2020-02-06T04:39:19.045Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -255,14 +276,14 @@
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

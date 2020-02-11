@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-02-06T04:39:19.045Z</updated>
+  <updated>2020-02-11T10:08:04.347Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Button.rx.tap Merge</title>
+    <link href="https://vkcldhkd.github.io/2020/02/11/ObservableMerge/"/>
+    <id>https://vkcldhkd.github.io/2020/02/11/ObservableMerge/</id>
+    <published>2020-02-11T10:05:32.000Z</published>
+    <updated>2020-02-11T10:08:04.347Z</updated>
+    
+    <content type="html"><![CDATA[<p>여러개의 버튼에 하나의 Action, Bind로 할수 있을까 해서 삽질하다가 성공한 코드!<br>조금만 더 깔끔하게 짤 수 있었으면 좋겠다 ㅎ… </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Observable.merge(</span><br><span class="line">    self.playlistEditButton.rx.tap.map&#123; $0 &#125;,</span><br><span class="line">    self.editDoneButton.rx.tap.map&#123; $0 &#125;</span><br><span class="line">    )</span><br><span class="line">    .throttle(.milliseconds(500), scheduler: MainScheduler.asyncInstance)</span><br><span class="line">    .map &#123; Reactor.Action.updatePlaylistEditing &#125;</span><br><span class="line">    .bind(to: reactor.action)</span><br><span class="line">    .disposed(by: self.disposeBag)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;여러개의 버튼에 하나의 Action, Bind로 할수 있을까 해서 삽질하다가 성공한 코드!&lt;br&gt;조금만 더 깔끔하게 짤 수 있었으면 좋겠다 ㅎ… &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas
+      
+    
+    </summary>
+    
+    
+      <category term="RxSwift" scheme="https://vkcldhkd.github.io/categories/RxSwift/"/>
+    
+    
+      <category term="RxSwift" scheme="https://vkcldhkd.github.io/tags/RxSwift/"/>
+    
+      <category term="Button.rx.tap" scheme="https://vkcldhkd.github.io/tags/Button-rx-tap/"/>
+    
+      <category term="Button Merge" scheme="https://vkcldhkd.github.io/tags/Button-Merge/"/>
+    
+      <category term="Button Action" scheme="https://vkcldhkd.github.io/tags/Button-Action/"/>
+    
+  </entry>
   
   <entry>
     <title>PublishSubject VS BehaviorSubject</title>
@@ -528,9 +561,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
-    
       <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
+    
+      <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
     
   </entry>
   
@@ -556,9 +589,9 @@
       <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
     
     
-      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
-    
       <category term="Token Error" scheme="https://vkcldhkd.github.io/tags/Token-Error/"/>
+    
+      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
     
   </entry>
   
