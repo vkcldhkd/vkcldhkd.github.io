@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-02-11T10:08:04.347Z</updated>
+  <updated>2020-02-17T02:00:44.302Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>getUDID</title>
+    <link href="https://vkcldhkd.github.io/2020/02/17/getUDID/"/>
+    <id>https://vkcldhkd.github.io/2020/02/17/getUDID/</id>
+    <published>2020-02-17T01:58:30.000Z</published>
+    <updated>2020-02-17T02:00:44.302Z</updated>
+    
+    <content type="html"><![CDATA[<p>테스트 기기등록을 위해 UDID를 쉽게 알아보는 방법!<br>UDID를 얻어오려는 기기로 아래의 주소를 접근한 후, 일반 - 프로파일 - Get Your UDID - 설치 후, 다시 아래의 주소로 접근해서 얻어오면된다!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://get.udid.io/</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;테스트 기기등록을 위해 UDID를 쉽게 알아보는 방법!&lt;br&gt;UDID를 얻어오려는 기기로 아래의 주소를 접근한 후, 일반 - 프로파일 - Get Your UDID - 설치 후, 다시 아래의 주소로 접근해서 얻어오면된다!&lt;/p&gt;
+&lt;figure cl
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS UDID" scheme="https://vkcldhkd.github.io/tags/iOS-UDID/"/>
+    
+      <category term="UDID" scheme="https://vkcldhkd.github.io/tags/UDID/"/>
+    
+  </entry>
   
   <entry>
     <title>Button.rx.tap Merge</title>
