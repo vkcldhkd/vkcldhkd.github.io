@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/ReorderImageView-TintColor/</loc>
+        <lastmod>2020-03-09T06:53:44.793Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/TableViewCellEditingMode/</loc>
+        <lastmod>2020-03-09T06:53:44.793Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
+        <lastmod>2020-03-09T06:53:44.793Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/NavigationBarButtonItem/</loc>
         <lastmod>2020-02-17T10:06:11.830Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -11,13 +32,6 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/UIBarButtonItem/</loc>
-        <lastmod>2020-02-17T10:06:11.830Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
         <lastmod>2020-02-17T10:06:11.830Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -311,14 +325,14 @@
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-02-17T10:06:11.830Z</updated>
+  <updated>2020-03-09T06:53:44.793Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ReorderImageView TintColor</title>
+    <link href="https://vkcldhkd.github.io/2020/03/09/ReorderImageViewTintColor/"/>
+    <id>https://vkcldhkd.github.io/2020/03/09/ReorderImageViewTintColor/</id>
+    <published>2020-03-09T06:51:17.000Z</published>
+    <updated>2020-03-09T06:53:44.793Z</updated>
+    
+    <content type="html"><![CDATA[<p>TableView Editing Mode 를 변경해서 사용하는 도중, CustomCell의 백그라운드색상이 흰색일 경우 테이블뷰에서 Reorder 부분이 잘 안보이는 이슈가 있었다. 이래저래 방법을 찾던 도중 아래와같은 방법으로 해결했다! 후 ㅂㄷㅂㄷ…</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">self.detailTableView.rx.willDisplayCell</span><br><span class="line">    .subscribe(onNext: &#123; tuple in</span><br><span class="line">        let cell = tuple.cell</span><br><span class="line">        let imageView = cell.subviews.first(where: &#123; $0.description.contains(&quot;Reorder&quot;) &#125;)?.subviews.first(where: &#123; $0 is UIImageView &#125;) as? UIImageView</span><br><span class="line">        imageView?.image = imageView?.image?.withRenderingMode(.alwaysTemplate)</span><br><span class="line">        imageView?.tintColor = ColorHelper.C33_33_33.getColor()</span><br><span class="line">    &#125;)</span><br><span class="line">    .disposed(by: self.disposeBag)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;TableView Editing Mode 를 변경해서 사용하는 도중, CustomCell의 백그라운드색상이 흰색일 경우 테이블뷰에서 Reorder 부분이 잘 안보이는 이슈가 있었다. 이래저래 방법을 찾던 도중 아래와같은 방법으로 해결했다! 후 ㅂ
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="TableViewCellEditingMode" scheme="https://vkcldhkd.github.io/tags/TableViewCellEditingMode/"/>
+    
+      <category term="ReorderImageView TintColor" scheme="https://vkcldhkd.github.io/tags/ReorderImageView-TintColor/"/>
+    
+  </entry>
   
   <entry>
     <title>UIBarButtonItem의 TintColor가 초기화 되는 현상</title>
@@ -596,34 +626,6 @@
       <category term="Git" scheme="https://vkcldhkd.github.io/tags/Git/"/>
     
       <category term="Remote" scheme="https://vkcldhkd.github.io/tags/Remote/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>앱스토어 업로드 State 오류</title>
-    <link href="https://vkcldhkd.github.io/2019/11/14/AppStoreError2/"/>
-    <id>https://vkcldhkd.github.io/2019/11/14/AppStoreError2/</id>
-    <published>2019-11-14T03:41:41.000Z</published>
-    <updated>2019-11-14T06:56:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Cannot proceed with delivery: an existing transporter instance is currently uploading this package</span><br><span class="line">Return status of iTunes Transporter was 1: Cannot proceed with delivery: an existing transporter instance is currently uploading this package</span><br><span class="line">The call to the iTMSTransporter completed with a non-zero exit status: 1. This indicates a failure.</span><br></pre></td></tr></table></figure><p>위와같은 에러가 날 경우 앱스토어 커넥트에서 해당버전의 상태가 제출준비중 인지 확인할 것!!<br>바보같이 심사완료된걸 취소안하고 재업로드했다 -_-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
-      
-    
-    </summary>
-    
-    
-      <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
-    
-    
-      <category term="delivery Error" scheme="https://vkcldhkd.github.io/tags/delivery-Error/"/>
-    
-      <category term="AppStore Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Error/"/>
     
   </entry>
   

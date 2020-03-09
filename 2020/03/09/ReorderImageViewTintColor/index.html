@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-archives2020">
+  <html class="light page-posts">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2020 | I iOS You</title>
+  <title>ReorderImageView TintColor | I iOS You</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="RxSwift, ReactorKit, Swift, IAP, AutoLayout, Open Source" />
+    <meta name="keywords" content="iOS,TableViewCellEditingMode,ReorderImageView TintColor," />
   
 
-  <meta name="keywords" content="RxSwift, Swift, AutoLayout, StoryBoard, IAP, UX&#x2F;UI">
-<meta property="og:type" content="website">
-<meta property="og:title" content="I iOS You">
-<meta property="og:url" content="https:&#x2F;&#x2F;vkcldhkd.github.io&#x2F;archives&#x2F;2020&#x2F;index.html">
+  <meta name="description" content="TableView Editing Mode 를 변경해서 사용하는 도중, CustomCell의 백그라운드색상이 흰색일 경우 테이블뷰에서 Reorder 부분이 잘 안보이는 이슈가 있었다. 이래저래 방법을 찾던 도중 아래와같은 방법으로 해결했다! 후 ㅂㄷㅂㄷ… 12345678self.detailTableView.rx.willDisplayCell    .subscr">
+<meta name="keywords" content="iOS,TableViewCellEditingMode,ReorderImageView TintColor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ReorderImageView TintColor">
+<meta property="og:url" content="https:&#x2F;&#x2F;vkcldhkd.github.io&#x2F;2020&#x2F;03&#x2F;09&#x2F;ReorderImageViewTintColor&#x2F;index.html">
 <meta property="og:site_name" content="I iOS You">
+<meta property="og:description" content="TableView Editing Mode 를 변경해서 사용하는 도중, CustomCell의 백그라운드색상이 흰색일 경우 테이블뷰에서 Reorder 부분이 잘 안보이는 이슈가 있었다. 이래저래 방법을 찾던 도중 아래와같은 방법으로 해결했다! 후 ㅂㄷㅂㄷ… 12345678self.detailTableView.rx.willDisplayCell    .subscr">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-03-09T06:53:44.793Z">
 <meta name="twitter:card" content="summary">
 
   
@@ -58,12 +61,8 @@
     <span id="toolbox-mobile" class="toolbox-mobile">Menu</span>
   
 
-  <div class="content content-archive">
-  <div class="page-header">
-
-  
-
-  
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">Menu</span>
@@ -131,106 +130,67 @@
   </div>
 
 
-
-  <div class="box-blog-info">
-    <a class="avatar" href="/">
-      <img src="https://avatars0.githubusercontent.com/u/6158125?s=460&amp;v=4" alt="" />
-    </a>
-    <div class="info">
-      <h3 class="name" style="font-family: calligraffittiregular">
-        SUNG9
-      </h3>
-      <div class="slogan">
-        I iOS You
-      </div>
-    </div>
-  </div>
-
 </div>
 
 
-  <div class="post-list-box archive-body">
-    <ul class="list-post">  <li class="item-year item item-title item-title-0">
-    <a href="/archives/2020" class="text-year">
-      2020
-      <i class="icon-shu"></i>
+
+
+<div class="content content-post CENTER">
+   <article id="posts-ReorderImageViewTintColor" class="article article-type-posts" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">ReorderImageView TintColor</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2020.03.09</span>
+      </span>
+
       
-    </a>
-  </li>
-<li class="item-post item">
-  <span class="post-date">03-09</span>
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>SUNG9</span>
+        </span>
+      
 
-  
-  <a class="post-title" href="/2020/03/09/ReorderImageViewTintColor/">ReorderImageView TintColor</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">02-17</span>
-
-  
-  <a class="post-title" href="/2020/02/17/UIBarButtonItem/">UIBarButtonItem의 TintColor가 초기화 되는 현상</a>
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+  </span>
 
 
-</li>
-<li class="item-post item">
-  <span class="post-date">02-17</span>
 
-  
-  <a class="post-title" href="/2020/02/17/getUDID/">기기에서 UDID 얻어오기</a>
+      
 
+      
+      
+    </div>
+  </header>
 
-</li>
-<li class="item-post item">
-  <span class="post-date">02-11</span>
+  <div class="article-content">
+    
+      <p>TableView Editing Mode 를 변경해서 사용하는 도중, CustomCell의 백그라운드색상이 흰색일 경우 테이블뷰에서 Reorder 부분이 잘 안보이는 이슈가 있었다. 이래저래 방법을 찾던 도중 아래와같은 방법으로 해결했다! 후 ㅂㄷㅂㄷ…</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">self.detailTableView.rx.willDisplayCell</span><br><span class="line">    .subscribe(onNext: &#123; tuple in</span><br><span class="line">        let cell = tuple.cell</span><br><span class="line">        let imageView = cell.subviews.first(where: &#123; $0.description.contains(&quot;Reorder&quot;) &#125;)?.subviews.first(where: &#123; $0 is UIImageView &#125;) as? UIImageView</span><br><span class="line">        imageView?.image = imageView?.image?.withRenderingMode(.alwaysTemplate)</span><br><span class="line">        imageView?.tintColor = ColorHelper.C33_33_33.getColor()</span><br><span class="line">    &#125;)</span><br><span class="line">    .disposed(by: self.disposeBag)</span><br></pre></td></tr></table></figure>
 
-  
-  <a class="post-title" href="/2020/02/11/ObservableMerge/">Button.rx.tap Merge</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">02-06</span>
-
-  
-  <a class="post-title" href="/2020/02/06/subject/">PublishSubject VS BehaviorSubject</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">02-03</span>
-
-  
-  <a class="post-title" href="/2020/02/03/gitflow/">Git Flow</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">01-15</span>
-
-  
-  <a class="post-title" href="/2020/01/15/RxSwiftMemory/">RxSwift 메모리 누수</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">01-07</span>
-
-  
-  <a class="post-title" href="/2020/01/07/zsh/">hexo+zsh = :)</a>
-
-
-</li>
-</ul>
-  </div>
-
-  <div class="archive-footer">
     
   </div>
+
+</article>
+
+
+   
+
+   
+
+
+
 </div>
 
 
-
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
 
 
 
@@ -307,6 +267,24 @@
 </div>
 
 
+
+  
+      <div class="fexo-comments comments-posts">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
 
   
 
