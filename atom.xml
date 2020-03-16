@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-03-12T06:51:43.597Z</updated>
+  <updated>2020-03-16T06:14:30.067Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UIActivityViewController 정리</title>
+    <link href="https://vkcldhkd.github.io/2020/03/16/UIActivityViewController/"/>
+    <id>https://vkcldhkd.github.io/2020/03/16/UIActivityViewController/</id>
+    <published>2020-03-16T01:40:59.000Z</published>
+    <updated>2020-03-16T06:14:30.067Z</updated>
+    
+    <content type="html"><![CDATA[<p>iOS에서 공유하기 버튼을 누를경우 하단에서 뷰가 올라오는것이 있는데, 그것이 UIActivityViewController이다.<br>UIActivityViewController에 대해서 옵션을 설정해보면서 알게된 내용 정리!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">ActivityType</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let postToFacebook: UIActivity.ActivityType // 페이스북</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let postToTwitter: UIActivity.ActivityType // 트위터</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let postToWeibo: UIActivity.ActivityType // 웨이보</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let message: UIActivity.ActivityType // 메시지</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let mail: UIActivity.ActivityType // 메일</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let print: UIActivity.ActivityType // 프린트</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let copyToPasteboard: UIActivity.ActivityType // 복사하기</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let assignToContact: UIActivity.ActivityType // 전화번호부에 저장</span><br><span class="line"></span><br><span class="line">@available(iOS 6.0, *)</span><br><span class="line">public static let saveToCameraRoll: UIActivity.ActivityType // 사진첩에 저장</span><br><span class="line"></span><br><span class="line">@available(iOS 7.0, *)</span><br><span class="line">public static let addToReadingList: UIActivity.ActivityType // 읽기목록에 추가</span><br><span class="line"></span><br><span class="line">@available(iOS 7.0, *)</span><br><span class="line">public static let postToFlickr: UIActivity.ActivityType // 플리커(사진공유 커뮤니티)</span><br><span class="line"></span><br><span class="line">@available(iOS 7.0, *)</span><br><span class="line">public static let postToVimeo: UIActivity.ActivityType // 비메오</span><br><span class="line"></span><br><span class="line">@available(iOS 7.0, *)</span><br><span class="line">public static let postToTencentWeibo: UIActivity.ActivityType // 텐센트웨이보</span><br><span class="line"></span><br><span class="line">@available(iOS 7.0, *)</span><br><span class="line">public static let airDrop: UIActivity.ActivityType // 에어드랍</span><br><span class="line"></span><br><span class="line">@available(iOS 9.0, *)</span><br><span class="line">public static let openInIBooks: UIActivity.ActivityType // 아이북스</span><br><span class="line"></span><br><span class="line">@available(iOS 11.0, *)</span><br><span class="line">public static let markupAsPDF: UIActivity.ActivityType // PDF로 저장</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;iOS에서 공유하기 버튼을 누를경우 하단에서 뷰가 올라오는것이 있는데, 그것이 UIActivityViewController이다.&lt;br&gt;UIActivityViewController에 대해서 옵션을 설정해보면서 알게된 내용 정리!&lt;/p&gt;
+&lt;figur
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="UIActivityViewController" scheme="https://vkcldhkd.github.io/tags/UIActivityViewController/"/>
+    
+      <category term="Share" scheme="https://vkcldhkd.github.io/tags/Share/"/>
+    
+  </entry>
   
   <entry>
     <title>Http Status Code</title>
@@ -601,35 +632,6 @@
       <category term="Hexo" scheme="https://vkcldhkd.github.io/tags/Hexo/"/>
     
       <category term="Bash" scheme="https://vkcldhkd.github.io/tags/Bash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo GitConfig</title>
-    <link href="https://vkcldhkd.github.io/2019/11/14/hexoGitConfig/"/>
-    <id>https://vkcldhkd.github.io/2019/11/14/hexoGitConfig/</id>
-    <published>2019-11-14T04:59:35.000Z</published>
-    <updated>2019-11-18T06:15:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Hexo deploy안에 name과 email을 설정해도 글로벌으로 설정되어있지 않다면 깃헙에 잔디가 심어지지않았다 (name,email이 설정되지 않았다는 뜻)</p><p>.deploy_git 폴더로 이동 후 아래의 명령어를 추가했다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name vkcldhkd</span><br><span class="line">git config user.email vkcldhkd@gmail.com</span><br></pre></td></tr></table></figure><p>잔디 성공!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Hexo deploy안에 name과 email을 설정해도 글로벌으로 설정되어있지 않다면 깃헙에 잔디가 심어지지않았다 (name,email이 설정되지 않았다는 뜻)&lt;/p&gt;
-&lt;p&gt;.deploy_git 폴더로 이동 후 아래의 명령어를 추가했다.&lt;/p&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://vkcldhkd.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Git" scheme="https://vkcldhkd.github.io/tags/Git/"/>
-    
-      <category term="Config" scheme="https://vkcldhkd.github.io/tags/Config/"/>
     
   </entry>
   
