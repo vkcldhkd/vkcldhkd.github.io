@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-03-16T06:14:30.067Z</updated>
+  <updated>2020-03-17T10:25:50.879Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Alert</title>
+    <link href="https://vkcldhkd.github.io/2020/03/17/Alert/"/>
+    <id>https://vkcldhkd.github.io/2020/03/17/Alert/</id>
+    <published>2020-03-17T10:22:54.000Z</published>
+    <updated>2020-03-17T10:25:50.879Z</updated>
+    
+    <content type="html"><![CDATA[<p>입력할 수 있는 Alert창이 필요해서 뚝딱 하나 만들었다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">func createTextFieldAlert(title: String?, previousText: String? = nil, completion: @escaping (String) -&gt; Void) -&gt; UIAlertController&#123;</span><br><span class="line">    let alert = UIAlertController(</span><br><span class="line">        title: title,</span><br><span class="line">        message: nil,</span><br><span class="line">        preferredStyle: .alert)</span><br><span class="line">    </span><br><span class="line">    let okAction = UIAlertAction(</span><br><span class="line">    title: &quot;OK&quot;,</span><br><span class="line">    style: .default</span><br><span class="line">    ) &#123; [unowned alert] _ in</span><br><span class="line">        let text = alert.textFields![0].text</span><br><span class="line">        // do something interesting with &quot;answer&quot; here</span><br><span class="line">        LogHelper.printLog(&quot;text : \(text)&quot;)</span><br><span class="line">        completion(text ?? &quot;&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    alert.addTextField &#123; textField in</span><br><span class="line">        textField.text = previousText</span><br><span class="line">        NotificationCenter.default.addObserver(forName: UITextField.textDidChangeNotification, object: textField, queue: OperationQueue.main) &#123; (notification) in</span><br><span class="line">            LogHelper.printLog(&quot;containsEmoji : \((textField.text ?? &quot;&quot;).containsEmoji)&quot;)</span><br><span class="line">            guard let inputText = textField.text else &#123;</span><br><span class="line">                okAction.isEnabled = false</span><br><span class="line">                return</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            okAction.isEnabled = !inputText.containsEmoji &amp;&amp; inputText.count &gt; 1 &amp;&amp; previousText != inputText</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    okAction.isEnabled = false</span><br><span class="line">    </span><br><span class="line">    alert.addAction(okAction)</span><br><span class="line">    alert.addAction(UIAlertAction.cancelAction())</span><br><span class="line">    return alert</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>사용법은 아래와같다 :)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">UIAlertController.createTextFieldAlert(</span><br><span class="line">    title: &quot;변경할 닉네임을 입력해 주세요.&quot;,</span><br><span class="line">    previousText: &quot;UserInformationManager.shared.userInfo?.displayName&quot;</span><br><span class="line">) &#123; [weak self] name in</span><br><span class="line">    LogHelper.printLog(&quot;name : \(name)&quot;)</span><br><span class="line">&#125;.show()</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;입력할 수 있는 Alert창이 필요해서 뚝딱 하나 만들었다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="UIAlertController" scheme="https://vkcldhkd.github.io/tags/UIAlertController/"/>
+    
+      <category term="UITextFieldAlert" scheme="https://vkcldhkd.github.io/tags/UITextFieldAlert/"/>
+    
+  </entry>
   
   <entry>
     <title>UIActivityViewController 정리</title>
@@ -604,34 +635,6 @@
       <category term="dSYM" scheme="https://vkcldhkd.github.io/tags/dSYM/"/>
     
       <category term="Firebase" scheme="https://vkcldhkd.github.io/tags/Firebase/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo+bash = :)</title>
-    <link href="https://vkcldhkd.github.io/2019/11/14/hexo-bash/"/>
-    <id>https://vkcldhkd.github.io/2019/11/14/hexo-bash/</id>
-    <published>2019-11-14T07:45:39.000Z</published>
-    <updated>2019-11-18T06:19:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#Hexo</span><br><span class="line">alias hexo_home=&quot;cd /Users/a1/Desktop/Workspace/SUNG9BLOG&quot;</span><br><span class="line">alias hexo_deploy=&apos;cd /Users/a1/Desktop/Workspace/SUNG9BLOG; hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy&apos;</span><br><span class="line">alias hexo_server=&apos;cd /Users/a1/Desktop/Workspace/SUNG9BLOG; hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server&apos;</span><br></pre></td></tr></table></figure><p>귀찮은 명령어들을 한방에 뙇!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://vkcldhkd.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://vkcldhkd.github.io/tags/Hexo/"/>
-    
-      <category term="Bash" scheme="https://vkcldhkd.github.io/tags/Bash/"/>
     
   </entry>
   
