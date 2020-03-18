@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-archives202003">
+  <html class="light page-posts">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2020/3 | I iOS You</title>
+  <title>ITMS-90717 | I iOS You</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="RxSwift, ReactorKit, Swift, IAP, AutoLayout, Open Source" />
+    <meta name="keywords" content="ITMS-90717,AppStore Connect Error," />
   
 
-  <meta name="keywords" content="RxSwift, Swift, AutoLayout, StoryBoard, IAP, UX&#x2F;UI">
-<meta property="og:type" content="website">
-<meta property="og:title" content="I iOS You">
-<meta property="og:url" content="https:&#x2F;&#x2F;vkcldhkd.github.io&#x2F;archives&#x2F;2020&#x2F;03&#x2F;index.html">
+  <meta name="description" content="제작한 앱을 테스트플라이트 환경에서 테스트 하려고 업로드 중 아래와 같은 에러가 발생했다. 123App Store Connect Operation ErrorERROR ITEMS-90717: &amp;quot;Invalid App Store Icon. The App Store Icon in the asset catalog in &amp;apos;Appname.app&amp;apo">
+<meta name="keywords" content="ITMS-90717,AppStore Connect Error">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ITMS-90717">
+<meta property="og:url" content="https:&#x2F;&#x2F;vkcldhkd.github.io&#x2F;2020&#x2F;03&#x2F;18&#x2F;ITMS-90717&#x2F;index.html">
 <meta property="og:site_name" content="I iOS You">
+<meta property="og:description" content="제작한 앱을 테스트플라이트 환경에서 테스트 하려고 업로드 중 아래와 같은 에러가 발생했다. 123App Store Connect Operation ErrorERROR ITEMS-90717: &amp;quot;Invalid App Store Icon. The App Store Icon in the asset catalog in &amp;apos;Appname.app&amp;apo">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-03-18T05:25:30.087Z">
 <meta name="twitter:card" content="summary">
 
   
@@ -58,12 +61,8 @@
     <span id="toolbox-mobile" class="toolbox-mobile">Menu</span>
   
 
-  <div class="content content-archive">
-  <div class="page-header">
-
-  
-
-  
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">Menu</span>
@@ -131,82 +130,69 @@
   </div>
 
 
-
-  <div class="box-blog-info">
-    <a class="avatar" href="/">
-      <img src="https://avatars0.githubusercontent.com/u/6158125?s=460&amp;v=4" alt="" />
-    </a>
-    <div class="info">
-      <h3 class="name" style="font-family: calligraffittiregular">
-        SUNG9
-      </h3>
-      <div class="slogan">
-        I iOS You
-      </div>
-    </div>
-  </div>
-
 </div>
 
 
-  <div class="post-list-box archive-body">
-    <ul class="list-post">  <li class="item-year item item-title item-title-0">
-    <a href="/archives/2020" class="text-year">
-      2020
-      <i class="icon-shu"></i>
+
+
+<div class="content content-post CENTER">
+   <article id="posts-ITMS-90717" class="article article-type-posts" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">ITMS-90717</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2020.03.18</span>
+      </span>
+
       
-    </a>
-  </li>
-<li class="item-post item">
-  <span class="post-date">03-18</span>
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>SUNG9</span>
+        </span>
+      
 
-  
-  <a class="post-title" href="/2020/03/18/ITMS-90717/">ITMS-90717</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">03-17</span>
-
-  
-  <a class="post-title" href="/2020/03/17/Alert/">UITextFieldAlert</a>
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+  </span>
 
 
-</li>
-<li class="item-post item">
-  <span class="post-date">03-16</span>
 
-  
-  <a class="post-title" href="/2020/03/16/UIActivityViewController/">UIActivityViewController 정리</a>
+      
 
+      
+      
+    </div>
+  </header>
 
-</li>
-<li class="item-post item">
-  <span class="post-date">03-12</span>
+  <div class="article-content">
+    
+      <p>제작한 앱을 테스트플라이트 환경에서 테스트 하려고 업로드 중 아래와 같은 에러가 발생했다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">App Store Connect Operation Error</span><br><span class="line"></span><br><span class="line">ERROR ITEMS-90717: &quot;Invalid App Store Icon. The App Store Icon in the asset catalog in &apos;Appname.app&apos; can&apos;t be transparent not contain an alpha channel. &quot;</span><br></pre></td></tr></table></figure>
 
-  
-  <a class="post-title" href="/2020/03/12/HttpStatusCode/">Http Status Code</a>
+<p>해결방법은, 해당 파일을 연 후 다른이름으로 저장할 때 알파채널을 제외시킨 후 덮어쓰기하면된다!</p>
 
-
-</li>
-<li class="item-post item">
-  <span class="post-date">03-09</span>
-
-  
-  <a class="post-title" href="/2020/03/09/ReorderImageViewTintColor/">ReorderImageView TintColor</a>
-
-
-</li>
-</ul>
-  </div>
-
-  <div class="archive-footer">
     
   </div>
+
+</article>
+
+
+   
+
+   
+
+
+
 </div>
 
 
-
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
 
 
 
@@ -283,6 +269,24 @@
 </div>
 
 
+
+  
+      <div class="fexo-comments comments-posts">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
 
   
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-03-17T10:26:34.717Z</updated>
+  <updated>2020-03-18T05:25:30.087Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ITMS-90717</title>
+    <link href="https://vkcldhkd.github.io/2020/03/18/ITMS-90717/"/>
+    <id>https://vkcldhkd.github.io/2020/03/18/ITMS-90717/</id>
+    <published>2020-03-18T05:20:51.000Z</published>
+    <updated>2020-03-18T05:25:30.087Z</updated>
+    
+    <content type="html"><![CDATA[<p>제작한 앱을 테스트플라이트 환경에서 테스트 하려고 업로드 중 아래와 같은 에러가 발생했다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">App Store Connect Operation Error</span><br><span class="line"></span><br><span class="line">ERROR ITEMS-90717: &quot;Invalid App Store Icon. The App Store Icon in the asset catalog in &apos;Appname.app&apos; can&apos;t be transparent not contain an alpha channel. &quot;</span><br></pre></td></tr></table></figure><p>해결방법은, 해당 파일을 연 후 다른이름으로 저장할 때 알파채널을 제외시킨 후 덮어쓰기하면된다!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;제작한 앱을 테스트플라이트 환경에서 테스트 하려고 업로드 중 아래와 같은 에러가 발생했다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;li
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="ITMS-90717" scheme="https://vkcldhkd.github.io/tags/ITMS-90717/"/>
+    
+      <category term="AppStore Connect Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Connect-Error/"/>
+    
+  </entry>
   
   <entry>
     <title>UITextFieldAlert</title>
@@ -607,34 +636,6 @@
       <category term="R.Swift Install" scheme="https://vkcldhkd.github.io/tags/R-Swift-Install/"/>
     
       <category term="Cycle inside building could produce unreliable results" scheme="https://vkcldhkd.github.io/tags/Cycle-inside-building-could-produce-unreliable-results/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Firebase Missing dSYM</title>
-    <link href="https://vkcldhkd.github.io/2019/11/18/dsym/"/>
-    <id>https://vkcldhkd.github.io/2019/11/18/dsym/</id>
-    <published>2019-11-18T06:10:49.000Z</published>
-    <updated>2019-11-18T06:15:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Fastlane을 통해 앱을 앱스토어에 업로드하고, 이미 앱스토어에서 판매중인 상태인데 Friebase Crashlytics에서 누락된 dSYM 파일이 있다고 나올경우에는 AppStore Connect에 들어가서 모든 빌드에서 해당 버전을 클릭 후 기호포함의 dSYM다운로드 클릭!</p><p>그런 후 Crashlytics에 가서 업로드를 수동으로 진행해주면 된다! 다행 ㅠ</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Fastlane을 통해 앱을 앱스토어에 업로드하고, 이미 앱스토어에서 판매중인 상태인데 Friebase Crashlytics에서 누락된 dSYM 파일이 있다고 나올경우에는 AppStore Connect에 들어가서 모든 빌드에서 해당 버전을 클릭 
-      
-    
-    </summary>
-    
-    
-      <category term="AppStore" scheme="https://vkcldhkd.github.io/categories/AppStore/"/>
-    
-    
-      <category term="dSYM" scheme="https://vkcldhkd.github.io/tags/dSYM/"/>
-    
-      <category term="Firebase" scheme="https://vkcldhkd.github.io/tags/Firebase/"/>
     
   </entry>
   
