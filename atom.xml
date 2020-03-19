@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-03-18T05:25:30.087Z</updated>
+  <updated>2020-03-19T05:09:05.308Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ipad에서 ActionSheetAlert가 뜨면 죽는 이슈</title>
+    <link href="https://vkcldhkd.github.io/2020/03/19/ipadAlert/"/>
+    <id>https://vkcldhkd.github.io/2020/03/19/ipadAlert/</id>
+    <published>2020-03-19T05:03:31.000Z</published>
+    <updated>2020-03-19T05:09:05.308Z</updated>
+    
+    <content type="html"><![CDATA[<p>최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다.</p><p>그래서 아래와같이 UIAlertController extension 에 show 함수를 수정한 결과 매우잘된다.<br>완전 고려를 못하고있던 부분이었는데 그나마 쉽게해결됐다 ㅎㅎㅎㅎㅎ</p><pre><code>extension UIAlertController{    func show(){        guard let topVC = UIApplication.shared.topViewController() else { return }        if Device.current.isPad,            let popoverController = self.popoverPresentationController {                popoverController.sourceView = topVC.view                popoverController.sourceRect = CGRect(x: topVC.view.bounds.midX, y: topVC.view.bounds.midY, width: 0, height: 0)                popoverController.permittedArrowDirections = []            }        topVC.present(self, animated: true, completion: nil)    }}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다.&lt;/p&gt;
+&lt;p&gt;그래서 아래와같이 UIAlertController exte
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="UIActivityViewController" scheme="https://vkcldhkd.github.io/tags/UIActivityViewController/"/>
+    
+      <category term="Share" scheme="https://vkcldhkd.github.io/tags/Share/"/>
+    
+  </entry>
   
   <entry>
     <title>ITMS-90717</title>
@@ -603,39 +634,6 @@
       <category term="Algorithm" scheme="https://vkcldhkd.github.io/tags/Algorithm/"/>
     
       <category term="mockTest" scheme="https://vkcldhkd.github.io/tags/mockTest/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>R.Swift</title>
-    <link href="https://vkcldhkd.github.io/2019/11/20/R-Swift/"/>
-    <id>https://vkcldhkd.github.io/2019/11/20/R-Swift/</id>
-    <published>2019-11-20T02:36:58.000Z</published>
-    <updated>2019-11-20T02:53:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>R.swift를 다른프로젝트에서 설치해야할일이 있어서 설치를 한 후 이와같은 에러가 발생했다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cycle inside building could produce unreliable results</span><br></pre></td></tr></table></figure><p>이럴떈 Build Phases에서 추가한 Run Script의 순서를 [CP] Check Pods Manifest.lock 아래로 상단으로 올려주면 된다.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;R.swift를 다른프로젝트에서 설치해야할일이 있어서 설치를 한 후 이와같은 에러가 발생했다.&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/categories/CocoaPods/"/>
-    
-    
-      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/tags/CocoaPods/"/>
-    
-      <category term="CocoaPods Error" scheme="https://vkcldhkd.github.io/tags/CocoaPods-Error/"/>
-    
-      <category term="R.Swift Install" scheme="https://vkcldhkd.github.io/tags/R-Swift-Install/"/>
-    
-      <category term="Cycle inside building could produce unreliable results" scheme="https://vkcldhkd.github.io/tags/Cycle-inside-building-could-produce-unreliable-results/"/>
     
   </entry>
   
