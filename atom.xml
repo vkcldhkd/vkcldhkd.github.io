@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-03-19T11:41:39.548Z</updated>
+  <updated>2020-03-20T06:25:19.487Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AppStore 수출 규정 준수</title>
+    <link href="https://vkcldhkd.github.io/2020/03/20/ExemptEncryption/"/>
+    <id>https://vkcldhkd.github.io/2020/03/20/ExemptEncryption/</id>
+    <published>2020-03-20T06:21:45.000Z</published>
+    <updated>2020-03-20T06:25:19.487Z</updated>
+    
+    <content type="html"><![CDATA[<p>테스트플라이트에서 앱을 테스트 하기위해 앱을 올렸는데 수출규정준수 관련한 문구가 떠있어서 테스트가 불가능했다.<br>기존 암호화 구성이 변경되지 않은경우, info.plist에 아래의 정보를 넣으면 수출규정준수에 허용할 필요 없이 바로 가능하다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;key&gt;ITSAppUsesNonExemptEncryption&lt;/key&gt;&lt;false/&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;테스트플라이트에서 앱을 테스트 하기위해 앱을 올렸는데 수출규정준수 관련한 문구가 떠있어서 테스트가 불가능했다.&lt;br&gt;기존 암호화 구성이 변경되지 않은경우, info.plist에 아래의 정보를 넣으면 수출규정준수에 허용할 필요 없이 바로 가능하다.
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="AppStoreConnect" scheme="https://vkcldhkd.github.io/tags/AppStoreConnect/"/>
+    
+  </entry>
   
   <entry>
     <title>ImageTintColor</title>
@@ -601,39 +629,6 @@
       <category term="Algorithm" scheme="https://vkcldhkd.github.io/tags/Algorithm/"/>
     
       <category term="Desc" scheme="https://vkcldhkd.github.io/tags/Desc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UICollectionView on iOS13</title>
-    <link href="https://vkcldhkd.github.io/2019/11/21/iOS13/"/>
-    <id>https://vkcldhkd.github.io/2019/11/21/iOS13/</id>
-    <published>2019-11-21T02:38:11.000Z</published>
-    <updated>2019-11-21T08:58:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!<br>컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찾았다ㅠㅠ</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Show the Size Inspector 에서 UICollectionView의 Estimate Size를 None으로 변경!!</span><br></pre></td></tr></table></figure><p>아주 잘된다 :)</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Xcode11.2.1 으로 업데이트 후 간만에 신규 프로젝트를 생성했다!&lt;br&gt;컬렉션뷰의 아이템을 delegate르 설정을 해봐도 안바뀌길래 한참을 헤메다가 찾았다ㅠㅠ&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-      <category term="UICollectionView" scheme="https://vkcldhkd.github.io/tags/UICollectionView/"/>
-    
-      <category term="iOS13" scheme="https://vkcldhkd.github.io/tags/iOS13/"/>
-    
-      <category term="UICollectionView cell size" scheme="https://vkcldhkd.github.io/tags/UICollectionView-cell-size/"/>
-    
-      <category term="iOS13 cell size" scheme="https://vkcldhkd.github.io/tags/iOS13-cell-size/"/>
     
   </entry>
   

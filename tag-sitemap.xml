@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/AppStoreConnect/</loc>
+        <lastmod>2020-03-20T06:25:19.487Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
+        <lastmod>2020-03-20T06:25:19.487Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/ImageTintColor/</loc>
         <lastmod>2020-03-19T11:41:39.548Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -25,13 +39,6 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/UIActivityViewController/</loc>
-        <lastmod>2020-03-19T05:09:05.308Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
         <lastmod>2020-03-19T05:09:05.308Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
