@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-03-20T06:25:19.487Z</updated>
+  <updated>2020-03-27T05:35:40.031Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google DynamicLinks</title>
+    <link href="https://vkcldhkd.github.io/2020/03/27/DynamicLinks/"/>
+    <id>https://vkcldhkd.github.io/2020/03/27/DynamicLinks/</id>
+    <published>2020-03-27T05:32:44.000Z</published>
+    <updated>2020-03-27T05:35:40.031Z</updated>
+    
+    <content type="html"><![CDATA[<p>DynamicLinks 쓸일이 생겨서 정리!<br><a href="https://firebase.google.com/docs/dynamic-links/create-manually?hl=ko" target="_blank" rel="noopener">https://firebase.google.com/docs/dynamic-links/create-manually?hl=ko</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ibi : 링크를 여는 데 사용할 iOS 앱의 번들 ID입니다. Firebase 콘솔의 개요 페이지에서 앱을 프로젝트에 연결해야 합니다. 동적 링크를 통해 iOS 앱을 여는 데 필요합니다.</span><br><span class="line"></span><br><span class="line">ifl : 앱이 설치되지 않은 경우에 열리는 링크입니다. 앱이 설치되지 않았을 때 App Store에서 앱을 설치하는 것 이외에 콘텐츠의 모바일 웹 버전 열기, 앱 홍보 페이지 표시 등의 다른 작업을 수행하려는 경우 이 매개변수를 지정합니다.</span><br><span class="line"></span><br><span class="line">ius : 앱의 번들 ID와 다른 값으로 정의하면 앱의 맞춤 URL 스키마로 사용됩니다.</span><br><span class="line"></span><br><span class="line">ipfl : 앱이 설치되지 않은 경우 iPad에서 열리는 링크입니다. 앱이 설치되지 않았을 때 App Store에서 앱을 설치하는 것 이외에 콘텐츠의 웹 버전 열기, 앱 홍보 페이지 표시 등의 다른 작업을 수행하려면 이 매개변수를 지정합니다.</span><br><span class="line"></span><br><span class="line">ipbi : iPad에서 링크를 여는 데 사용할 iOS 앱의 번들 ID입니다. Firebase 콘솔의 개요 페이지에서 앱을 프로젝트에 연결해야 합니다.</span><br><span class="line"></span><br><span class="line">isi : 앱이 설치되지 않았다면 사용자를 App Store로 보내는 데 사용되는 앱의 App Store ID입니다.</span><br><span class="line"></span><br><span class="line">imv : 링크를 열 수 있는 앱의 최소 버전 번호입니다. 이 플래그는 앱이 열렸을 때 앱에 전달되며 앱에서 수행할 작업을 결정해야 합니다.</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;DynamicLinks 쓸일이 생겨서 정리!&lt;br&gt;&lt;a href=&quot;https://firebase.google.com/docs/dynamic-links/create-manually?hl=ko&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="DynamicLinks" scheme="https://vkcldhkd.github.io/tags/DynamicLinks/"/>
+    
+  </entry>
   
   <entry>
     <title>AppStore 수출 규정 준수</title>
@@ -600,35 +626,6 @@
       <category term="CocoaPods Error" scheme="https://vkcldhkd.github.io/tags/CocoaPods-Error/"/>
     
       <category term="Unable to find a specification for" scheme="https://vkcldhkd.github.io/tags/Unable-to-find-a-specification-for/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>정수 내림차순으로 정렬하기</title>
-    <link href="https://vkcldhkd.github.io/2019/11/25/desc/"/>
-    <id>https://vkcldhkd.github.io/2019/11/25/desc/</id>
-    <published>2019-11-25T04:03:13.000Z</published>
-    <updated>2019-12-03T09:07:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12933" target="_blank" rel="noopener">문제 설명</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">함수 solution은 정수 n을 매개변수로 입력받습니다. n의 각 자릿수를 큰것부터 작은 순으로 정렬한 새로운 정수를 리턴해주세요. 예를들어 n이 118372면 873211을 리턴하면 됩니다.</span><br><span class="line"></span><br><span class="line">제한 조건</span><br><span class="line">n은 1이상 8000000000 이하인 자연수입니다.</span><br></pre></td></tr></table></figure><p>Swift 코드</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">func solution(_ n:Int64) -&gt; Int64 &#123;</span><br><span class="line">        return Int64(</span><br><span class="line">        String(n)</span><br><span class="line">            .sorted(by: &gt;)</span><br><span class="line">            .map&#123; String($0) &#125;</span><br><span class="line">            .reduce(&quot;&quot;, +)</span><br><span class="line">        )!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12933&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;문제 설명&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight 
-      
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="https://vkcldhkd.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://vkcldhkd.github.io/tags/Algorithm/"/>
-    
-      <category term="Desc" scheme="https://vkcldhkd.github.io/tags/Desc/"/>
     
   </entry>
   
