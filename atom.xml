@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-03-27T05:35:40.031Z</updated>
+  <updated>2020-04-21T08:45:30.945Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cannot proceed with delivery</title>
+    <link href="https://vkcldhkd.github.io/2020/04/21/delivery/"/>
+    <id>https://vkcldhkd.github.io/2020/04/21/delivery/</id>
+    <published>2020-04-21T08:40:57.000Z</published>
+    <updated>2020-04-21T08:45:30.945Z</updated>
+    
+    <content type="html"><![CDATA[<p>fastlane으로 업로드를 진행하다가 아래와 같은 에러가 발생했다. 예전에 비슷한 문제가 있었던 것 같은데… 안되서 다시 포스팅한다ㅠ</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Application Loader: “Cannot proceed with delivery: an existing transporter instance is currently uploading this package”</span><br></pre></td></tr></table></figure><p><a href="https://stackoverflow.com/questions/3870082/application-loader-cannot-proceed-with-delivery-an-existing-transporter-insta" target="_blank" rel="noopener">https://stackoverflow.com/questions/3870082/application-loader-cannot-proceed-with-delivery-an-existing-transporter-insta</a></p><p>를 참고해서, UploadTokens안에 있는 토큰들을 전부 날린 후 업로드 진행하니 잘된다.</p><p>까먹지말자 후…괜히 한시간 날렸네ㅠ</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;fastlane으로 업로드를 진행하다가 아래와 같은 에러가 발생했다. 예전에 비슷한 문제가 있었던 것 같은데… 안되서 다시 포스팅한다ㅠ&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="ITMS-90717" scheme="https://vkcldhkd.github.io/tags/ITMS-90717/"/>
+    
+      <category term="AppStore Connect Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Connect-Error/"/>
+    
+  </entry>
   
   <entry>
     <title>Google DynamicLinks</title>
@@ -595,37 +624,6 @@
       <category term="Algorithm" scheme="https://vkcldhkd.github.io/tags/Algorithm/"/>
     
       <category term="budget" scheme="https://vkcldhkd.github.io/tags/budget/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CocoaPods Unable to find a specification for</title>
-    <link href="https://vkcldhkd.github.io/2019/11/29/CocoaPodsError/"/>
-    <id>https://vkcldhkd.github.io/2019/11/29/CocoaPodsError/</id>
-    <published>2019-11-29T02:04:38.000Z</published>
-    <updated>2019-11-29T02:07:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>간만에 개인 맥북으로 프로젝트에 Cocoapods로 라이브러리를 설치하다가 아래와 같은 에러가 발생했다. </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Unable to find a specification for ~~~~</span><br></pre></td></tr></table></figure><p>pod setup<br>pod install</p><p>setup 후 install을 하게되면 잘된다 :)</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;간만에 개인 맥북으로 프로젝트에 Cocoapods로 라이브러리를 설치하다가 아래와 같은 에러가 발생했다. &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span 
-      
-    
-    </summary>
-    
-    
-      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/categories/CocoaPods/"/>
-    
-    
-      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/tags/CocoaPods/"/>
-    
-      <category term="CocoaPods Error" scheme="https://vkcldhkd.github.io/tags/CocoaPods-Error/"/>
-    
-      <category term="Unable to find a specification for" scheme="https://vkcldhkd.github.io/tags/Unable-to-find-a-specification-for/"/>
     
   </entry>
   
