@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-04-21T08:45:30.945Z</updated>
+  <updated>2020-05-18T10:37:39.687Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>애드몹 동영상광고</title>
+    <link href="https://vkcldhkd.github.io/2020/05/18/Sound/"/>
+    <id>https://vkcldhkd.github.io/2020/05/18/Sound/</id>
+    <published>2020-05-18T10:32:46.000Z</published>
+    <updated>2020-05-18T10:37:39.687Z</updated>
+    
+    <content type="html"><![CDATA[<p>컬렉션뷰에 기존 아이템들과 광고 아이템을 섞어서 노출하던 중, 음악재생 중에 동영상 광고를 지나가게되면 노래가 꺼지는 버그가 있었다. 아무리 생각해도 오디오 세션 관련된 버그 같았는데 공식홈페이지에 이런 내용이 있었다.<br>하 이거때문에 엄청 검색하다가 겨우 찾음…. 하지만 조금 더 테스트가 필요하다ㅠ</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">https://developers.google.com/admob/ios/global-settings?hl=ko</span><br><span class="line"></span><br><span class="line">오디오 세션 변경</span><br><span class="line">오디오 세션을 통해 앱의 오디오 동작에 대한 개발자의 의도를 시스템에 반영할 수 있습니다. 오디오 세션에 대한 자세한 내용은 Apple의 오디오 세션 프로그래밍 가이드를 참조하세요. Google 모바일 광고 SDK 오디오를 관리하는 데 사용할 수 있는 옵션은 audioVideoManager 속성을 사용하는 것입니다.</span><br><span class="line"></span><br><span class="line">앱에서 오디오를 사용하지 않으면 이러한 API를 사용할 필요가 없습니다. Google 모바일 광고 SDK가 오디오를 재생할 때 오디오 세션 카테고리를 자동으로 관리합니다. 앱에서 오디오를 재생하고 Google 모바일 광고 SDK가 오디오를 재생하는 방법과 시기를 더욱 정밀하게 제어하려는 경우 이러한 API가 도움이 될 수 있습니다.</span><br><span class="line"></span><br><span class="line">오디오 동영상 관리자에서 직접 오디오 세션 카테고리를 관리해야 하는 경우 audioSessionIsApplicationManaged 속성을 YES로 설정하세요.</span><br><span class="line"></span><br><span class="line">오디오 세션 카테고리를 관리하려면 광고 동영상 및 오디오 재생 이벤트를 알리도록 GADAudioVideoManagerDelegate를 구현하고 오디오 동영상 관리자에서 delegate 속성을 설정해야 합니다. 그런 다음 위에 연결된 Apple의 오디오 세션 프로그래밍 가이드에 따라 오디오 세션 카테고리를 관련 카테고리로 변경하세요.</span><br><span class="line"></span><br><span class="line">참고: 기본적으로 모바일 광고 SDK는 광고를 음소거 상태로 재생할 때 오디오 세션 카테고리를 AVAudioSessionCategoryAmbient로 설정합니다. 이 경우에 앱에서 AVAudioSessionCategoryOptionDuckOthers를 사용하게 하려면 GADAudioVideoManagerDelegate 프로토콜을 구현하고 오디오 동영상 관리자 audioSessionIsApplicationManaged를 YES로 설정해야 합니다.</span><br><span class="line">다음은 앱이 위의 API를 사용하여 음악을 재생할 때 권장하는 코드의 간단한 예입니다.</span><br><span class="line"></span><br><span class="line">Swift</span><br><span class="line">Objective-C</span><br><span class="line">func setUp() &#123;</span><br><span class="line">    GADMobileAds.sharedInstance().audioVideoManager.delegate = self</span><br><span class="line">    GADMobileAds.sharedInstance().audioVideoManager.audioSessionIsApplicationManaged = false</span><br><span class="line">&#125;</span><br><span class="line">func myAppWillStartPlayingMusic() &#123;</span><br><span class="line">    // Mutes all Google video ads.</span><br><span class="line">    GADMobileAds.sharedInstance().audioVideoManager.audioSessionIsApplicationManaged = true</span><br><span class="line">    GADMobileAds.sharedInstance().applicationMuted = true</span><br><span class="line">&#125;</span><br><span class="line">func myAppDidStopPlayingMusic() &#123;</span><br><span class="line">    // Un-mutes all of our video ads.</span><br><span class="line">    GADMobileAds.sharedInstance().audioVideoManager.audioSessionIsApplicationManaged = false</span><br><span class="line">    GADMobileAds.sharedInstance().applicationMuted = false</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// MARK: - GADAudioVideoManagerDelegate</span><br><span class="line">func audioVideoManagerWillPlayAudio(_ audioVideoManager: GADAudioVideoManager) &#123;</span><br><span class="line">    // The mobile ads SDK is notifying your app that it will play audio. You</span><br><span class="line">    // could optionally pause music depending on your apps design.</span><br><span class="line">    MyAppObject.sharedInstance().pauseAllMusic()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func audioVideoManagerDidStopPlayingAudio(_ audioVideoManager: GADAudioVideoManager) &#123;</span><br><span class="line">    // The mobile ads SDK is notifying your app that it has stopped playing</span><br><span class="line">    // audio. Depending on your design, you could resume music here.</span><br><span class="line">    MyAppObject.sharedInstance().resumeAllMusic()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;컬렉션뷰에 기존 아이템들과 광고 아이템을 섞어서 노출하던 중, 음악재생 중에 동영상 광고를 지나가게되면 노래가 꺼지는 버그가 있었다. 아무리 생각해도 오디오 세션 관련된 버그 같았는데 공식홈페이지에 이런 내용이 있었다.&lt;br&gt;하 이거때문에 엄청 
+      
+    
+    </summary>
+    
+    
+      <category term="Admob" scheme="https://vkcldhkd.github.io/categories/Admob/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="Admob" scheme="https://vkcldhkd.github.io/tags/Admob/"/>
+    
+      <category term="동영상 광고" scheme="https://vkcldhkd.github.io/tags/%EB%8F%99%EC%98%81%EC%83%81-%EA%B4%91%EA%B3%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Cannot proceed with delivery</title>
@@ -595,35 +625,6 @@
       <category term="layerMaxXMaxYCorner" scheme="https://vkcldhkd.github.io/tags/layerMaxXMaxYCorner/"/>
     
       <category term="maskedCorners" scheme="https://vkcldhkd.github.io/tags/maskedCorners/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>예산 알고리즘</title>
-    <link href="https://vkcldhkd.github.io/2019/12/03/budget/"/>
-    <id>https://vkcldhkd.github.io/2019/12/03/budget/</id>
-    <published>2019-12-03T08:55:13.000Z</published>
-    <updated>2019-12-03T08:58:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12982" target="_blank" rel="noopener">문제 설명</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">S사에서는 각 부서에 필요한 물품을 지원해 주기 위해 부서별로 물품을 구매하는데 필요한 금액을 조사했습니다. 그러나, 전체 예산이 정해져 있기 때문에 모든 부서의 물품을 구매해 줄 수는 없습니다. 그래서 최대한 많은 부서의 물품을 구매해 줄 수 있도록 하려고 합니다.</span><br><span class="line"></span><br><span class="line">물품을 구매해 줄 때는 각 부서가 신청한 금액만큼을 모두 지원해 줘야 합니다. 예를 들어 1,000원을 신청한 부서에는 정확히 1,000원을 지원해야 하며, 1,000원보다 적은 금액을 지원해 줄 수는 없습니다.</span><br><span class="line"></span><br><span class="line">부서별로 신청한 금액이 들어있는 배열 d와 예산 budget이 매개변수로 주어질 때, 최대 몇 개의 부서에 물품을 지원할 수 있는지 return 하도록 solution 함수를 완성해주세요.</span><br><span class="line"></span><br><span class="line">제한사항</span><br><span class="line">d는 부서별로 신청한 금액이 들어있는 배열이며, 길이(전체 부서의 개수)는 1 이상 100 이하입니다.</span><br><span class="line">d의 각 원소는 부서별로 신청한 금액을 나타내며, 부서별 신청 금액은 1 이상 100,000 이하의 자연수입니다.</span><br><span class="line">budget은 예산을 나타내며, 1 이상 10,000,000 이하의 자연수입니다.</span><br></pre></td></tr></table></figure><p>Swift 코드</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">func solution(_ d:[Int], _ budget:Int) -&gt; Int &#123;</span><br><span class="line">    let sortedArray = d.sorted()</span><br><span class="line">    var result = 0</span><br><span class="line">    var resultBudget = budget</span><br><span class="line">    for i in 0 ..&lt; sortedArray.count&#123;</span><br><span class="line">        let index = sortedArray[i]</span><br><span class="line">        guard index &lt;= resultBudget else &#123; break &#125;</span><br><span class="line">        resultBudget -= index</span><br><span class="line">        result += 1</span><br><span class="line">    &#125;</span><br><span class="line">    print(&quot;sortedArray : \(sortedArray)&quot;)</span><br><span class="line">    return result</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(solution([1,3,2,5,4], 9))</span><br></pre></td></tr></table></figure><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12982&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;문제 설명&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight 
-      
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="https://vkcldhkd.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://vkcldhkd.github.io/tags/Algorithm/"/>
-    
-      <category term="budget" scheme="https://vkcldhkd.github.io/tags/budget/"/>
     
   </entry>
   
