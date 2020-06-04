@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-05-18T10:43:15.307Z</updated>
+  <updated>2020-06-04T00:36:23.313Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Audio Session Interruptions</title>
+    <link href="https://vkcldhkd.github.io/2020/06/04/Interruptions/"/>
+    <id>https://vkcldhkd.github.io/2020/06/04/Interruptions/</id>
+    <published>2020-06-04T00:24:53.000Z</published>
+    <updated>2020-06-04T00:36:23.313Z</updated>
+    
+    <content type="html"><![CDATA[<p>클래식 매니저를 사용중에 버그리포트가 들어왔다.<br>내용은 바로 음악 재생중에 전화를 걸고 난 후 통화가 종료되었을 때 다른앱들은 노래가 나오는데, 왜 클래식매니저는 나오지 않느냐 라는 리포트였다.</p><p>맨 처음에는 AppDelegate LifeCycle쪽을 의심했었는데 얻을 수 있는 단서가 없었다 ㅠ….</p><p>애플 공식홈페이지에서 <a href="https://developer.apple.com/documentation/avfoundation/avaudiosession" target="_blank" rel="noopener">AudioSession</a>쪽을 보던 중 <a href="https://developer.apple.com/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions" target="_blank" rel="noopener">Audio Session Interruptions</a>을 발견했다.</p><p>생각해보니 위의 리포트 내용은 앱단에서 체크하는것이 아닌, OS단에서 체크를 해서 앱에 전달해줘야한다는 생각이 뽷 들었다ㅋㅋㅋㅋ</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">func setupNotifications() &#123;</span><br><span class="line">    // Get the default notification center instance.</span><br><span class="line">    let nc = NotificationCenter.default</span><br><span class="line">    nc.addObserver(self,</span><br><span class="line">                   selector: #selector(handleInterruption),</span><br><span class="line">                   name: AVAudioSession.interruptionNotification,</span><br><span class="line">                   object: nil)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@objc func handleInterruption(notification: Notification) &#123;</span><br><span class="line">    // To be implemented.</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위의 코드를 이용해서 로그를 찍어본 결과</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line"> 재생 중이고, 전화왔을 때</span><br><span class="line"> notification :name = AVAudioSessionInterruptionNotification, object = Optional(&lt;AVAudioSession: 0x283023550&gt;), userInfo = Optional([AnyHashable(&quot;AVAudioSessionInterruptionTypeKey&quot;): 1])</span><br><span class="line"> </span><br><span class="line"> 재생 멈춘 상태이고 전화 끊어졌을 때</span><br><span class="line"> notification :name = AVAudioSessionInterruptionNotification, object = Optional(&lt;AVAudioSession: 0x283023550&gt;), userInfo = Optional([AnyHashable(&quot;AVAudioSessionInterruptionTypeKey&quot;): 0, AnyHashable(&quot;AVAudioSessionInterruptionOptionKey&quot;): 1])</span><br><span class="line"> */</span><br></pre></td></tr></table></figure><p>이런 값들로 들어왔다.  그래서 아래와 같이 마무리를 했더니 잘 된다 :)</p><pre><code>@objc func handleInterruption(notification: Notification) {            guard let userinfo = notification.userInfo,        let interruptionTypeKey = userinfo[AVAudioSessionInterruptionTypeKey] as? Int,        interruptionTypeKey == 0 else { return }        // 1은 앱의 음악이 재생중 이었는데 오디오 세션을 뺏기며 음악이 멈춘 상황에 리턴되는 것 같다.        // 0은 전화 끝난 상황        // 참고로 음악을 재생중이지 않을때 통화를 시도하면 해당 메소드가 호출되지 않는 것같다.    ModernPlayerManager.shared.play()}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;클래식 매니저를 사용중에 버그리포트가 들어왔다.&lt;br&gt;내용은 바로 음악 재생중에 전화를 걸고 난 후 통화가 종료되었을 때 다른앱들은 노래가 나오는데, 왜 클래식매니저는 나오지 않느냐 라는 리포트였다.&lt;/p&gt;
+&lt;p&gt;맨 처음에는 AppDelegate
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="Audio" scheme="https://vkcldhkd.github.io/tags/Audio/"/>
+    
+      <category term="Session" scheme="https://vkcldhkd.github.io/tags/Session/"/>
+    
+      <category term="Interruptions" scheme="https://vkcldhkd.github.io/tags/Interruptions/"/>
+    
+  </entry>
   
   <entry>
     <title>AVPlayerItem Caching</title>
@@ -583,36 +614,6 @@
       <category term="Hexo" scheme="https://vkcldhkd.github.io/tags/Hexo/"/>
     
       <category term="zsh" scheme="https://vkcldhkd.github.io/tags/zsh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Privacy Description</title>
-    <link href="https://vkcldhkd.github.io/2019/12/09/Description/"/>
-    <id>https://vkcldhkd.github.io/2019/12/09/Description/</id>
-    <published>2019-12-09T04:44:55.000Z</published>
-    <updated>2019-12-09T07:32:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>나도모르게 또 검색하길래 아예 정리해놓기!! <a href="https://kka7.tistory.com/40" target="_blank" rel="noopener">참고한 블로그</a></p><table><thead><tr><th>Data Class</th><th>XCode Key</th><th>Raw Info.plist Key</th></tr></thead><tbody><tr><td>Apple Music</td><td>Privacy - Media Library Usage Description</td><td>NSAppleMusicUsageDescription</td></tr><tr><td>Bluetooth</td><td>Privacy - Bluetooth Peripheral Usage Description</td><td>NSBluetoothPeripheralUsageDescription</td></tr><tr><td>Calendar</td><td>Privacy - Calendars Usage Description</td><td>NSCalendarsUsageDescription</td></tr><tr><td>Camera</td><td>Privacy - Camera Usage Description</td><td>NSCameraUsageDescription</td></tr><tr><td>Contacts</td><td>Privacy - Contacts Usage Description</td><td>NSContactsUsageDescription</td></tr><tr><td>Health</td><td>Privacy - Health Share Usage Description Privacy - Health Update Usage Description</td><td>NSHealthShareUsageDescription NSHealthUpdateUsageDescription</td></tr><tr><td>Home</td><td>Privacy - HomeKit Usage Description</td><td>NSHomeKitUsageDescription</td></tr><tr><td>Location</td><td>Privacy - Location Always Usage Description Privacy - Location When In Use Usage Description</td><td>NSLocationAlwaysUsageDescription NSLocationWhenInUseUsageDescription</td></tr><tr><td>Microphone</td><td>Privacy - Microphone Usage Description</td><td>NSMicrophoneUsageDescription</td></tr><tr><td>Motion</td><td>Privacy - Motion Usage Description</td><td>NSMotionUsageDescription</td></tr><tr><td>Photos</td><td>Privacy - Photo Library Usage Description</td><td>NSPhotoLibraryUsageDescription</td></tr><tr><td>Reminders</td><td>Privacy - Reminders Usage Description</td><td>NSRemindersUsageDescription</td></tr><tr><td>Siri</td><td>Privacy - Siri Usage Description</td><td>NSSiriUsageDescription</td></tr><tr><td>Speech Recognition</td><td>Privacy - Speech Recognition Usage Description</td><td>NSSpeechRecognitionUsageDescription</td></tr><tr><td>TV Provider Account</td><td>Privacy - TV Provider Usage Description</td><td>NSVideoSubscriberAccountUsageDescription</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;나도모르게 또 검색하길래 아예 정리해놓기!! &lt;a href=&quot;https://kka7.tistory.com/40&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;참고한 블로그&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Da
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-      <category term="Privacy" scheme="https://vkcldhkd.github.io/tags/Privacy/"/>
     
   </entry>
   
