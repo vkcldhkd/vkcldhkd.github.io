@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="I iOS You">
 <meta property="og:description" content="클래식 매니저를 개발중에 버그리포트가 들어왔다.내용은 바로 음악 재생중에 전화를 걸고 난 후 통화가 종료되었을 때 다른앱들은 노래가 나오는데, 왜 클래식매니저는 나오지 않느냐 라는 리포트였다. 맨 처음에는 AppDelegate LifeCycle쪽을 의심했었는데 얻을 수 있는 단서가 없었다 ㅠ….위의 리포트 내용을 보고 곰곰히 생각해보니, 위와 같은 상황은">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-06-04T00:39:29.097Z">
+<meta property="og:updated_time" content="2020-06-04T00:41:39.392Z">
 <meta name="twitter:card" content="summary">
 
   
@@ -179,15 +179,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">재생 중이고, 전화왔을 때</span><br><span class="line">notification :name = AVAudioSessionInterruptionNotification, object = Optional(&lt;AVAudioSession: 0x283023550&gt;), userInfo = Optional([AnyHashable(&quot;AVAudioSessionInterruptionTypeKey&quot;): 1])</span><br><span class="line"></span><br><span class="line">재생 멈춘 상태이고 전화 끊어졌을 때</span><br><span class="line">notification :name = AVAudioSessionInterruptionNotification, object = Optional(&lt;AVAudioSession: 0x283023550&gt;), userInfo = Optional([AnyHashable(&quot;AVAudioSessionInterruptionTypeKey&quot;): 0, AnyHashable(&quot;AVAudioSessionInterruptionOptionKey&quot;): 1])</span><br></pre></td></tr></table></figure>
 
 <p>이런 값들로 들어왔다.  그래서 아래와 같이 마무리를 했더니 잘 된다 :)</p>
-<pre><code>@objc func handleInterruption(notification: Notification) {        
-    guard let userinfo = notification.userInfo,
-        let interruptionTypeKey = userinfo[AVAudioSessionInterruptionTypeKey] as? Int,
-        interruptionTypeKey == 0 else { return }
-        // 1은 앱의 음악이 재생중 이었는데 오디오 세션을 뺏기며 음악이 멈춘 상황에 리턴되는 것 같다.
-        // 0은 전화 끝난 상황
-        // 참고로 음악을 재생중이지 않을때 통화를 시도하면 해당 메소드가 호출되지 않는 것같다.
-    ModernPlayerManager.shared.play()
-}</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@objc func handleInterruption(notification: Notification) &#123;        </span><br><span class="line">    guard let userinfo = notification.userInfo,</span><br><span class="line">        let interruptionTypeKey = userinfo[AVAudioSessionInterruptionTypeKey] as? Int,</span><br><span class="line">        interruptionTypeKey == 0 else &#123; return &#125;</span><br><span class="line">        </span><br><span class="line">        // 1은 앱의 음악이 재생중 이었는데 오디오 세션을 뺏기며 음악이 멈춘 상황에 리턴되는 것 같다.</span><br><span class="line">        // 0은 전화 끝난 상황</span><br><span class="line">        // 참고로 음악을 재생중이지 않을때 통화를 시도하면 해당 메소드가 호출되지 않는 것같다.</span><br><span class="line">        </span><br><span class="line">        ModernPlayerManager.shared.play()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
     
   </div>
 
