@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/Interruptions/</loc>
+        <lastmod>2020-06-11T01:39:10.641Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Session/</loc>
+        <lastmod>2020-06-11T01:39:10.641Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Audio/</loc>
+        <lastmod>2020-06-11T01:39:10.641Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Traditional/</loc>
         <lastmod>2020-06-10T05:03:50.565Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,27 +33,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/tags/Simplified/</loc>
         <lastmod>2020-06-10T05:03:50.565Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Interruptions/</loc>
-        <lastmod>2020-06-08T11:06:43.047Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Session/</loc>
-        <lastmod>2020-06-08T11:06:43.047Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Audio/</loc>
-        <lastmod>2020-06-08T11:06:43.047Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
