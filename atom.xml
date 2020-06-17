@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-06-17T00:45:58.408Z</updated>
+  <updated>2020-06-17T06:28:31.835Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>UnknownCase</title>
+    <title>Enum Unknown Case</title>
     <link href="https://vkcldhkd.github.io/2020/06/17/UnknownCase/"/>
     <id>https://vkcldhkd.github.io/2020/06/17/UnknownCase/</id>
     <published>2020-06-17T00:39:10.000Z</published>
-    <updated>2020-06-17T00:45:58.408Z</updated>
+    <updated>2020-06-17T06:28:31.835Z</updated>
     
     <content type="html"><![CDATA[<p>iOS에서 서버의 데이터를 파싱하는 과정에서 코더블을 많이 사용하게된다.<br>해당 객체의 타입이 enum 타입일때, 정의한 값 이외에 알 수 없는 값이 오게되면 error가 나게되는데 아래의 방법으로 처리하면 기본값을 설정할 수 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">protocol UnknownCaseRepresentable: RawRepresentable, CaseIterable where RawValue: Equatable &#123;</span><br><span class="line">    static var unknownCase: Self &#123; get &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extension UnknownCaseRepresentable &#123;</span><br><span class="line">    init(rawValue: RawValue) &#123;</span><br><span class="line">        self = Self.allCases.first(where: &#123; $0.rawValue == rawValue &#125;) ?? Self.unknownCase</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>아래와 같이 프로토콜을 선언한 뒤, 사용하려는 객체에서 사용하면된다. :)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">enum AccountClass: String, Codable, Equatable, UnknownCaseRepresentable&#123;</span><br><span class="line">    static let unknownCase: AccountClass = .normal</span><br><span class="line">    </span><br><span class="line">    case normal</span><br><span class="line">    case forshop</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>도움 주신 <a href="https://github.com/Danue1" target="_blank" rel="noopener">Danuel</a> 님 감사합니다!</p>]]></content>
     
@@ -38,6 +38,8 @@
     
       <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
     
+    
+      <category term="Enum" scheme="https://vkcldhkd.github.io/tags/Enum/"/>
     
       <category term="Codable" scheme="https://vkcldhkd.github.io/tags/Codable/"/>
     
