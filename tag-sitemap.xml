@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/zsh/</loc>
+        <lastmod>2020-07-20T08:08:40.946Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Bash/</loc>
+        <lastmod>2020-07-20T08:08:40.946Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Hexo/</loc>
+        <lastmod>2020-07-20T08:08:40.946Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Case/</loc>
         <lastmod>2020-06-17T06:28:31.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -311,20 +332,6 @@
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/zsh/</loc>
-        <lastmod>2020-01-07T00:46:43.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Hexo/</loc>
-        <lastmod>2020-01-07T00:46:43.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://vkcldhkd.github.io/tags/Privacy/</loc>
         <lastmod>2019-12-09T07:32:51.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -474,13 +481,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/tags/R-Swift-Install/</loc>
         <lastmod>2019-11-20T02:53:26.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Bash/</loc>
-        <lastmod>2019-11-18T06:19:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
