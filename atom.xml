@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-06-17T06:28:31.000Z</updated>
+  <updated>2020-07-21T00:22:03.286Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Transition과 Animation</title>
+    <link href="https://vkcldhkd.github.io/2020/07/21/TransitionAndAnimation/"/>
+    <id>https://vkcldhkd.github.io/2020/07/21/TransitionAndAnimation/</id>
+    <published>2020-07-21T00:17:56.000Z</published>
+    <updated>2020-07-21T00:22:03.286Z</updated>
+    
+    <content type="html"><![CDATA[<p>transition 속성과 animation 속성의 가장 큰 차이는 transition 속성은 요소의 상태가 바뀌어야 바뀌는 상태를 애니메이션으로 표현하지만, animation 속성은 요소의 상태 변화와 상관 없이 애니메이션을 실행한다.</p><p>그리고 UIView.animate를 할 때,transition으로 시작하는 옵션값들을 넣으면 아무 효과 없이, cureveEaseInOut으로 동작하게된다.</p><p>transition 속성을 이용하려면 UIView.transition으로 해야 제대로 동작한다. 이럴거면 UIView.AnimationOptions 를 나눠두는게 낫지않나싶은데… 애플의 큰뜻이 있겠지 ㅠ</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;transition 속성과 animation 속성의 가장 큰 차이는 transition 속성은 요소의 상태가 바뀌어야 바뀌는 상태를 애니메이션으로 표현하지만, animation 속성은 요소의 상태 변화와 상관 없이 애니메이션을 실행한다.&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="Transition" scheme="https://vkcldhkd.github.io/tags/Transition/"/>
+    
+      <category term="Animation" scheme="https://vkcldhkd.github.io/tags/Animation/"/>
+    
+  </entry>
   
   <entry>
     <title>Enum Unknown Case</title>
@@ -588,37 +619,6 @@
       <category term="Publishsubject" scheme="https://vkcldhkd.github.io/tags/Publishsubject/"/>
     
       <category term="Behaviorsubject" scheme="https://vkcldhkd.github.io/tags/Behaviorsubject/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git Flow</title>
-    <link href="https://vkcldhkd.github.io/2020/02/03/gitflow/"/>
-    <id>https://vkcldhkd.github.io/2020/02/03/gitflow/</id>
-    <published>2020-02-03T00:17:10.000Z</published>
-    <updated>2020-02-03T00:19:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Git Flow에 대해서 공부하려고 보니 아주 설명이 잘되어있어서 메모!<br>언제쯤 깃을 잘쓸수있을까 ㄷ…</p><p><a href="http://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html" target="_blank" rel="noopener">http://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Git Flow에 대해서 공부하려고 보니 아주 설명이 잘되어있어서 메모!&lt;br&gt;언제쯤 깃을 잘쓸수있을까 ㄷ…&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://woowabros.github.io/experience/2017/10/30/baemin-mobi
-      
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="https://vkcldhkd.github.io/categories/Git/"/>
-    
-    
-      <category term="Git" scheme="https://vkcldhkd.github.io/tags/Git/"/>
-    
-      <category term="Gif Flow" scheme="https://vkcldhkd.github.io/tags/Gif-Flow/"/>
-    
-      <category term="Baemin" scheme="https://vkcldhkd.github.io/tags/Baemin/"/>
     
   </entry>
   

@@ -3,22 +3,43 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/Animation/</loc>
+        <lastmod>2020-07-21T00:22:03.286Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Transition/</loc>
+        <lastmod>2020-07-21T00:22:03.286Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
+        <lastmod>2020-07-21T00:22:03.286Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/zsh/</loc>
-        <lastmod>2020-07-20T08:11:48.899Z</lastmod>
+        <lastmod>2020-07-20T08:15:30.923Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Bash/</loc>
-        <lastmod>2020-07-20T08:11:48.899Z</lastmod>
+        <lastmod>2020-07-20T08:15:30.923Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Hexo/</loc>
-        <lastmod>2020-07-20T08:11:48.899Z</lastmod>
+        <lastmod>2020-07-20T08:15:30.923Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -88,13 +109,6 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Admob/</loc>
-        <lastmod>2020-05-18T10:44:08.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
         <lastmod>2020-05-18T10:44:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
