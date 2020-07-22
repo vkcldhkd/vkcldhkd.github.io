@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/Release/</loc>
+        <lastmod>2020-07-22T02:17:33.997Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Debug/</loc>
+        <lastmod>2020-07-22T02:17:33.997Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
+        <lastmod>2020-07-22T02:17:33.997Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Animation/</loc>
         <lastmod>2020-07-21T00:22:03.286Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -11,13 +32,6 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Transition/</loc>
-        <lastmod>2020-07-21T00:22:03.286Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
         <lastmod>2020-07-21T00:22:03.286Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
