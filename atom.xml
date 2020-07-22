@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-07-22T10:49:59.234Z</updated>
+  <updated>2020-07-22T10:51:12.785Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>googleAdmob</title>
+    <title>Google Admob</title>
     <link href="https://vkcldhkd.github.io/2020/07/22/GoogleAdmob/"/>
     <id>https://vkcldhkd.github.io/2020/07/22/GoogleAdmob/</id>
     <published>2020-07-22T10:47:52.000Z</published>
-    <updated>2020-07-22T10:49:59.234Z</updated>
+    <updated>2020-07-22T10:51:12.785Z</updated>
     
     <content type="html"><![CDATA[<p>현재 빌드셋팅을 </p><ul><li>Debug</li><li>Release</li><li>Release_Test_Ad</li></ul><p>이렇게 3가지로 운영하고있는데, pod update를 하면서 Release_Test_Ad 빌드상태에서 테스트광고가 나오지 않았다 -_-….<br>빌드 한참건드리다가 애드몹을 팟에서 재설치했는데 바로됨……………하 내 2시간;</p>]]></content>
     
