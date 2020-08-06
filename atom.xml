@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-07-22T12:12:00.801Z</updated>
+  <updated>2020-08-06T06:06:22.705Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fastlane 모음</title>
+    <link href="https://vkcldhkd.github.io/2020/08/06/fastlane/"/>
+    <id>https://vkcldhkd.github.io/2020/08/06/fastlane/</id>
+    <published>2020-08-06T06:03:35.000Z</published>
+    <updated>2020-08-06T06:06:22.705Z</updated>
+    
+    <content type="html"><![CDATA[<p>Fastlane을 이용한 자동화 코드 모음(실제 사용 중)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">platform :ios do</span><br><span class="line"></span><br><span class="line">    lane :cm_test do</span><br><span class="line">        begin</span><br><span class="line">            test_lane()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">                on_error(exception)</span><br><span class="line">            end</span><br><span class="line">        end</span><br><span class="line"></span><br><span class="line">    desc &quot;Send Slack&quot;</span><br><span class="line">        lane :sendSlack do</span><br><span class="line">            sendSlack()</span><br><span class="line">        end</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    lane :cm_upload_stg do</span><br><span class="line">        begin</span><br><span class="line">            upload_stg()</span><br><span class="line">            sendSlack()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    lane :cm_upload_prd do</span><br><span class="line">        begin</span><br><span class="line">            upload_prd()</span><br><span class="line">            sendSlack()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    lane :cm_upload_prd_test_ad do</span><br><span class="line">        begin</span><br><span class="line">            upload_prd_test_ad()</span><br><span class="line">            sendSlack()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    lane :cm_upload_all do</span><br><span class="line">        begin</span><br><span class="line">            upload_stg()</span><br><span class="line">            upload_prd()</span><br><span class="line">            upload_prd_test_ad()</span><br><span class="line">            uploadedAllBuild()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">end</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">def test_lane</span><br><span class="line">    clear_derived_data</span><br><span class="line">    scan(</span><br><span class="line">        workspace: &quot;projectName.xcworkspace&quot;,</span><br><span class="line">        devices: [&quot;iPhone 6s&quot;, &quot;iPad Air&quot;]</span><br><span class="line">    )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">def uploadedAllBuild</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a All build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a All build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">def sendSlack</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a new App Store build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a new App Store build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">def slackTest</span><br><span class="line">   slack(</span><br><span class="line">       message: &quot;Test&quot;,</span><br><span class="line">       success: true,</span><br><span class="line">       slack_url: &quot;url&quot;,</span><br><span class="line">       attachment_properties: &#123;</span><br><span class="line">           fields: [</span><br><span class="line">               &#123;</span><br><span class="line">                   title: &quot;슬랙 보내기 테스트 입니다.&quot;,</span><br><span class="line">                   value: ENV[&quot;BUILD_NUMBER&quot;],</span><br><span class="line">               &#125;</span><br><span class="line">           ]</span><br><span class="line">       &#125;</span><br><span class="line">   )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def on_error(exception)</span><br><span class="line">   slack(</span><br><span class="line">       message: &quot;Error!!!&quot;,</span><br><span class="line">       success: false,</span><br><span class="line">       slack_url: &quot;url&quot;,</span><br><span class="line">       attachment_properties: &#123;</span><br><span class="line">           fields: [</span><br><span class="line">               &#123;</span><br><span class="line">                   title: &quot;Build number&quot;,</span><br><span class="line">                   value: ENV[&quot;BUILD_NUMBER&quot;],</span><br><span class="line">               &#125;,</span><br><span class="line">               &#123;</span><br><span class="line">                   title: &quot;Error message&quot;,</span><br><span class="line">                   value: exception.to_s,</span><br><span class="line">                   short: false</span><br><span class="line">               &#125;</span><br><span class="line">           ]</span><br><span class="line">       &#125;</span><br><span class="line">   )</span><br><span class="line">end</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Fastlane을 이용한 자동화 코드 모음(실제 사용 중)&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;s
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="Fastlane" scheme="https://vkcldhkd.github.io/tags/Fastlane/"/>
+    
+  </entry>
   
   <entry>
     <title>Google Admob</title>
@@ -592,35 +621,6 @@
       <category term="UIBarButtonItem" scheme="https://vkcldhkd.github.io/tags/UIBarButtonItem/"/>
     
       <category term="NavigationBarButtonItem" scheme="https://vkcldhkd.github.io/tags/NavigationBarButtonItem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>기기에서 UDID 얻어오기</title>
-    <link href="https://vkcldhkd.github.io/2020/02/17/getUDID/"/>
-    <id>https://vkcldhkd.github.io/2020/02/17/getUDID/</id>
-    <published>2020-02-17T01:58:30.000Z</published>
-    <updated>2020-02-17T02:03:13.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>테스트 기기등록을 위해 UDID를 쉽게 알아보는 방법!<br>UDID를 얻어오려는 기기로 아래의 주소를 접근한 후, 일반 - 프로파일 - Get Your UDID - 설치 한 후 UDID를 얻어오면된다!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://get.udid.io/</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;테스트 기기등록을 위해 UDID를 쉽게 알아보는 방법!&lt;br&gt;UDID를 얻어오려는 기기로 아래의 주소를 접근한 후, 일반 - 프로파일 - Get Your UDID - 설치 한 후 UDID를 얻어오면된다!&lt;/p&gt;
-&lt;figure class=&quot;high
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-      <category term="iOS UDID" scheme="https://vkcldhkd.github.io/tags/iOS-UDID/"/>
-    
-      <category term="UDID" scheme="https://vkcldhkd.github.io/tags/UDID/"/>
     
   </entry>
   
