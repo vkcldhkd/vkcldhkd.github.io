@@ -3,14 +3,21 @@
 
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/Fastlane/</loc>
-        <lastmod>2020-08-06T06:06:22.705Z</lastmod>
+        <loc>https://vkcldhkd.github.io/tags/Xocde/</loc>
+        <lastmod>2020-09-10T02:36:58.690Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
+        <lastmod>2020-09-10T02:36:58.690Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Fastlane/</loc>
         <lastmod>2020-08-06T06:06:22.705Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -549,14 +556,14 @@
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

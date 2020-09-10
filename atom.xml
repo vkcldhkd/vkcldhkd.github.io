@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-08-06T06:06:22.705Z</updated>
+  <updated>2020-09-10T02:36:58.690Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xcode에서 정규식으로 검색하기</title>
+    <link href="https://vkcldhkd.github.io/2020/09/10/xcodeSearch/"/>
+    <id>https://vkcldhkd.github.io/2020/09/10/xcodeSearch/</id>
+    <published>2020-09-10T02:07:27.000Z</published>
+    <updated>2020-09-10T02:36:58.690Z</updated>
+    
+    <content type="html"><![CDATA[<p>혹시라도 하드코딩이 되어있는 부분이 있나 검색하기위해 찾다보니 엑스코드 자체검색에서 정규식 지원을 했었다 ㄷㄷㄷㄷ;</p><p>검색에서 Find -&gt; Regular Expression으로 변경 후  정규식을 입력하면된다.</p><p>내가 필요한 부분은 “로 시작하고, 한글이 들어가는것들이 필요했기때문에 아래와 같은 정규표현식이 필요했당</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;.[가-힣]</span><br></pre></td></tr></table></figure><p>이런게 있었다니….. 몇년을 날린 기분이다ㅠ</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;혹시라도 하드코딩이 되어있는 부분이 있나 검색하기위해 찾다보니 엑스코드 자체검색에서 정규식 지원을 했었다 ㄷㄷㄷㄷ;&lt;/p&gt;
+&lt;p&gt;검색에서 Find -&amp;gt; Regular Expression으로 변경 후  정규식을 입력하면된다.&lt;/p&gt;
+&lt;p&gt;내가
+      
+    
+    </summary>
+    
+    
+      <category term="Xcode" scheme="https://vkcldhkd.github.io/categories/Xcode/"/>
+    
+    
+      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+      <category term="Xocde" scheme="https://vkcldhkd.github.io/tags/Xocde/"/>
+    
+  </entry>
   
   <entry>
     <title>Fastlane 모음</title>
@@ -590,37 +620,6 @@
       <category term="TableViewCellEditingMode" scheme="https://vkcldhkd.github.io/tags/TableViewCellEditingMode/"/>
     
       <category term="ReorderImageView TintColor" scheme="https://vkcldhkd.github.io/tags/ReorderImageView-TintColor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UIBarButtonItem의 TintColor가 초기화 되는 현상</title>
-    <link href="https://vkcldhkd.github.io/2020/02/17/UIBarButtonItem/"/>
-    <id>https://vkcldhkd.github.io/2020/02/17/UIBarButtonItem/</id>
-    <published>2020-02-17T10:02:30.000Z</published>
-    <updated>2020-02-17T10:06:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>NavigationBar에 아래와 같이 설정을 해줬는데도 페이지 이동 시 설정한 UIBarButtonItem의 TintColor가 초기화 되는 이슈가 생겼다 -_____- </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">UINavigationBar.appearance().backIndicatorImage = arrwoImg</span><br><span class="line">UINavigationBar.appearance().backIndicatorTransitionMaskImage = arrwoImg</span><br><span class="line">UINavigationBar.appearance().barTintColor = ColorHelper.C38_38_38.getColor()</span><br><span class="line">UINavigationBar.appearance().tintColor = .white</span><br><span class="line">UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]</span><br></pre></td></tr></table></figure><p>초기화는 기본색상인 파란색? 계열로 되는데 도저히 찾지를 못하다가 아래처럼 barbuttonItem의 then 부분에 tintColor를 설정해주니 정상적으로 잘 됐다 -_-</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">static func getSearchBarButton() -&gt; UIBarButtonItem&#123;</span><br><span class="line">    return UIBarButtonItem().then&#123;</span><br><span class="line">        $0.image = R.image.common_Search()</span><br><span class="line">        $0.style = .plain</span><br><span class="line">        $0.tintColor = .white</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>하 진짜 이것때문에 몇시간을 날린건지…………………………..</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;NavigationBar에 아래와 같이 설정을 해줬는데도 페이지 이동 시 설정한 UIBarButtonItem의 TintColor가 초기화 되는 이슈가 생겼다 -_____- &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tab
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
-      <category term="UIBarButtonItem" scheme="https://vkcldhkd.github.io/tags/UIBarButtonItem/"/>
-    
-      <category term="NavigationBarButtonItem" scheme="https://vkcldhkd.github.io/tags/NavigationBarButtonItem/"/>
     
   </entry>
   
