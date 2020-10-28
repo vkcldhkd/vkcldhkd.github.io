@@ -3,6 +3,62 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/maskedCorners/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMaxXMaxYCorner/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMaxXMinYCorner/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMinXMaxYCorner/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/layerMinXMinYCorner/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Cusom-CornerRadius/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Layer-CornerRadius/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/iOS-CornerRadius/</loc>
+        <lastmod>2020-10-28T06:54:33.608Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Xocde/</loc>
         <lastmod>2020-09-10T02:36:58.690Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -383,62 +439,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/tags/Privacy/</loc>
         <lastmod>2019-12-09T07:32:51.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/maskedCorners/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/layerMaxXMaxYCorner/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/layerMaxXMinYCorner/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/layerMinXMaxYCorner/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/layerMinXMinYCorner/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Cusom-CornerRadius/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Layer-CornerRadius/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/iOS-CornerRadius/</loc>
-        <lastmod>2019-12-04T06:29:01.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
