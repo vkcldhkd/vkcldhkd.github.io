@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2020-09-10T02:36:58.690Z</updated>
+  <updated>2022-02-09T02:40:01.552Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cocoapods error &#39;Unable to read the license file&#39;</title>
+    <link href="https://vkcldhkd.github.io/2022/02/09/20220209/"/>
+    <id>https://vkcldhkd.github.io/2022/02/09/20220209/</id>
+    <published>2022-02-09T02:38:05.000Z</published>
+    <updated>2022-02-09T02:40:01.552Z</updated>
+    
+    <content type="html"><![CDATA[<p>간만에 코코아팟에서 에러가 발생해서 블로그에 글 작성하기</p><p>1) pod deintegrate<br>2) pod cache clean –all<br>3) pod install</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;간만에 코코아팟에서 에러가 발생해서 블로그에 글 작성하기&lt;/p&gt;
+&lt;p&gt;1) pod deintegrate&lt;br&gt;2) pod cache clean –all&lt;br&gt;3) pod install&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/categories/CocoaPods/"/>
+    
+    
+      <category term="CocoaPods" scheme="https://vkcldhkd.github.io/tags/CocoaPods/"/>
+    
+      <category term="CocoaPods Error" scheme="https://vkcldhkd.github.io/tags/CocoaPods-Error/"/>
+    
+      <category term="Unable to read the license file" scheme="https://vkcldhkd.github.io/tags/Unable-to-read-the-license-file/"/>
+    
+  </entry>
   
   <entry>
     <title>xcode에서 정규식으로 검색하기</title>
@@ -590,36 +622,6 @@
       <category term="Status" scheme="https://vkcldhkd.github.io/tags/Status/"/>
     
       <category term="Code" scheme="https://vkcldhkd.github.io/tags/Code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReorderImageView TintColor</title>
-    <link href="https://vkcldhkd.github.io/2020/03/09/ReorderImageViewTintColor/"/>
-    <id>https://vkcldhkd.github.io/2020/03/09/ReorderImageViewTintColor/</id>
-    <published>2020-03-09T06:51:17.000Z</published>
-    <updated>2020-03-09T06:53:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>TableView Editing Mode 를 변경해서 사용하는 도중, CustomCell의 백그라운드색상이 흰색일 경우 테이블뷰에서 Reorder 부분이 잘 안보이는 이슈가 있었다. 이래저래 방법을 찾던 도중 아래와같은 방법으로 해결했다! 후 ㅂㄷㅂㄷ…</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">self.detailTableView.rx.willDisplayCell</span><br><span class="line">    .subscribe(onNext: &#123; tuple in</span><br><span class="line">        let cell = tuple.cell</span><br><span class="line">        let imageView = cell.subviews.first(where: &#123; $0.description.contains(&quot;Reorder&quot;) &#125;)?.subviews.first(where: &#123; $0 is UIImageView &#125;) as? UIImageView</span><br><span class="line">        imageView?.image = imageView?.image?.withRenderingMode(.alwaysTemplate)</span><br><span class="line">        imageView?.tintColor = ColorHelper.C33_33_33.getColor()</span><br><span class="line">    &#125;)</span><br><span class="line">    .disposed(by: self.disposeBag)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;TableView Editing Mode 를 변경해서 사용하는 도중, CustomCell의 백그라운드색상이 흰색일 경우 테이블뷰에서 Reorder 부분이 잘 안보이는 이슈가 있었다. 이래저래 방법을 찾던 도중 아래와같은 방법으로 해결했다! 후 ㅂ
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-      <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
-      <category term="TableViewCellEditingMode" scheme="https://vkcldhkd.github.io/tags/TableViewCellEditingMode/"/>
-    
-      <category term="ReorderImageView TintColor" scheme="https://vkcldhkd.github.io/tags/ReorderImageView-TintColor/"/>
     
   </entry>
   
