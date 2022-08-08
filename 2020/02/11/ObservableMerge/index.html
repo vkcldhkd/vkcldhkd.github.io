@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-posts">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Button.rx.tap Merge | I iOS You</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="RxSwift,Button.rx.tap,Button Merge,Button Action," />
+  
+
+  <meta name="description" content="여러개의 버튼에 하나의 Action, Bind로 할수 있을까 해서 삽질하다가 성공한 코드!조금만 더 깔끔하게 짤 수 있었으면 좋겠다 ㅎ…  12345678Observable.merge(    self.playlistEditButton.rx.tap.map&amp;#123; $0 &amp;#125;,    self.editDoneButton.rx.tap.map&amp;#123; $">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Button.rx.tap Merge">
+<meta property="og:url" content="https://vkcldhkd.github.io/2020/02/11/ObservableMerge/index.html">
+<meta property="og:site_name" content="I iOS You">
+<meta property="og:description" content="여러개의 버튼에 하나의 Action, Bind로 할수 있을까 해서 삽질하다가 성공한 코드!조금만 더 깔끔하게 짤 수 있었으면 좋겠다 ㅎ…  12345678Observable.merge(    self.playlistEditButton.rx.tap.map&amp;#123; $0 &amp;#125;,    self.editDoneButton.rx.tap.map&amp;#123; $">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-11T10:05:32.000Z">
+<meta property="article:modified_time" content="2020-02-11T10:08:04.000Z">
+<meta property="article:author" content="SUNG9">
+<meta property="article:tag" content="RxSwift">
+<meta property="article:tag" content="Button.rx.tap">
+<meta property="article:tag" content="Button Merge">
+<meta property="article:tag" content="Button Action">
+<meta name="twitter:card" content="summary">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta name="google-site-verification" content="vo_CwfQ6OMs6cfN-FocvswNl-YtRJQChLoD6MwTXYuY" />
+<meta name="naver-site-verification" content="1a13646deb2373a7b0493fc8f00f7c697fe5902f"/>
+
+<link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    
+<link rel="stylesheet" href="/css/personal-style.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="I iOS You" type="application/atom+xml">
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">Menu</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">Menu</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Blog
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Categories
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Tags
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            About
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="posts-ObservableMerge" class="article article-type-posts" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Button.rx.tap Merge</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2020.02.11</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>SUNG9</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/RxSwift/">RxSwift</a>
+  </span>
+
+
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>여러개의 버튼에 하나의 Action, Bind로 할수 있을까 해서 삽질하다가 성공한 코드!<br>조금만 더 깔끔하게 짤 수 있었으면 좋겠다 ㅎ… </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Observable.merge(</span><br><span class="line">    self.playlistEditButton.rx.tap.map&#123; $0 &#125;,</span><br><span class="line">    self.editDoneButton.rx.tap.map&#123; $0 &#125;</span><br><span class="line">    )</span><br><span class="line">    .throttle(.milliseconds(500), scheduler: MainScheduler.asyncInstance)</span><br><span class="line">    .map &#123; Reactor.Action.updatePlaylistEditing &#125;</span><br><span class="line">    .bind(to: reactor.action)</span><br><span class="line">    .disposed(by: self.disposeBag)</span><br></pre></td></tr></table></figure>
+
+    
+  </div>
+
+</article>
+
+
+   
+
+   
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">Close</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Blog
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Categories
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Tags
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              About
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Search
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-posts">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

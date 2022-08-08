@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-posts">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>UIBarButtonItem의 TintColor가 초기화 되는 현상 | I iOS You</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="iOS,UIBarButtonItem,NavigationBarButtonItem," />
+  
+
+  <meta name="description" content="NavigationBar에 아래와 같이 설정을 해줬는데도 페이지 이동 시 설정한 UIBarButtonItem의 TintColor가 초기화 되는 이슈가 생겼다 -_____-  12345UINavigationBar.appearance().backIndicatorImage &#x3D; arrwoImgUINavigationBar.appearance().backIndicat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UIBarButtonItem의 TintColor가 초기화 되는 현상">
+<meta property="og:url" content="https://vkcldhkd.github.io/2020/02/17/UIBarButtonItem/index.html">
+<meta property="og:site_name" content="I iOS You">
+<meta property="og:description" content="NavigationBar에 아래와 같이 설정을 해줬는데도 페이지 이동 시 설정한 UIBarButtonItem의 TintColor가 초기화 되는 이슈가 생겼다 -_____-  12345UINavigationBar.appearance().backIndicatorImage &#x3D; arrwoImgUINavigationBar.appearance().backIndicat">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-17T10:02:30.000Z">
+<meta property="article:modified_time" content="2020-02-17T10:06:11.000Z">
+<meta property="article:author" content="SUNG9">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="UIBarButtonItem">
+<meta property="article:tag" content="NavigationBarButtonItem">
+<meta name="twitter:card" content="summary">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta name="google-site-verification" content="vo_CwfQ6OMs6cfN-FocvswNl-YtRJQChLoD6MwTXYuY" />
+<meta name="naver-site-verification" content="1a13646deb2373a7b0493fc8f00f7c697fe5902f"/>
+
+<link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    
+<link rel="stylesheet" href="/css/personal-style.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="I iOS You" type="application/atom+xml">
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">Menu</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">Menu</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Blog
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Categories
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Tags
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            About
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="posts-UIBarButtonItem" class="article article-type-posts" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">UIBarButtonItem의 TintColor가 초기화 되는 현상</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2020.02.17</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>SUNG9</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+  </span>
+
+
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>NavigationBar에 아래와 같이 설정을 해줬는데도 페이지 이동 시 설정한 UIBarButtonItem의 TintColor가 초기화 되는 이슈가 생겼다 -_____- </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">UINavigationBar.appearance().backIndicatorImage = arrwoImg</span><br><span class="line">UINavigationBar.appearance().backIndicatorTransitionMaskImage = arrwoImg</span><br><span class="line">UINavigationBar.appearance().barTintColor = ColorHelper.C38_38_38.getColor()</span><br><span class="line">UINavigationBar.appearance().tintColor = .white</span><br><span class="line">UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]</span><br></pre></td></tr></table></figure>
+
+
+<p>초기화는 기본색상인 파란색? 계열로 되는데 도저히 찾지를 못하다가 아래처럼 barbuttonItem의 then 부분에 tintColor를 설정해주니 정상적으로 잘 됐다 -_-</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">static func getSearchBarButton() -&gt; UIBarButtonItem&#123;</span><br><span class="line">    return UIBarButtonItem().then&#123;</span><br><span class="line">        $0.image = R.image.common_Search()</span><br><span class="line">        $0.style = .plain</span><br><span class="line">        $0.tintColor = .white</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>하 진짜 이것때문에 몇시간을 날린건지…………………………..</p>
+
+    
+  </div>
+
+</article>
+
+
+   
+
+   
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">Close</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Blog
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Categories
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Tags
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              About
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Search
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-posts">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

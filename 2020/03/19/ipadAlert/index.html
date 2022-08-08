@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-posts">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>ipad에서 ActionSheetAlert가 뜨면 죽는 이슈 | I iOS You</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="iOS,UIActivityViewController,Share," />
+  
+
+  <meta name="description" content="최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다. 그래서 아래와같이 UIAlertController extension 에 show 함수를 수정한 결과 매우잘된다.완전 고려를 못하고있던 부분이었는데 그나마 쉽게해결됐다 ㅎㅎㅎㅎㅎ ext">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ipad에서 ActionSheetAlert가 뜨면 죽는 이슈">
+<meta property="og:url" content="https://vkcldhkd.github.io/2020/03/19/ipadAlert/index.html">
+<meta property="og:site_name" content="I iOS You">
+<meta property="og:description" content="최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다. 그래서 아래와같이 UIAlertController extension 에 show 함수를 수정한 결과 매우잘된다.완전 고려를 못하고있던 부분이었는데 그나마 쉽게해결됐다 ㅎㅎㅎㅎㅎ ext">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-19T05:03:31.000Z">
+<meta property="article:modified_time" content="2020-03-19T05:09:05.000Z">
+<meta property="article:author" content="SUNG9">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="UIActivityViewController">
+<meta property="article:tag" content="Share">
+<meta name="twitter:card" content="summary">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta name="google-site-verification" content="vo_CwfQ6OMs6cfN-FocvswNl-YtRJQChLoD6MwTXYuY" />
+<meta name="naver-site-verification" content="1a13646deb2373a7b0493fc8f00f7c697fe5902f"/>
+
+<link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    
+<link rel="stylesheet" href="/css/personal-style.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="I iOS You" type="application/atom+xml">
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">Menu</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">Menu</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Blog
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Categories
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Tags
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            About
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="posts-ipadAlert" class="article article-type-posts" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">ipad에서 ActionSheetAlert가 뜨면 죽는 이슈</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2020.03.19</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>SUNG9</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+  </span>
+
+
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다.</p>
+<p>그래서 아래와같이 UIAlertController extension 에 show 함수를 수정한 결과 매우잘된다.<br>완전 고려를 못하고있던 부분이었는데 그나마 쉽게해결됐다 ㅎㅎㅎㅎㅎ</p>
+<pre><code>extension UIAlertController&#123;
+    func show()&#123;
+        guard let topVC = UIApplication.shared.topViewController() else &#123; return &#125;
+
+        if Device.current.isPad,
+            let popoverController = self.popoverPresentationController &#123;
+                popoverController.sourceView = topVC.view
+                popoverController.sourceRect = CGRect(x: topVC.view.bounds.midX, y: topVC.view.bounds.midY, width: 0, height: 0)
+                popoverController.permittedArrowDirections = []
+            &#125;
+
+        topVC.present(self, animated: true, completion: nil)
+    &#125;
+&#125;</code></pre>
+    
+  </div>
+
+</article>
+
+
+   
+
+   
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">Close</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Blog
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Categories
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Tags
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              About
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Search
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-posts">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
