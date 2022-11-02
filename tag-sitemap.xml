@@ -4,14 +4,28 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Klaytn/</loc>
-        <lastmod>2022-11-02T05:50:46.039Z</lastmod>
+        <lastmod>2022-11-02T05:51:47.494Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/BlockChain/</loc>
-        <lastmod>2022-11-02T05:50:46.039Z</lastmod>
+        <lastmod>2022-11-02T05:51:47.494Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Git-Error/</loc>
+        <lastmod>2022-11-02T05:51:14.276Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Git/</loc>
+        <lastmod>2022-11-02T05:51:14.276Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -452,13 +466,6 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Gif-Flow/</loc>
-        <lastmod>2020-02-03T00:19:14.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/Git/</loc>
         <lastmod>2020-02-03T00:19:14.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
