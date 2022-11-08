@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2022-11-02T05:51:47.494Z</updated>
+  <updated>2022-11-07T02:18:01.752Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Klaytn 개발시 유용한 사이트들</title>
+    <link href="https://vkcldhkd.github.io/2022/11/07/20221107_UnitTest_No_Such_module/"/>
+    <id>https://vkcldhkd.github.io/2022/11/07/20221107_UnitTest_No_Such_module/</id>
+    <published>2022-11-07T02:09:52.000Z</published>
+    <updated>2022-11-07T02:18:01.752Z</updated>
+    
+    <content type="html"><![CDATA[<p>테스트파일 생성 후 테스트 진행하려고 했는데 @testable import에서 아래와 같은 에러가 발생했다</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">No such module &#x27;Product Name&#x27;</span><br></pre></td></tr></table></figure><p>Build Setting -&gt; ENABLE TESTING SEARCH PATHS를 Yes로 변경하면 끝!</p><p>난줄알았으나 그래도 안되어서 스키마 설정에서 Targets에 Tests파일이 추가되어있는지 확인했다.<br>추가 안되어있어서 추가 후 빌드 성공!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;테스트파일 생성 후 테스트 진행하려고 했는데 @testable import에서 아래와 같은 에러가 발생했다&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;s</summary>
+      
+    
+    
+    
+    <category term="Xcode" scheme="https://vkcldhkd.github.io/categories/Xcode/"/>
+    
+    
+    <category term="Xcode" scheme="https://vkcldhkd.github.io/tags/Xcode/"/>
+    
+    <category term="UnitTest" scheme="https://vkcldhkd.github.io/tags/UnitTest/"/>
+    
+  </entry>
   
   <entry>
     <title>Klaytn 개발시 유용한 사이트들</title>
@@ -554,33 +581,6 @@
     <category term="UIActivityViewController" scheme="https://vkcldhkd.github.io/tags/UIActivityViewController/"/>
     
     <category term="Share" scheme="https://vkcldhkd.github.io/tags/Share/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ITMS-90717</title>
-    <link href="https://vkcldhkd.github.io/2020/03/18/ITMS-90717/"/>
-    <id>https://vkcldhkd.github.io/2020/03/18/ITMS-90717/</id>
-    <published>2020-03-18T05:20:51.000Z</published>
-    <updated>2020-03-18T05:25:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>제작한 앱을 테스트플라이트 환경에서 테스트 하려고 업로드 중 아래와 같은 에러가 발생했다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">App Store Connect Operation Error</span><br><span class="line"></span><br><span class="line">ERROR ITEMS-90717: &quot;Invalid App Store Icon. The App Store Icon in the asset catalog in &#x27;Appname.app&#x27; can&#x27;t be transparent not contain an alpha channel. &quot;</span><br></pre></td></tr></table></figure><p>해결방법은, 해당 파일을 연 후 다른이름으로 저장할 때 알파채널을 제외시킨 후 덮어쓰기하면된다!</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;제작한 앱을 테스트플라이트 환경에서 테스트 하려고 업로드 중 아래와 같은 에러가 발생했다.&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="ITMS-90717" scheme="https://vkcldhkd.github.io/tags/ITMS-90717/"/>
-    
-    <category term="AppStore Connect Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Connect-Error/"/>
     
   </entry>
   

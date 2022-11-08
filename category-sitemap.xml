@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://vkcldhkd.github.io/categories/Xcode/</loc>
+        <lastmod>2022-11-07T02:18:01.752Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/categories/BlockChain/</loc>
         <lastmod>2022-11-02T05:51:47.494Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,13 +38,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/categories/iOS/</loc>
         <lastmod>2020-10-28T06:54:33.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/categories/Xcode/</loc>
-        <lastmod>2020-09-10T02:36:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
