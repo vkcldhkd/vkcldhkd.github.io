@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2022-11-08T07:48:00.765Z</updated>
+  <updated>2022-11-25T04:52:04.678Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP Basic Access denied</title>
+    <link href="https://vkcldhkd.github.io/2022/11/25/20221125_http_access_denied/"/>
+    <id>https://vkcldhkd.github.io/2022/11/25/20221125_http_access_denied/</id>
+    <published>2022-11-25T04:50:52.000Z</published>
+    <updated>2022-11-25T04:52:04.678Z</updated>
+    
+    <content type="html"><![CDATA[<p>계정 비밀번호를 변경한것을 깜빡하고 git push 를 진행하던 도중 아래와 같은 에러가 발생했다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.</span><br></pre></td></tr></table></figure><ol><li>git config –local –unset credential.helper</li><li>email과 password를 다시 입력</li><li>git push </li><li>성공 :)</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;계정 비밀번호를 변경한것을 깜빡하고 git push 를 진행하던 도중 아래와 같은 에러가 발생했다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span </summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://vkcldhkd.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://vkcldhkd.github.io/tags/Git/"/>
+    
+    <category term="Access denied" scheme="https://vkcldhkd.github.io/tags/Access-denied/"/>
+    
+  </entry>
   
   <entry>
     <title>UnitTest @testable import Error</title>
@@ -552,35 +579,6 @@
     <category term="UIImage" scheme="https://vkcldhkd.github.io/tags/UIImage/"/>
     
     <category term="ImageTintColor" scheme="https://vkcldhkd.github.io/tags/ImageTintColor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ipad에서 ActionSheetAlert가 뜨면 죽는 이슈</title>
-    <link href="https://vkcldhkd.github.io/2020/03/19/ipadAlert/"/>
-    <id>https://vkcldhkd.github.io/2020/03/19/ipadAlert/</id>
-    <published>2020-03-19T05:03:31.000Z</published>
-    <updated>2020-03-19T05:09:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다.</p><p>그래서 아래와같이 UIAlertController extension 에 show 함수를 수정한 결과 매우잘된다.<br>완전 고려를 못하고있던 부분이었는데 그나마 쉽게해결됐다 ㅎㅎㅎㅎㅎ</p><pre><code>extension UIAlertController&#123;    func show()&#123;        guard let topVC = UIApplication.shared.topViewController() else &#123; return &#125;        if Device.current.isPad,            let popoverController = self.popoverPresentationController &#123;                popoverController.sourceView = topVC.view                popoverController.sourceRect = CGRect(x: topVC.view.bounds.midX, y: topVC.view.bounds.midY, width: 0, height: 0)                popoverController.permittedArrowDirections = []            &#125;        topVC.present(self, animated: true, completion: nil)    &#125;&#125;</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다.&lt;/p&gt;
-&lt;p&gt;그래서 아래와같이 UIAlertController exte</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
-    <category term="UIActivityViewController" scheme="https://vkcldhkd.github.io/tags/UIActivityViewController/"/>
-    
-    <category term="Share" scheme="https://vkcldhkd.github.io/tags/Share/"/>
     
   </entry>
   
