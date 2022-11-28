@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2022-11-25T04:52:04.678Z</updated>
+  <updated>2022-11-28T09:24:51.178Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Is Ethereum wallet address case sensitive?</title>
+    <link href="https://vkcldhkd.github.io/2022/11/28/20221128_eth_uppercase_lowercase/"/>
+    <id>https://vkcldhkd.github.io/2022/11/28/20221128_eth_uppercase_lowercase/</id>
+    <published>2022-11-28T09:23:52.000Z</published>
+    <updated>2022-11-28T09:24:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p>Ethereum wallet addresses are in hex [0-9A-F]*. While the address itself is case-insensitive (A is the same as a to the network), the case sensitivity is used as a (optional) checksum. It was built as an after-thought to an addressing scheme that lacked basic checksum validation.<br><a href="https://github.com/ethereum/EIPs/issues/55#issuecomment-187159063">https://github.com/ethereum/EIPs/issues/55#issuecomment-187159063</a></p><p>The checksum works like so:<br>lowercase address and remove 0x prefix<br>sha3 hash result from #1<br>change nth letter of address according to the nth letter of the hash:<br>0,1,2,3,4,5,6,7 → Lowercase<br>8, 9, a, b, c, d, e, f → Uppercase<br>So, you sha3 hash the address, and look at each Nth character of the sha result. If it’s 7 or below, the Nth character in the address is lowercase. If it is 8 or above, that character is uppercase.<br>(Brought from an old Ethereum forum whose link is now broken.)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Ethereum wallet addresses are in hex [0-9A-F]*. While the address itself is case-insensitive (A is the same as a to the network), the cas</summary>
+      
+    
+    
+    
+    <category term="BlockChain" scheme="https://vkcldhkd.github.io/categories/BlockChain/"/>
+    
+    
+    <category term="BlockChain" scheme="https://vkcldhkd.github.io/tags/BlockChain/"/>
+    
+    <category term="Ethereum" scheme="https://vkcldhkd.github.io/tags/Ethereum/"/>
+    
+    <category term="Address" scheme="https://vkcldhkd.github.io/tags/Address/"/>
+    
+  </entry>
   
   <entry>
     <title>HTTP Basic Access denied</title>
@@ -552,33 +580,6 @@
     <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
     
     <category term="AppStoreConnect" scheme="https://vkcldhkd.github.io/tags/AppStoreConnect/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ImageTintColor</title>
-    <link href="https://vkcldhkd.github.io/2020/03/19/ImageTintColor/"/>
-    <id>https://vkcldhkd.github.io/2020/03/19/ImageTintColor/</id>
-    <published>2020-03-19T11:39:38.000Z</published>
-    <updated>2020-03-19T11:41:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>가끔 이미지 하나로 UIColor를 입혀서 사용해야할 때가있다.<br>자꾸 까먹어서 아예 포스팅!</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let button = UIButton()</span><br><span class="line">let image = UIImage(named: &quot;image_name&quot;)?.withRenderingMode(.alwaysTemplate)</span><br><span class="line">button.setImage(image, for: .normal)</span><br><span class="line">button.tintColor = UIColor.red</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;가끔 이미지 하나로 UIColor를 입혀서 사용해야할 때가있다.&lt;br&gt;자꾸 까먹어서 아예 포스팅!&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span c</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="UIImage" scheme="https://vkcldhkd.github.io/tags/UIImage/"/>
-    
-    <category term="ImageTintColor" scheme="https://vkcldhkd.github.io/tags/ImageTintColor/"/>
     
   </entry>
   
