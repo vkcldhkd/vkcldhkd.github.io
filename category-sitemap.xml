@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://vkcldhkd.github.io/categories/iOS/</loc>
+        <lastmod>2022-12-09T02:37:03.102Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/categories/Xcode/</loc>
         <lastmod>2022-12-09T02:34:42.559Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,13 +38,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/categories/CocoaPods/</loc>
         <lastmod>2022-02-09T02:40:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/categories/iOS/</loc>
-        <lastmod>2020-10-28T06:54:33.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/DynamicLinks/</loc>
+        <lastmod>2022-12-09T02:37:03.102Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
+        <lastmod>2022-12-09T02:37:03.102Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Simulator/</loc>
         <lastmod>2022-12-09T02:34:42.559Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -158,13 +172,6 @@
 
     <url>
         <loc>https://vkcldhkd.github.io/tags/Xocde/</loc>
-        <lastmod>2020-09-10T02:36:58.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/iOS/</loc>
         <lastmod>2020-09-10T02:36:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -327,13 +334,6 @@
     <url>
         <loc>https://vkcldhkd.github.io/tags/ITMS-90717/</loc>
         <lastmod>2020-04-21T08:45:30.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://vkcldhkd.github.io/tags/DynamicLinks/</loc>
-        <lastmod>2020-03-27T05:35:40.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
