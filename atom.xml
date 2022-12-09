@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2022-12-09T02:34:42.559Z</updated>
+  <updated>2022-12-09T02:39:07.243Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Firebase DynamicLinks</title>
+    <link href="https://vkcldhkd.github.io/2022/12/09/20221209_%20Firebase%20DynamicLinks/"/>
+    <id>https://vkcldhkd.github.io/2022/12/09/20221209_%20Firebase%20DynamicLinks/</id>
+    <published>2022-12-09T02:39:52.000Z</published>
+    <updated>2022-12-09T02:39:07.243Z</updated>
+    
+    <content type="html"><![CDATA[<p>DynamicLinks 관련 R&amp;D 하던 도중 괜찮았던 페이지 메모</p><ul><li><a href="https://github.com/sujinnaljin/TIL/blob/master/Firebase%20Dynamic%20Link.md">https://github.com/sujinnaljin/TIL/blob/master/Firebase%20Dynamic%20Link.md</a></li><li><a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html">https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html</a></li><li><a href="https://medium.com/prnd/%EB%94%A5%EB%A7%81%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0%EA%B2%83-feat-app-link-universal-link-deferred-deeplink-61d6cf63a0a5">https://medium.com/prnd/%EB%94%A5%EB%A7%81%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0%EA%B2%83-feat-app-link-universal-link-deferred-deeplink-61d6cf63a0a5</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;DynamicLinks 관련 R&amp;amp;D 하던 도중 괜찮았던 페이지 메모&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sujinnaljin/TIL/blob/master/Firebase%20Dynamic%20Link.</summary>
+      
+    
+    
+    
+    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
+    
+    
+    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
+    
+    <category term="DynamicLinks" scheme="https://vkcldhkd.github.io/tags/DynamicLinks/"/>
+    
+  </entry>
   
   <entry>
     <title>Check Simulator</title>
@@ -40,34 +68,6 @@
     <category term="Xcode" scheme="https://vkcldhkd.github.io/tags/Xcode/"/>
     
     <category term="Simulator" scheme="https://vkcldhkd.github.io/tags/Simulator/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Firebase DynamicLinks</title>
-    <link href="https://vkcldhkd.github.io/2022/12/09/20221209_%20Firebase%20DynamicLinks/"/>
-    <id>https://vkcldhkd.github.io/2022/12/09/20221209_%20Firebase%20DynamicLinks/</id>
-    <published>2022-12-09T02:34:52.000Z</published>
-    <updated>2022-12-09T02:37:03.102Z</updated>
-    
-    <content type="html"><![CDATA[<p>DynamicLinks 관련 R&amp;D 하던 도중 괜찮았던 페이지 메모</p><ul><li><a href="https://github.com/sujinnaljin/TIL/blob/master/Firebase%20Dynamic%20Link.md">https://github.com/sujinnaljin/TIL/blob/master/Firebase%20Dynamic%20Link.md</a></li><li><a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html">https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html</a></li><li><a href="https://medium.com/prnd/%EB%94%A5%EB%A7%81%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0%EA%B2%83-feat-app-link-universal-link-deferred-deeplink-61d6cf63a0a5">https://medium.com/prnd/%EB%94%A5%EB%A7%81%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0%EA%B2%83-feat-app-link-universal-link-deferred-deeplink-61d6cf63a0a5</a></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;DynamicLinks 관련 R&amp;amp;D 하던 도중 괜찮았던 페이지 메모&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/sujinnaljin/TIL/blob/master/Firebase%20Dynamic%20Link.</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
-    <category term="DynamicLinks" scheme="https://vkcldhkd.github.io/tags/DynamicLinks/"/>
     
   </entry>
   
