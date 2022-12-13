@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2022-12-09T02:39:07.243Z</updated>
+  <updated>2022-12-13T02:47:23.858Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cocoapods에 등록되어있는 라이브러리 업데이트</title>
+    <link href="https://vkcldhkd.github.io/2022/12/13/20221213_cocoapods_update/"/>
+    <id>https://vkcldhkd.github.io/2022/12/13/20221213_cocoapods_update/</id>
+    <published>2022-12-13T02:47:52.000Z</published>
+    <updated>2022-12-13T02:47:23.858Z</updated>
+    
+    <content type="html"><![CDATA[<p>예전에 업로드를 하고 업데이트 하는 과정에서 기억이 가물가물….<br>업데이트 도중 생긴 에러들 메모</p><ol><li>git status</li><li>git add .</li><li>git commit -m ‘message’</li><li>git push origin master</li><li>git tag version</li><li>git push origin version</li></ol><hr><p>You need to run <code>pod trunk register</code> to register a session first.<br>-&gt; pod trunk register 이메일 ‘닉네임’ –description&#x3D;‘설명’</p><p>pod trunk push<br>-&gt;The spec did not pass validation, due to 1 warning (but you can use <code>--allow-warnings</code> to ignore it).</p><p>pod trunk push –allow-warnings<br>    1.  🎉  Congrats<br>    2. 🚀  NeopinConnect (0.3.0) successfully published<br>    3. 📅  December 13th, 11:36<br>    4. 🌎  <a href="https://cocoapods.org/pods/NeopinConnect">https://cocoapods.org/pods/NeopinConnect</a><br>    5. 👍  Tell your friends!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;예전에 업로드를 하고 업데이트 하는 과정에서 기억이 가물가물….&lt;br&gt;업데이트 도중 생긴 에러들 메모&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;git status&lt;/li&gt;
+&lt;li&gt;git add .&lt;/li&gt;
+&lt;li&gt;git commit -m ‘message’&lt;/li&gt;</summary>
+      
+    
+    
+    
+    <category term="cocoapods" scheme="https://vkcldhkd.github.io/categories/cocoapods/"/>
+    
+    
+    <category term="Xcode" scheme="https://vkcldhkd.github.io/tags/Xcode/"/>
+    
+    <category term="cocoapods" scheme="https://vkcldhkd.github.io/tags/cocoapods/"/>
+    
+    <category term="opensource" scheme="https://vkcldhkd.github.io/tags/opensource/"/>
+    
+  </entry>
   
   <entry>
     <title>Firebase DynamicLinks</title>
@@ -558,33 +590,6 @@
     <category term="Admob" scheme="https://vkcldhkd.github.io/tags/Admob/"/>
     
     <category term="동영상 광고" scheme="https://vkcldhkd.github.io/tags/%EB%8F%99%EC%98%81%EC%83%81-%EA%B4%91%EA%B3%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cannot proceed with delivery</title>
-    <link href="https://vkcldhkd.github.io/2020/04/21/delivery/"/>
-    <id>https://vkcldhkd.github.io/2020/04/21/delivery/</id>
-    <published>2020-04-21T08:40:57.000Z</published>
-    <updated>2020-04-21T08:45:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>fastlane으로 업로드를 진행하다가 아래와 같은 에러가 발생했다. 예전에 비슷한 문제가 있었던 것 같은데… 안되서 다시 포스팅한다ㅠ</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Application Loader: “Cannot proceed with delivery: an existing transporter instance is currently uploading this package”</span><br></pre></td></tr></table></figure><p><a href="https://stackoverflow.com/questions/3870082/application-loader-cannot-proceed-with-delivery-an-existing-transporter-insta">https://stackoverflow.com/questions/3870082/application-loader-cannot-proceed-with-delivery-an-existing-transporter-insta</a></p><p>를 참고해서, UploadTokens안에 있는 토큰들을 전부 날린 후 업로드 진행하니 잘된다.</p><p>까먹지말자 후…괜히 한시간 날렸네ㅠ</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;fastlane으로 업로드를 진행하다가 아래와 같은 에러가 발생했다. 예전에 비슷한 문제가 있었던 것 같은데… 안되서 다시 포스팅한다ㅠ&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="ITMS-90717" scheme="https://vkcldhkd.github.io/tags/ITMS-90717/"/>
-    
-    <category term="AppStore Connect Error" scheme="https://vkcldhkd.github.io/tags/AppStore-Connect-Error/"/>
     
   </entry>
   
