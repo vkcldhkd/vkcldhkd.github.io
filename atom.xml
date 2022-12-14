@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2022-12-14T07:14:50.737Z</updated>
+  <updated>2022-12-14T07:15:32.782Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Cocoapods에 등록되어있는 라이브러리 업데이트</title>
+    <title>BlockChain network ID</title>
     <link href="https://vkcldhkd.github.io/2022/12/14/20221214_network_chain_id/"/>
     <id>https://vkcldhkd.github.io/2022/12/14/20221214_network_chain_id/</id>
     <published>2022-12-14T07:08:52.000Z</published>
-    <updated>2022-12-14T07:14:50.737Z</updated>
+    <updated>2022-12-14T07:15:32.782Z</updated>
     
     <content type="html"><![CDATA[<p>기존 구조에서 멀티체인 구조로 앱을 확장하면서 Chain ID를 검색할일이 생각보다 많아졌다<br>Mainnet은 물론 Testnet도 검색 가능해서 좋은 사이트 발견!</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://chainlist.org/?search=</span><br></pre></td></tr></table></figure>]]></content>
     
