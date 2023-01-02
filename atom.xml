@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2022-12-14T07:15:32.782Z</updated>
+  <updated>2023-01-02T05:24:15.687Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity CS0103 does not exist in the current context</title>
+    <link href="https://vkcldhkd.github.io/2023/01/02/20230102_unity_cs0103/"/>
+    <id>https://vkcldhkd.github.io/2023/01/02/20230102_unity_cs0103/</id>
+    <published>2023-01-02T05:22:22.000Z</published>
+    <updated>2023-01-02T05:24:15.687Z</updated>
+    
+    <content type="html"><![CDATA[<p>WalletConnect Unity 지원을 위해 R&amp;D하던 중, VSCode에서 Debug.Log()가 안먹고 에러나는 문제가있었다.<br>엄청 간단한것 인데 시간 잡아먹어서 박제..<br>상단에 해당 값 추가</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">using UnityEngine;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;WalletConnect Unity 지원을 위해 R&amp;amp;D하던 중, VSCode에서 Debug.Log()가 안먹고 에러나는 문제가있었다.&lt;br&gt;엄청 간단한것 인데 시간 잡아먹어서 박제..&lt;br&gt;상단에 해당 값 추가&lt;/p&gt;
+&lt;figure cla</summary>
+      
+    
+    
+    
+    <category term="Unity" scheme="https://vkcldhkd.github.io/categories/Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://vkcldhkd.github.io/tags/Unity/"/>
+    
+    <category term="Error" scheme="https://vkcldhkd.github.io/tags/Error/"/>
+    
+    <category term="Debug" scheme="https://vkcldhkd.github.io/tags/Debug/"/>
+    
+  </entry>
   
   <entry>
     <title>BlockChain network ID</title>
@@ -437,9 +466,9 @@
     <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
     
     
-    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
     <category term="Debug" scheme="https://vkcldhkd.github.io/tags/Debug/"/>
+    
+    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
     
     <category term="Release" scheme="https://vkcldhkd.github.io/tags/Release/"/>
     
@@ -560,33 +589,6 @@
     <category term="Session" scheme="https://vkcldhkd.github.io/tags/Session/"/>
     
     <category term="Interruptions" scheme="https://vkcldhkd.github.io/tags/Interruptions/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AVPlayerItem Caching</title>
-    <link href="https://vkcldhkd.github.io/2020/05/18/Caching/"/>
-    <id>https://vkcldhkd.github.io/2020/05/18/Caching/</id>
-    <published>2020-05-18T10:41:26.000Z</published>
-    <updated>2020-05-18T10:43:15.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>플레이어에 캐시기능을 추가하기 위한 프로젝트 검색</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">https://andreygordeev.com/2018/03/31/cache-avplayeritem/</span><br><span class="line">https://github.com/neekeetab/CachingPlayerItem</span><br><span class="line">https://github.com/vitoziv/VIMediaCache</span><br><span class="line">https://github.com/muhku/FreeStreamer</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;플레이어에 캐시기능을 추가하기 위한 프로젝트 검색&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;sp</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="AVPlayerItem" scheme="https://vkcldhkd.github.io/tags/AVPlayerItem/"/>
-    
-    <category term="Caching" scheme="https://vkcldhkd.github.io/tags/Caching/"/>
     
   </entry>
   
