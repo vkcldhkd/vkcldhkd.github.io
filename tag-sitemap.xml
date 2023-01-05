@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://vkcldhkd.github.io/tags/%25EC%25A0%259C%25EA%25B3%25B1/</loc>
+        <lastmod>2023-01-05T12:02:02.539Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://vkcldhkd.github.io/tags/Pow/</loc>
+        <lastmod>2023-01-05T12:02:02.539Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://vkcldhkd.github.io/tags/Debug/</loc>
         <lastmod>2023-01-02T05:24:15.687Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -654,14 +668,14 @@
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://vkcldhkd.github.io/tags/delivery-Error/</loc>
+        <loc>https://vkcldhkd.github.io/tags/AppStore-Error/</loc>
         <lastmod>2019-11-14T06:56:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

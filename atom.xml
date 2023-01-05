@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2023-01-02T05:24:15.687Z</updated>
+  <updated>2023-01-05T12:02:02.539Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Swift Pow</title>
+    <link href="https://vkcldhkd.github.io/2023/01/05/20230105_swift_pow/"/>
+    <id>https://vkcldhkd.github.io/2023/01/05/20230105_swift_pow/</id>
+    <published>2023-01-05T11:52:22.000Z</published>
+    <updated>2023-01-05T12:02:02.539Z</updated>
+    
+    <content type="html"><![CDATA[<p>수수료 계산을 할때 Decimal로 계산하면서 pow로 자리수 계산할일이 많다</p><p>제곱할 값 value, 제곱수 2</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pow(x, y)</span><br></pre></td></tr></table></figure><p>x 자리에는 제곱을 할 값을 넣어주고<br>y 자리에는 제곱 수를 넣어주면 된다.</p><p>체인들마다 자리수가 전부 다르기때문에 계산할 때 주의해서 넣기!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;수수료 계산을 할때 Decimal로 계산하면서 pow로 자리수 계산할일이 많다&lt;/p&gt;
+&lt;p&gt;제곱할 값 value, 제곱수 2&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutte</summary>
+      
+    
+    
+    
+    <category term="Swift" scheme="https://vkcldhkd.github.io/categories/Swift/"/>
+    
+    
+    <category term="Pow" scheme="https://vkcldhkd.github.io/tags/Pow/"/>
+    
+    <category term="제곱" scheme="https://vkcldhkd.github.io/tags/%EC%A0%9C%EA%B3%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>Unity CS0103 does not exist in the current context</title>
@@ -560,35 +588,6 @@
     <category term="Simplified" scheme="https://vkcldhkd.github.io/tags/Simplified/"/>
     
     <category term="Traditional" scheme="https://vkcldhkd.github.io/tags/Traditional/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Audio Session Interruptions</title>
-    <link href="https://vkcldhkd.github.io/2020/06/04/Interruptions/"/>
-    <id>https://vkcldhkd.github.io/2020/06/04/Interruptions/</id>
-    <published>2020-06-04T00:24:53.000Z</published>
-    <updated>2020-06-11T01:39:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>클래식 매니저를 개발중에 버그리포트가 들어왔다.<br>내용은 바로 음악 재생중에 전화를 걸고 난 후 통화가 종료되었을 때 다른앱들은 노래가 나오는데, 왜 클래식매니저는 나오지 않느냐 라는 리포트였다.</p><p>맨 처음에는 AppDelegate LifeCycle쪽을 의심했었는데 얻을 수 있는 단서가 없었다 ㅠ….<br>위의 리포트 내용을 보고 곰곰히 생각해보니, 위와 같은 상황은 앱단에서 체크하는것이 아닌, OS단에서 체크를 해서 앱에 전달해줘야하지않을까??? 라는 생각이 뽷 들었다ㅋㅋㅋㅋ</p><p>그래서 애플 공식홈페이지에서 <a href="https://developer.apple.com/documentation/avfoundation/avaudiosession">AudioSession</a>쪽을 보던 중 <a href="https://developer.apple.com/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions">Audio Session Interruptions</a>을 발견했다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">func setupNotifications() &#123;</span><br><span class="line">    // Get the default notification center instance.</span><br><span class="line">    let nc = NotificationCenter.default</span><br><span class="line">    nc.addObserver(self,</span><br><span class="line">                   selector: #selector(handleInterruption),</span><br><span class="line">                   name: AVAudioSession.interruptionNotification,</span><br><span class="line">                   object: nil)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@objc func handleInterruption(notification: Notification) &#123;</span><br><span class="line">    // To be implemented.</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위의 코드를 이용해서 로그를 찍어본 결과</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">재생 중이고, 전화왔을 때</span><br><span class="line">notification :name = AVAudioSessionInterruptionNotification, object = Optional(&lt;AVAudioSession: 0x283023550&gt;), userInfo = Optional([AnyHashable(&quot;AVAudioSessionInterruptionTypeKey&quot;): 1])</span><br><span class="line"></span><br><span class="line">재생 멈춘 상태이고 전화 끊어졌을 때</span><br><span class="line">notification :name = AVAudioSessionInterruptionNotification, object = Optional(&lt;AVAudioSession: 0x283023550&gt;), userInfo = Optional([AnyHashable(&quot;AVAudioSessionInterruptionTypeKey&quot;): 0, AnyHashable(&quot;AVAudioSessionInterruptionOptionKey&quot;): 1])</span><br></pre></td></tr></table></figure><p>이런 값들로 들어왔다.  그래서 아래와 같이 마무리를 했더니 잘 된다 :)</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@objc func handleInterruption(notification: Notification) &#123;        </span><br><span class="line">    guard let userinfo = notification.userInfo,</span><br><span class="line">        let interruptionOptionKey = userinfo[AVAudioSessionInterruptionOptionKey] as? Int,</span><br><span class="line">        interruptionOptionKey == 1 else &#123; return &#125;</span><br><span class="line">        </span><br><span class="line">        ModernPlayerManager.shared.play()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>++++++<br>아래의 코드로 개선했다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">@objc func handleInterruption(notification: Notification) &#123;        </span><br><span class="line">    LogHelper.printLog(&quot;handleInterruption&quot;)</span><br><span class="line">    guard let value = (notification.userInfo?[AVAudioSessionInterruptionTypeKey] as? NSNumber)?.uintValue,</span><br><span class="line">        let interruptionType =  AVAudioSession.InterruptionType(rawValue: value) else &#123;</span><br><span class="line">            LogHelper.printLog(&quot;AVAudioSessionInterruptionTypeKey : \(String(describing: notification.userInfo?[AVAudioSessionInterruptionTypeKey]))&quot;)</span><br><span class="line">            return</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    switch interruptionType &#123;</span><br><span class="line">    case .began:</span><br><span class="line">        LogHelper.printLog(&quot;began&quot;)</span><br><span class="line">        ModernPlayerManager.shared.pause()</span><br><span class="line">        LogHelper.printLog(&quot;audioPlayer.playing \(ModernPlayerManager.shared.player.state == .playing)&quot;)</span><br><span class="line">        </span><br><span class="line">    default :</span><br><span class="line">        LogHelper.printLog(&quot;ended&quot;)</span><br><span class="line">        if let optionValue = (notification.userInfo?[AVAudioSessionInterruptionOptionKey] as? NSNumber)?.uintValue,</span><br><span class="line">            AVAudioSession.InterruptionOptions(rawValue: optionValue) == .shouldResume &#123;</span><br><span class="line">            LogHelper.printLog(&quot;should resume&quot;)</span><br><span class="line">            ModernPlayerManager.shared.play()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;클래식 매니저를 개발중에 버그리포트가 들어왔다.&lt;br&gt;내용은 바로 음악 재생중에 전화를 걸고 난 후 통화가 종료되었을 때 다른앱들은 노래가 나오는데, 왜 클래식매니저는 나오지 않느냐 라는 리포트였다.&lt;/p&gt;
-&lt;p&gt;맨 처음에는 AppDelegate</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="Audio" scheme="https://vkcldhkd.github.io/tags/Audio/"/>
-    
-    <category term="Session" scheme="https://vkcldhkd.github.io/tags/Session/"/>
-    
-    <category term="Interruptions" scheme="https://vkcldhkd.github.io/tags/Interruptions/"/>
     
   </entry>
   
