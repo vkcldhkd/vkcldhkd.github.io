@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2023-01-05T12:02:02.539Z</updated>
+  <updated>2023-01-13T09:02:18.129Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git config</title>
+    <link href="https://vkcldhkd.github.io/2023/01/13/20230113_git/"/>
+    <id>https://vkcldhkd.github.io/2023/01/13/20230113_git/</id>
+    <published>2023-01-13T11:52:22.000Z</published>
+    <updated>2023-01-13T09:02:18.129Z</updated>
+    
+    <content type="html"><![CDATA[<p>rebase가 아닌 merge로 하려고할때 참고한 링크들<br><a href="https://sanghye.tistory.com/43">https://sanghye.tistory.com/43</a><br><a href="https://webisfree.com/2018-07-26/git-config-%EC%84%A4%EC%A0%95-%ED%99%95%EC%9D%B8-%EB%B0%8F-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0">https://webisfree.com/2018-07-26/git-config-%EC%84%A4%EC%A0%95-%ED%99%95%EC%9D%B8-%EB%B0%8F-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;rebase가 아닌 merge로 하려고할때 참고한 링크들&lt;br&gt;&lt;a href=&quot;https://sanghye.tistory.com/43&quot;&gt;https://sanghye.tistory.com/43&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://webisf</summary>
+      
+    
+    
+    
+    <category term="git" scheme="https://vkcldhkd.github.io/categories/git/"/>
+    
+    
+    <category term="merge" scheme="https://vkcldhkd.github.io/tags/merge/"/>
+    
+    <category term="fast-forward" scheme="https://vkcldhkd.github.io/tags/fast-forward/"/>
+    
+    <category term="rebase" scheme="https://vkcldhkd.github.io/tags/rebase/"/>
+    
+  </entry>
   
   <entry>
     <title>Swift Pow</title>
@@ -557,37 +585,6 @@
     <category term="Codable" scheme="https://vkcldhkd.github.io/tags/Codable/"/>
     
     <category term="Case" scheme="https://vkcldhkd.github.io/tags/Case/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>중국어 간체 번체</title>
-    <link href="https://vkcldhkd.github.io/2020/06/10/chinese/"/>
-    <id>https://vkcldhkd.github.io/2020/06/10/chinese/</id>
-    <published>2020-06-10T05:01:22.000Z</published>
-    <updated>2020-06-10T05:03:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>계속해서 헷갈려서 박제 -_-…<br>Xcode에서 간체 번체 구분</p><ul><li>간체(Chinese Simplified)</li><li>번체(Chinese Traditional)</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;계속해서 헷갈려서 박제 -_-…&lt;br&gt;Xcode에서 간체 번체 구분&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;간체(Chinese Simplified)&lt;/li&gt;
-&lt;li&gt;번체(Chinese Traditional)&lt;/li&gt;
-&lt;/ul&gt;
-</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="Simplified" scheme="https://vkcldhkd.github.io/tags/Simplified/"/>
-    
-    <category term="Traditional" scheme="https://vkcldhkd.github.io/tags/Traditional/"/>
     
   </entry>
   
