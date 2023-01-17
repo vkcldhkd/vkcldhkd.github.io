@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2023-01-13T09:02:18.129Z</updated>
+  <updated>2023-01-17T08:36:26.396Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Tron Network Bandwidth Energy</title>
+    <link href="https://vkcldhkd.github.io/2023/01/17/20230117_tron/"/>
+    <id>https://vkcldhkd.github.io/2023/01/17/20230117_tron/</id>
+    <published>2023-01-17T08:32:22.000Z</published>
+    <updated>2023-01-17T08:36:26.396Z</updated>
+    
+    <content type="html"><![CDATA[<p>Tron Network에 대해서 공부하다가 나온 단어들 정리</p><ul><li>Bandwidth(대역폭)</li><li>Energy(에너지)</li></ul><p>bandwidth와 energy가 충분하다면 수수료가 발생하지않고 토큰을 전송할 수 있다<br>사용 후 일정 시간이 지나면 조금씩 회복되지만, 빠른시간내에 급속충전 원할 시 Tron Staking을 후 얻는것이 가능하다.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Tron Network에 대해서 공부하다가 나온 단어들 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bandwidth(대역폭)&lt;/li&gt;
+&lt;li&gt;Energy(에너지)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;bandwidth와 energy가 충분하다면 수수료가 발생하지않고 토큰을</summary>
+      
+    
+    
+    
+    <category term="blockchain" scheme="https://vkcldhkd.github.io/categories/blockchain/"/>
+    
+    
+    <category term="tron" scheme="https://vkcldhkd.github.io/tags/tron/"/>
+    
+    <category term="bandwidth" scheme="https://vkcldhkd.github.io/tags/bandwidth/"/>
+    
+    <category term="energy" scheme="https://vkcldhkd.github.io/tags/energy/"/>
+    
+  </entry>
   
   <entry>
     <title>git config</title>
@@ -556,35 +589,6 @@
     <category term="Transition" scheme="https://vkcldhkd.github.io/tags/Transition/"/>
     
     <category term="Animation" scheme="https://vkcldhkd.github.io/tags/Animation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Enum Unknown Case</title>
-    <link href="https://vkcldhkd.github.io/2020/06/17/UnknownCase/"/>
-    <id>https://vkcldhkd.github.io/2020/06/17/UnknownCase/</id>
-    <published>2020-06-17T00:39:10.000Z</published>
-    <updated>2020-06-17T06:28:31.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>iOS에서 서버의 데이터를 파싱하는 과정에서 코더블을 많이 사용하게된다.<br>해당 객체의 타입이 enum 타입일때, 정의한 값 이외에 알 수 없는 값이 오게되면 error가 나게되는데 아래의 방법으로 처리하면 기본값을 설정할 수 있다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">protocol UnknownCaseRepresentable: RawRepresentable, CaseIterable where RawValue: Equatable &#123;</span><br><span class="line">    static var unknownCase: Self &#123; get &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extension UnknownCaseRepresentable &#123;</span><br><span class="line">    init(rawValue: RawValue) &#123;</span><br><span class="line">        self = Self.allCases.first(where: &#123; $0.rawValue == rawValue &#125;) ?? Self.unknownCase</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>아래와 같이 프로토콜을 선언한 뒤, 사용하려는 객체에서 사용하면된다. :)</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">enum AccountClass: String, Codable, Equatable, UnknownCaseRepresentable&#123;</span><br><span class="line">    static let unknownCase: AccountClass = .normal</span><br><span class="line">    </span><br><span class="line">    case normal</span><br><span class="line">    case forshop</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>도움 주신 <a href="https://github.com/Danue1">Danuel</a> 님 감사합니다!</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;iOS에서 서버의 데이터를 파싱하는 과정에서 코더블을 많이 사용하게된다.&lt;br&gt;해당 객체의 타입이 enum 타입일때, 정의한 값 이외에 알 수 없는 값이 오게되면 error가 나게되는데 아래의 방법으로 처리하면 기본값을 설정할 수 있다.&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="Enum" scheme="https://vkcldhkd.github.io/tags/Enum/"/>
-    
-    <category term="Codable" scheme="https://vkcldhkd.github.io/tags/Codable/"/>
-    
-    <category term="Case" scheme="https://vkcldhkd.github.io/tags/Case/"/>
     
   </entry>
   
