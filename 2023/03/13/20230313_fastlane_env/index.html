@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-posts">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Fastlane env | I iOS You</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="fastlane,upload," />
+  
+
+  <meta name="description" content="얼마전부터 fastlane 키체인 관련해서 계속 로그인이 풀리고, 앱암호를 넣었는데도 불구하고 계속 패스워드를 다시 입력하라고 해서 찾다가 성공한 방법 메모!  fastlane 폴더에 .env 파일 생성  아래의 정보들을 넣은 후 저장APPLE_ID&#x3D;이메일주소FASTLANE_PASSWORD&#x3D;비밀번호FASTLANE_APPLE_APPLICAT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fastlane env">
+<meta property="og:url" content="https://vkcldhkd.github.io/2023/03/13/20230313_fastlane_env/index.html">
+<meta property="og:site_name" content="I iOS You">
+<meta property="og:description" content="얼마전부터 fastlane 키체인 관련해서 계속 로그인이 풀리고, 앱암호를 넣었는데도 불구하고 계속 패스워드를 다시 입력하라고 해서 찾다가 성공한 방법 메모!  fastlane 폴더에 .env 파일 생성  아래의 정보들을 넣은 후 저장APPLE_ID&#x3D;이메일주소FASTLANE_PASSWORD&#x3D;비밀번호FASTLANE_APPLE_APPLICAT">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-03-13T05:13:22.000Z">
+<meta property="article:modified_time" content="2023-03-13T05:15:31.675Z">
+<meta property="article:author" content="SUNG9">
+<meta property="article:tag" content="fastlane">
+<meta property="article:tag" content="upload">
+<meta name="twitter:card" content="summary">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta name="google-site-verification" content="vo_CwfQ6OMs6cfN-FocvswNl-YtRJQChLoD6MwTXYuY" />
+<meta name="naver-site-verification" content="1a13646deb2373a7b0493fc8f00f7c697fe5902f"/>
+
+<link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    
+<link rel="stylesheet" href="/css/personal-style.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="I iOS You" type="application/atom+xml">
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">Menu</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">Menu</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Blog
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Categories
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Tags
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            About
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="posts-20230313_fastlane_env" class="article article-type-posts" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Fastlane env</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2023.03.13</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>SUNG9</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Fastlane/">Fastlane</a>
+  </span>
+
+
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>얼마전부터 fastlane 키체인 관련해서 계속 로그인이 풀리고, 앱암호를 넣었는데도 불구하고 계속 패스워드를 다시 입력하라고 해서 찾다가 성공한 방법 메모!</p>
+<ol>
+<li><p>fastlane 폴더에 .env 파일 생성</p>
+</li>
+<li><p>아래의 정보들을 넣은 후 저장<br>APPLE_ID&#x3D;이메일주소<br>FASTLANE_PASSWORD&#x3D;비밀번호<br>FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD&#x3D;앱암호(애플에서 발급받은 abcd-dsad-fdsa 형태)</p>
+</li>
+<li><p>git status 후 .env파일이 업로드 안올라가는지 확인</p>
+</li>
+</ol>
+
+    
+  </div>
+
+</article>
+
+
+   
+
+   
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">Close</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Blog
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Categories
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Tags
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              About
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Search
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-posts">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
