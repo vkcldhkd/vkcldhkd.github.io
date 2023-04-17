@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2023-03-13T05:15:31.675Z</updated>
+  <updated>2023-04-17T02:35:59.533Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Missing file libarclite_iphoneos.a (Xcode 14.3)</title>
+    <link href="https://vkcldhkd.github.io/2023/04/17/20230417_Missing%20file%20libarclite_iphoneos%20(Xcode%2014.3)/"/>
+    <id>https://vkcldhkd.github.io/2023/04/17/20230417_Missing%20file%20libarclite_iphoneos%20(Xcode%2014.3)/</id>
+    <published>2023-04-17T02:31:22.000Z</published>
+    <updated>2023-04-17T02:35:59.533Z</updated>
+    
+    <content type="html"><![CDATA[<p>Xcode 14.3을 설치 후 pod install 하려고하니 아래와 같은 에러가 발생했다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">에러 문구</span><br><span class="line">Missing file libarclite_iphoneos.a (Xcode 14.3)</span><br></pre></td></tr></table></figure><p>해결방법</p><ol><li>sudo xcode-select -s &#x2F;Applications&#x2F;Xcode.app</li><li>pod file을 연 후, 아래의 코드를 제일 하단에 추가하고 다시 pod install 시도하니 해결!</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">post_install do |installer|</span><br><span class="line">    installer.generated_projects.each do |project|</span><br><span class="line">          project.targets.each do |target|</span><br><span class="line">              target.build_configurations.each do |config|</span><br><span class="line">                  config.build_settings[&#x27;IPHONEOS_DEPLOYMENT_TARGET&#x27;] = &#x27;13.0&#x27;</span><br><span class="line">               end</span><br><span class="line">          end</span><br><span class="line">   end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Xcode 14.3을 설치 후 pod install 하려고하니 아래와 같은 에러가 발생했다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span clas</summary>
+      
+    
+    
+    
+    <category term="Xcode" scheme="https://vkcldhkd.github.io/categories/Xcode/"/>
+    
+    
+    <category term="Xcode" scheme="https://vkcldhkd.github.io/tags/Xcode/"/>
+    
+    <category term="Xcode 14.3" scheme="https://vkcldhkd.github.io/tags/Xcode-14-3/"/>
+    
+  </entry>
   
   <entry>
     <title>Fastlane env</title>
@@ -561,34 +588,6 @@
     <category term="Admob" scheme="https://vkcldhkd.github.io/tags/Admob/"/>
     
     <category term="Google" scheme="https://vkcldhkd.github.io/tags/Google/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Xcode에서 debug Flag 관리</title>
-    <link href="https://vkcldhkd.github.io/2020/07/22/debugFlag/"/>
-    <id>https://vkcldhkd.github.io/2020/07/22/debugFlag/</id>
-    <published>2020-07-22T02:14:51.000Z</published>
-    <updated>2020-07-22T02:17:33.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#if DEBUG</span><br><span class="line">#else</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure><p>이런 구문을 자주 사용하게되는데, 이런 플레그는 App Target -&gt; Build Settings -&gt; Other Swift Flags에서 -D DEBUG를 추가하면 된다! 구분 잘 해야함!!!</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span c</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
-    <category term="Debug" scheme="https://vkcldhkd.github.io/tags/Debug/"/>
-    
-    <category term="Release" scheme="https://vkcldhkd.github.io/tags/Release/"/>
     
   </entry>
   
