@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2023-04-17T02:35:59.533Z</updated>
+  <updated>2024-03-11T01:19:30.417Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RxSwift Scheduler</title>
+    <link href="https://vkcldhkd.github.io/2024/03/11/20240311_MainScheduler/"/>
+    <id>https://vkcldhkd.github.io/2024/03/11/20240311_MainScheduler/</id>
+    <published>2024-03-11T00:58:22.000Z</published>
+    <updated>2024-03-11T01:19:30.417Z</updated>
+    
+    <content type="html"><![CDATA[<p>RxSwift에서 Scheduler 관련해 별 의문없이 사용하다가 명확히 개념을 알고 넘어가기위해 포스트를 작성!</p><table><thead><tr><th>스케줄러 타입</th><th>용도</th><th>특징</th></tr></thead><tbody><tr><td><strong>MainScheduler</strong></td><td>UI 작업 등 메인 스레드에서 실행해야 하는 작업 스케줄링</td><td><code>MainScheduler.instance</code>는 즉시 실행, <code>MainScheduler.asyncInstance</code>는 항상 비동기적으로 실행</td></tr><tr><td><strong>ConcurrentDispatchQueueScheduler</strong></td><td>병렬 실행 작업 스케줄링</td><td>GCD의 <code>DispatchQueue</code>를 사용, 병렬 실행 가능</td></tr><tr><td><strong>SerialDispatchQueueScheduler</strong></td><td>순차적 실행 작업 스케줄링</td><td>GCD의 <code>DispatchQueue</code>를 사용, 작업을 순차적으로 실행</td></tr><tr><td><strong>OperationQueueScheduler</strong></td><td>복잡한 비동기 작업 스케줄링</td><td><code>OperationQueue</code>를 기반, 작업 의존성 관리 및 동시 실행 제한 가능</td></tr><tr><td><strong>ImmediateScheduler</strong></td><td>즉시 실행해야 하는 작업 스케줄링</td><td>작업을 스케줄링하는 즉시 실행, 주로 테스트나 단순 동기 작업에 사용</td></tr><tr><td><strong>CurrentThreadScheduler</strong></td><td>현재 스레드에서 작업 실행</td><td>재귀적 작업을 스케줄링할 때 스택 오버플로우 방지 기능 제공</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;RxSwift에서 Scheduler 관련해 별 의문없이 사용하다가 명확히 개념을 알고 넘어가기위해 포스트를 작성!&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;스케줄러 타입&lt;/th&gt;
+&lt;th&gt;용도&lt;/th&gt;
+&lt;th&gt;특징&lt;/th&gt;
+&lt;/tr&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="RxSwift" scheme="https://vkcldhkd.github.io/categories/RxSwift/"/>
+    
+    
+    <category term="RxSwift" scheme="https://vkcldhkd.github.io/tags/RxSwift/"/>
+    
+    <category term="Scheduler" scheme="https://vkcldhkd.github.io/tags/Scheduler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Swiftgen Error</title>
+    <link href="https://vkcldhkd.github.io/2023/10/10/20231010_Swiftgen_error/"/>
+    <id>https://vkcldhkd.github.io/2023/10/10/20231010_Swiftgen_error/</id>
+    <published>2023-10-10T02:17:22.000Z</published>
+    <updated>2023-10-10T03:01:27.724Z</updated>
+    
+    <content type="html"><![CDATA[<p>최신버전의 Swiftgen으로 업데이트 후 아래와 같은 에러가 발생했다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">에러 문구</span><br><span class="line">Unprintable ASCII character found in source file</span><br></pre></td></tr></table></figure><p>해결방법은 Xcode 안에서 설정값을 변경해줘야했고 정말 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. Xcode 설정 </span><br><span class="line">2. Key Binding 탭으로 이동</span><br><span class="line">3. insert tab 검색</span><br><span class="line">4. 아래의 항목들 전부 단축키 제거</span><br><span class="line">5. Insert without Extra Action, Insert Tab, Insert BackTab 항목 단축키 제거</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;최신버전의 Swiftgen으로 업데이트 후 아래와 같은 에러가 발생했다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;</summary>
+      
+    
+    
+    
+    <category term="Xcode" scheme="https://vkcldhkd.github.io/categories/Xcode/"/>
+    
+    
+    <category term="Xcode" scheme="https://vkcldhkd.github.io/tags/Xcode/"/>
+    
+    <category term="Xcode 14.3" scheme="https://vkcldhkd.github.io/tags/Xcode-14-3/"/>
+    
+    <category term="Swiftgen" scheme="https://vkcldhkd.github.io/tags/Swiftgen/"/>
+    
+  </entry>
   
   <entry>
     <title>Missing file libarclite_iphoneos.a (Xcode 14.3)</title>
@@ -527,67 +590,6 @@
     <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
     
     <category term="Xocde" scheme="https://vkcldhkd.github.io/tags/Xocde/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fastlane 모음</title>
-    <link href="https://vkcldhkd.github.io/2020/08/06/fastlane/"/>
-    <id>https://vkcldhkd.github.io/2020/08/06/fastlane/</id>
-    <published>2020-08-06T06:03:35.000Z</published>
-    <updated>2020-08-06T06:06:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Fastlane을 이용한 자동화 코드 모음(실제 사용 중)</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">platform :ios do</span><br><span class="line"></span><br><span class="line">    lane :cm_test do</span><br><span class="line">        begin</span><br><span class="line">            test_lane()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">                on_error(exception)</span><br><span class="line">            end</span><br><span class="line">        end</span><br><span class="line"></span><br><span class="line">    desc &quot;Send Slack&quot;</span><br><span class="line">        lane :sendSlack do</span><br><span class="line">            sendSlack()</span><br><span class="line">        end</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    lane :cm_upload_stg do</span><br><span class="line">        begin</span><br><span class="line">            upload_stg()</span><br><span class="line">            sendSlack()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    lane :cm_upload_prd do</span><br><span class="line">        begin</span><br><span class="line">            upload_prd()</span><br><span class="line">            sendSlack()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    lane :cm_upload_prd_test_ad do</span><br><span class="line">        begin</span><br><span class="line">            upload_prd_test_ad()</span><br><span class="line">            sendSlack()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    lane :cm_upload_all do</span><br><span class="line">        begin</span><br><span class="line">            upload_stg()</span><br><span class="line">            upload_prd()</span><br><span class="line">            upload_prd_test_ad()</span><br><span class="line">            uploadedAllBuild()</span><br><span class="line">        rescue =&gt; exception</span><br><span class="line">            on_error(exception)</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">end</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">def test_lane</span><br><span class="line">    clear_derived_data</span><br><span class="line">    scan(</span><br><span class="line">        workspace: &quot;projectName.xcworkspace&quot;,</span><br><span class="line">        devices: [&quot;iPhone 6s&quot;, &quot;iPad Air&quot;]</span><br><span class="line">    )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">def uploadedAllBuild</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a All build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a All build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">def sendSlack</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a new App Store build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">    slack(</span><br><span class="line">        message: &quot;Successfully uploaded a new App Store build&quot;,</span><br><span class="line">        slack_url: &quot;url&quot;</span><br><span class="line">    )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">def slackTest</span><br><span class="line">   slack(</span><br><span class="line">       message: &quot;Test&quot;,</span><br><span class="line">       success: true,</span><br><span class="line">       slack_url: &quot;url&quot;,</span><br><span class="line">       attachment_properties: &#123;</span><br><span class="line">           fields: [</span><br><span class="line">               &#123;</span><br><span class="line">                   title: &quot;슬랙 보내기 테스트 입니다.&quot;,</span><br><span class="line">                   value: ENV[&quot;BUILD_NUMBER&quot;],</span><br><span class="line">               &#125;</span><br><span class="line">           ]</span><br><span class="line">       &#125;</span><br><span class="line">   )</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def on_error(exception)</span><br><span class="line">   slack(</span><br><span class="line">       message: &quot;Error!!!&quot;,</span><br><span class="line">       success: false,</span><br><span class="line">       slack_url: &quot;url&quot;,</span><br><span class="line">       attachment_properties: &#123;</span><br><span class="line">           fields: [</span><br><span class="line">               &#123;</span><br><span class="line">                   title: &quot;Build number&quot;,</span><br><span class="line">                   value: ENV[&quot;BUILD_NUMBER&quot;],</span><br><span class="line">               &#125;,</span><br><span class="line">               &#123;</span><br><span class="line">                   title: &quot;Error message&quot;,</span><br><span class="line">                   value: exception.to_s,</span><br><span class="line">                   short: false</span><br><span class="line">               &#125;</span><br><span class="line">           ]</span><br><span class="line">       &#125;</span><br><span class="line">   )</span><br><span class="line">end</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Fastlane을 이용한 자동화 코드 모음(실제 사용 중)&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
-    <category term="Fastlane" scheme="https://vkcldhkd.github.io/tags/Fastlane/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Google Admob</title>
-    <link href="https://vkcldhkd.github.io/2020/07/22/GoogleAdmob/"/>
-    <id>https://vkcldhkd.github.io/2020/07/22/GoogleAdmob/</id>
-    <published>2020-07-22T10:47:52.000Z</published>
-    <updated>2020-07-22T12:12:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>현재 빌드셋팅을 </p><ul><li>Debug</li><li>Release</li><li>Release_Test_Ad</li></ul><p>이렇게 3가지로 운영하고있는데, pod update를 하면서 Release_Test_Ad 빌드상태에서 테스트광고가 나오지 않았다 -_-….<br>빌드 한참건드리다가 애드몹을 팟에서 재설치했는데 바로됨……………하 내 2시간;</p><hr><p>또 같은 증상이 반복해서 찾아보니 광고가 정상적으로 전달되지 않았을 때도 이런 현상이 있다고 한다!!!!!<br>“ca-app-pub-3940256099942544&#x2F;3986624511” 키가 아닌 “ca-app-pub-3940256099942544&#x2F;2521693316”를 이용하니 잘 ……된다…….<br>극혐…</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;현재 빌드셋팅을 &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Debug&lt;/li&gt;
-&lt;li&gt;Release&lt;/li&gt;
-&lt;li&gt;Release_Test_Ad&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;이렇게 3가지로 운영하고있는데, pod update를 하면서 Release_Test_Ad 빌드</summary>
-      
-    
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/categories/iOS/"/>
-    
-    
-    <category term="iOS" scheme="https://vkcldhkd.github.io/tags/iOS/"/>
-    
-    <category term="Admob" scheme="https://vkcldhkd.github.io/tags/Admob/"/>
-    
-    <category term="Google" scheme="https://vkcldhkd.github.io/tags/Google/"/>
     
   </entry>
   
