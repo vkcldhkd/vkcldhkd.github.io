@@ -6,7 +6,7 @@
   <link href="https://vkcldhkd.github.io/atom.xml" rel="self"/>
   
   <link href="https://vkcldhkd.github.io/"/>
-  <updated>2024-03-12T01:17:32.587Z</updated>
+  <updated>2024-07-18T03:10:23.474Z</updated>
   <id>https://vkcldhkd.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BIP44 Mnemonic</title>
+    <link href="https://vkcldhkd.github.io/2024/07/18/20240718_Mnemonic/"/>
+    <id>https://vkcldhkd.github.io/2024/07/18/20240718_Mnemonic/</id>
+    <published>2024-07-18T03:08:22.000Z</published>
+    <updated>2024-07-18T03:10:23.474Z</updated>
+    
+    <content type="html"><![CDATA[<p>문득 BIP44 규격에서 Mnemonic의 최소개수와 최대개수, 그리고 어떤 단어가 조합되어야 하는지 궁금했다.</p><p>BIP44 규격</p><ul><li>최소 단어 개수: 12개</li><li>최대 단어 개수: 24개</li><li>단어들은 BIP39에 정의된 단어 목록에서 선택되며, 이는 BIP44의 상위 규격으로 사용</li><li>12, 15, 18, 21, 24 단어의 길이가 가능한 조합입니다.</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;문득 BIP44 규격에서 Mnemonic의 최소개수와 최대개수, 그리고 어떤 단어가 조합되어야 하는지 궁금했다.&lt;/p&gt;
+&lt;p&gt;BIP44 규격&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;최소 단어 개수: 12개&lt;/li&gt;
+&lt;li&gt;최대 단어 개수: 24개&lt;/li&gt;
+&lt;li</summary>
+      
+    
+    
+    
+    <category term="Blockchain" scheme="https://vkcldhkd.github.io/categories/Blockchain/"/>
+    
+    
+    <category term="bip44" scheme="https://vkcldhkd.github.io/tags/bip44/"/>
+    
+    <category term="mnemonic" scheme="https://vkcldhkd.github.io/tags/mnemonic/"/>
+    
+  </entry>
   
   <entry>
     <title>Swift DispatchQueue</title>
@@ -558,40 +589,6 @@
     
     
     <category term="BlockChain" scheme="https://vkcldhkd.github.io/tags/BlockChain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cocoapods error &#39;Unable to read the license file&#39;</title>
-    <link href="https://vkcldhkd.github.io/2022/02/09/20220209/"/>
-    <id>https://vkcldhkd.github.io/2022/02/09/20220209/</id>
-    <published>2022-02-09T02:38:05.000Z</published>
-    <updated>2022-02-09T02:40:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>간만에 코코아팟에서 에러가 발생해서 블로그에 글 작성하기</p><ol><li>pod deintegrate</li><li>pod cache clean –all</li><li>pod install</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;간만에 코코아팟에서 에러가 발생해서 블로그에 글 작성하기&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;pod deintegrate&lt;/li&gt;
-&lt;li&gt;pod cache clean –all&lt;/li&gt;
-&lt;li&gt;pod install&lt;/li&gt;
-&lt;/ol&gt;
-</summary>
-      
-    
-    
-    
-    <category term="CocoaPods" scheme="https://vkcldhkd.github.io/categories/CocoaPods/"/>
-    
-    
-    <category term="CocoaPods" scheme="https://vkcldhkd.github.io/tags/CocoaPods/"/>
-    
-    <category term="CocoaPods Error" scheme="https://vkcldhkd.github.io/tags/CocoaPods-Error/"/>
-    
-    <category term="Unable to read the license file" scheme="https://vkcldhkd.github.io/tags/Unable-to-read-the-license-file/"/>
     
   </entry>
   
