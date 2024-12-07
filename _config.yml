@@ -99,7 +99,7 @@ theme: fexo
 deploy: # 배포관련 설정
   type: git # git으로 배포
   repo: https://github.com/vkcldhkd/vkcldhkd.github.io.git # 해당 Repo에 배포
-  branch: main # master branch에 배포
+  branch: main # main branch에 배포
   name: vkcldhkd
   email: vkcldhkd@gmail.com
 
