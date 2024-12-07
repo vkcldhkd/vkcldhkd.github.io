@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vkcldhkd.github.io/sitemap.xml
