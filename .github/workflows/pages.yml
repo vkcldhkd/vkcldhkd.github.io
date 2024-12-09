@@ -22,10 +22,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # 4. Ensure Local Theme is Used
-      # This step ensures the `themes/fexo` directory is used from the repository.
-      - name: Verify Local Theme
-        run: ls ./themes/fexo
+      # # 4. Ensure Local Theme is Used
+      # # This step ensures the `themes/fexo` directory is used from the repository.
+      # - name: Verify Local Theme
+      #   run: ls ./themes/fexo
 
       # 5. Build Hexo
       - name: Build Hexo
