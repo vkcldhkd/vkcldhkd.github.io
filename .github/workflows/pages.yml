@@ -30,7 +30,6 @@ jobs:
           npm install hexo-cli -g
           hexo clean
           hexo generate
-          hexo deploy
 
       # 5. Disable Jekyll
       - name: Disable Jekyll
