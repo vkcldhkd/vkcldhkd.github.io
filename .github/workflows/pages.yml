@@ -22,23 +22,26 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # # 4. Ensure Local Theme is Used
-      # # This step ensures the `themes/fexo` directory is used from the repository.
-      # - name: Verify Local Theme
-      #   run: ls ./themes/fexo
+      # 4. Verify Local Theme
+      - name: Verify Local Theme
+        run: ls themes/fexo
 
-      # 5. Build Hexo
-      - name: Build Hexo
+      # 5. Build Hexo with Debug
+      - name: Build Hexo with Debug
         run: |
           npm install hexo-cli -g
           hexo clean
-          hexo generate
+          hexo generate --debug
 
       # 6. Disable Jekyll
       - name: Disable Jekyll
         run: echo > ./public/.nojekyll
 
-      # 7. Upload Pages artifact
+      # 7. Debug Index.html
+      - name: Debug Index.html
+        run: cat ./public/index.html
+
+      # 8. Upload Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
