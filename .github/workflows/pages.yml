@@ -9,10 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # # 1. Repository Checkout
-      # - uses: actions/checkout@v4
-      #   with:
-      #     submodules: recursive
+      # 1. Repository Checkout
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       # 2. Setup Node.js
       - name: Use Node.js 16
