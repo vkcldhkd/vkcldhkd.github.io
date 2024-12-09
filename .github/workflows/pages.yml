@@ -9,24 +9,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. Repository Checkout
       - uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: Use Node.js 20
+
+      # 2. Setup Node.js
+      - name: Use Node.js 16
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "16"
+
+      # 3. Install Dependencies
       - name: Install Dependencies
         run: npm install
+
+      # 4. Build Hexo
       - name: Build Hexo
         run: |
           npm install hexo-cli -g
           hexo clean
           hexo generate
+
+      # 5. Disable Jekyll
+      - name: Disable Jekyll
+        run: echo > ./public/.nojekyll
+
+      # 6. Upload Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+
   deploy:
     needs: build
     permissions:
@@ -37,6 +51,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
