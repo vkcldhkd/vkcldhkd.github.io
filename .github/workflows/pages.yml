@@ -9,11 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout repository with submodules
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          submodules: true
+      # 1. Checkout repository
+      - uses: actions/checkout@v4
 
       # 2. Setup Node.js
       - name: Setup Node.js
@@ -21,7 +18,7 @@ jobs:
         with:
           node-version: "16"
 
-      # 3. Install root dependencies
+      # 3. Install dependencies at the root
       - name: Install Root Dependencies
         run: npm install
 
@@ -29,19 +26,14 @@ jobs:
       - name: Install Theme Dependencies
         run: |
           if [ -f themes/fexo/package.json ]; then
-            echo "Installing dependencies for themes/fexo"
             cd themes/fexo
             npm install
             cd ../../
-          else
-            echo "No package.json found in themes/fexo, skipping..."
           fi
 
       # 5. Verify Theme Directory
       - name: Verify Theme Directory
-        run: |
-          echo "Checking contents of themes/fexo"
-          ls themes/fexo || echo "themes/fexo not found"
+        run: ls themes/fexo
 
       # 6. Build Hexo
       - name: Build Hexo
@@ -52,14 +44,7 @@ jobs:
 
       # 7. Debug Generated Index.html
       - name: Debug Generated Index.html
-        run: |
-          if [ -f public/index.html ]; then
-            echo "Generated public/index.html:"
-            head -n 20 public/index.html
-          else
-            echo "Error: public/index.html not generated!"
-            exit 1
-          fi
+        run: cat public/index.html
 
       # 8. Disable Jekyll
       - name: Disable Jekyll
@@ -80,10 +65,6 @@ jobs:
       name: github-pages
     runs-on: ubuntu-latest
     steps:
-      # 10. Checkout repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # 11. Deploy to GitHub Pages
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
