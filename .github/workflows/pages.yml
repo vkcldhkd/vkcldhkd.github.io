@@ -11,6 +11,8 @@ jobs:
     steps:
       # 1. Checkout repository
       - uses: actions/checkout@v4
+        with:
+          submodules: false
 
       # 2. Setup Node.js
       - name: Setup Node.js
@@ -68,3 +70,5 @@ jobs:
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+        with:
+          submodules: false
