@@ -1,4 +1,4 @@
-name: Pages
+name: Deploy Hexo to GitHub Pages
 
 on:
   push:
@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 1. Checkout repository
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           submodules: false
 
@@ -20,39 +21,22 @@ jobs:
         with:
           node-version: "16"
 
-      # 3. Install dependencies at the root
-      - name: Install Root Dependencies
+      # 3. Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      # 4. Install dependencies in themes/fexo (if package.json exists)
-      - name: Install Theme Dependencies
-        run: |
-          if [ -f themes/fexo/package.json ]; then
-            cd themes/fexo
-            npm install
-            cd ../../
-          fi
-
-      # 5. Verify Theme Directory
-      - name: Verify Theme Directory
-        run: ls themes/fexo
-
-      # 6. Build Hexo
+      # 4. Build Hexo
       - name: Build Hexo
         run: |
           npm install hexo-cli -g
           hexo clean
-          hexo generate --debug
+          hexo generate
 
-      # 7. Debug Generated Index.html
-      - name: Debug Generated Index.html
-        run: cat public/index.html
-
-      # 8. Disable Jekyll
+      # 5. Disable Jekyll
       - name: Disable Jekyll
         run: echo > public/.nojekyll
 
-      # 9. Upload Pages artifact
+      # 6. Upload Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -67,8 +51,8 @@ jobs:
       name: github-pages
     runs-on: ubuntu-latest
     steps:
-      # Deploy to GitHub Pages
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          submodules: false
