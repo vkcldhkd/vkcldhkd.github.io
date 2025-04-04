@@ -9,6 +9,7 @@ title: About
 - Email : vkcldhkd@gmail.com
 - Github:  github.com/vkcldhkd
 - Phone : 010-4107-4942
+- Kakaotalk: https://open.kakao.com/o/sIsbXPJb
 
 # 경력
 - 네오플라이
@@ -40,7 +41,7 @@ title: About
 # 회사프로젝트
 - NEOPIN
     - 개발환경 : Xcode
-    - 사용한 기술 : Cocoapods, Storyboard, SanpKit, RxAlamofire, RxSwift, ReactorKit, Git, Web3Swift, WalletConnect
+    - 사용한 기술 : Cocoapods, Storyboard, SanpKit, RxAlamofire, RxSwift, ReactorKit, Git, Web3Swift, WalletConnect, GRPC, Figma
     - 역할 : 개발(iOS, BlockChain, SDK)
     - 소속 : 네오플라이
     - 기간 : 2022년 6월 ~ 2024년 8월
