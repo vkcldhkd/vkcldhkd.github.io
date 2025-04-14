@@ -136,6 +136,10 @@ title: About
     - [해당 앱 앱스토어에서 보기](https://apps.apple.com/kr/app/%EB%A8%B8%EB%A8%B8%EB%A7%81-%EC%9D%BC%EC%83%81%EC%9D%84-%EB%8B%B4%EB%8A%94-%EB%AA%A9%EC%86%8C%EB%A6%AC/id1384878309)
     - ![murmuring](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/mm1.png)
 
+    
+----
+
+
 - 비트파트너  
     - 개발 환경: Xcode
     - 사용 기술: Cocoapods, Storyboard, AutoLayout, Sketch, Zeplin, Alamofire, Socket.IO, FCM
@@ -157,6 +161,10 @@ title: About
         FCM(Firebase Cloud Messaging)을 통해 투자 관련 알림 및 시스템 메시지를 사용자에게 실시간으로 전달하였습니다.
     - ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv1.png) ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv2.png) ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv3.png) ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv4.png) ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv5.png) ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv6.png) ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv7.png) ![bv1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/bv8.png)
 
+    
+----
+
+
 - 비트파트너 매니저  
     - 개발 환경: Xcode
     - 사용 기술: Cocoapods, Storyboard, AutoLayout, FCM, Alamofire, RxSwift
@@ -173,6 +181,10 @@ title: About
     
         - FCM 알림 기능 구현
         투자자 상태, 시세 변화, 거래 실행 등과 관련된 이벤트를 매니저에게 실시간으로 전달하는 푸시 알림 기능을 구성하였습니다.
+
+    
+----
+
 
 - 링커벨  
     - 개발 환경: Xcode
@@ -195,6 +207,10 @@ title: About
         소스트리를 통한 Git 버전 관리를 사용해 안정적인 협업 개발 환경을 구축하였습니다.
     - ![rb1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/rb1.png) ![rb2](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/rb2.png) ![rb3](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/rb3.png) ![rb4](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/rb4.png)
 
+    
+----
+
+
 - 링커벨 대학생
     - 개발 환경: Xcode
     - 사용 기술: Cocoapods (SDWebImage, GCM 등), Storyboard, AutoLayout, In-App Purchase (IAP)
@@ -202,6 +218,10 @@ title: About
     - 소속: 더치트 (2016년 09월 ~ 2017년 08월)
     - 서비스 소개: 링커벨 대학생은 대학생들이 익명으로 소통할 수 있도록 설계된 커뮤니티 기반의 익명 대화 애플리케이션입니다. 감정 표현, 실시간 소통 등 개인 간 자유로운 교류를 중심으로 운영되는 플랫폼입니다. 주요기능들은 링커벨과 동일합니다.
     
+    
+----
+
+
 - 더치트  
     - 개발 환경: Xcode
     - 사용 기술: Cocoapods, Storyboard, AutoLayout, Sketch, Zeplin, GCM, In-App Purchase (IAP), Naver Map, Jazzy
@@ -227,6 +247,10 @@ title: About
         
     - [해당 앱 앱스토어에서 보기](https://apps.apple.com/kr/app/%EB%8D%94%EC%B9%98%ED%8A%B8-%EC%82%AC%EA%B8%B0%ED%94%BC%ED%95%B4-%EC%A0%95%EB%B3%B4%EA%B3%B5%EC%9C%A0-%EA%B3%B5%EC%8B%9D-%EC%95%B1/id634456915)
     - ![thecheat1](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat1.png) ![thecheat2](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat2.png) ![thecheat3](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat3.png) ![thecheat4](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat4.png) ![thecheat5](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat5.png) ![thecheat6](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat6.png) ![thecheat7](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat7.png) ![thecheat8](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat8.png) ![thecheat9](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat9.png) ![thecheat10](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat10.png) ![thecheat11](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat11.png) ![thecheat12](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat12.png) ![thecheat13](https://raw.githubusercontent.com/vkcldhkd/resume/master/images/thecheat13.png)
+
+
+    
+----
 
 
 - 더치트 경찰  
