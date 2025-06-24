@@ -110,7 +110,7 @@ class ViewModel {
 
 
 ## 공부 더 하자!!!!!!!
-'''
+```
 주요 동시성 키워드 목록
 키워드    설명
 async    비동기 함수 선언. 호출 시 await 필요
@@ -124,4 +124,4 @@ nonisolated    actor 안에서 동기적으로 접근 가능한 함수 선언
 DetachedTask    actor나 context와 분리된 비동기 작업 실행
 withCheckedContinuation    기존 콜백 기반 코드를 async/await로 바꾸기 위한 브릿지
 withTaskGroup    여러 작업을 동시에 실행하고 결과를 모을 때 사용
-'''
+```
