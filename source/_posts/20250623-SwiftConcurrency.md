@@ -4,7 +4,8 @@ date: 2025-06-23 18:28:03
 tags: Swift, Concurrency
 ---
 
-# Swift Concurrency: `actor` 와 `@MainActor` 정리
+# Swift Concurrency: 
+`actor` 와 `@MainActor` 정리
 
 Swift Concurrency에서는 데이터 경쟁을 방지하고 **스레드 안전성**을 보장하기 위해 `actor`와 `@MainActor` 키워드를 제공
 

@@ -4,7 +4,7 @@ date: 2025-06-29 22:31:22
 tags: RxSwift, DisposeBag, Dispose
 ---
 
-# # RxSwift: 
+# RxSwift: 
 `DisposeBag`의 역할과 `dispose()`와의 차이
 
 ---
