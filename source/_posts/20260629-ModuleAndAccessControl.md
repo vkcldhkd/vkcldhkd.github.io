@@ -1,3 +1,9 @@
+---
+title: 모듈과 접근 제어와의 관계
+date: 2025-06-29 14:10:14
+tags: Module, AccessControl, Internal, Public, Open
+---
+
 # Swift의 모듈(Module) 개념과 접근 제어와의 관계
 
 Swift에서 "모듈(module)"은 접근 제어자(`internal`, `public`, `open`)의 동작을 이해하는 데 핵심적인 개념
