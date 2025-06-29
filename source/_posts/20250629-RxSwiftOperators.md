@@ -61,7 +61,7 @@ Observable.from(items)
 
 ---
 
-`zip`
+## `zip`
 - 두 Observable이 **각각 하나의 값을 방출할 때마다 짝을 지어 하나로 묶음**
 - 짝이 안 맞으면 기다림
 ```swift
@@ -76,7 +76,7 @@ Observable.zip(obs1, obs2) { a, b in "\(a)-\(b)" }
 
 ---
 
-`combineLatest`
+## `combineLatest`
 - 두 Observable이 **각각 최소 하나의 값을 방출한 후**, 이후 하나라도 새로운 값을 방출하면 **가장 최신 값끼리 조합**
 - 최신 상태 유지
 ```swift
@@ -92,6 +92,7 @@ obs2.onNext("2")
 // 출력: A+1, B+1, B+2
 ```
 ---
+
 ## 차이점
 
 | 연산자   | 용도                       | 동시에 실행 | 순서 보장 | 사용 예시 |
@@ -111,4 +112,5 @@ obs2.onNext("2")
 - `from`: 단순 배열을 Observable로 바꿔야 할 때
 - `zip`: 두 데이터가 동시에 필요 (한 쌍이 갖춰졌을 때만 처리)
 - `combineLatest`:  최신 값으로 UI 업데이트
+
 ---
