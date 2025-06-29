@@ -11,7 +11,7 @@ tags: RxSwift, DisposeBag, Dispose
 
 ## DisposeBag이란?
 - `DisposeBag`은 RxSwift에서 ****Disposable 객체들을 담아두는 바구니**** 역할
-- 구독(Subscription)이 끝날 때 자동으로 ****모든 리소스를 정리(dispose)****
+- 구독(Subscribe)이 끝날 때 자동으로 ****모든 리소스를 정리(dispose)****
 ```swift
 let disposeBag = DisposeBag()
 
