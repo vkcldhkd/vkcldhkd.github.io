@@ -1,7 +1,10 @@
 ---
 title: Google DynamicLinks
 date: 2020-03-17 13:33:11
-tags: iOS
+category:
+ - iOS
+tags: 
+- DynamicLinks
 ---
 
 DynamicLinks 쓸일이 생겨서 정리!

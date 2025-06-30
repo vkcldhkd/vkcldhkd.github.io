@@ -1,7 +1,10 @@
 ---
 title: UIActivityViewController 정리
 date: 2020-03-16 13:25:37
-tags: iOS
+category:
+ - iOS
+tags: 
+- UIActivityViewController
 ---
 
 iOS에서 공유하기 버튼을 누를경우 하단에서 뷰가 올라오는것이 있는데, 그것이 UIActivityViewController이다.

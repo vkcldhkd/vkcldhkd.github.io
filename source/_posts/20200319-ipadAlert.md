@@ -1,7 +1,11 @@
 ---
 title: ipad에서 ActionSheetAlert가 뜨면 죽는 이슈
 date: 2020-03-19 13:28:43
-tags: iOS
+category:
+ - iOS
+tags: 
+- iPadIssue
+- ActionSheetAlert
 ---
 
 최근 클래식매니저앱을 개편하면서 AlertController를 애용했는데 아이패드에서 돌리면 죽는경우가 매우 많아서 분석해보니 액션시트 스타일인 Alert가 뜰때 죽고있었다.

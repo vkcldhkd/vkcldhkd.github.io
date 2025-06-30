@@ -1,7 +1,11 @@
 ---
 title: Transition과 Animation
 date: 2020-07-21 13:44:10
-tags: iOS
+category:
+ - iOS
+tags: 
+- Transition
+- Animation
 ---
 
 transition 속성과 animation 속성의 가장 큰 차이는 transition 속성은 요소의 상태가 바뀌어야 바뀌는 상태를 애니메이션으로 표현하지만, animation 속성은 요소의 상태 변화와 상관 없이 애니메이션을 실행한다.

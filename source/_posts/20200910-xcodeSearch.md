@@ -1,7 +1,11 @@
 ---
 title: XCode에서 정규식으로 검색하기
 date: 2020-09-10 13:47:53
-tags: Xcode
+category:
+ - Xcode
+tags: 
+- XcodeSearch
+- Expression
 ---
 
 혹시라도 하드코딩이 되어있는 부분이 있나 검색하기위해 찾다보니 엑스코드 자체검색에서 정규식 지원을 했었다 ㄷㄷㄷㄷ;

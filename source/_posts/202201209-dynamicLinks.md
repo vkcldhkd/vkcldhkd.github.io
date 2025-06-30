@@ -1,7 +1,11 @@
 ---
 title: Firebase DynamicLinks
 date: 2022-12-09 14:04:20
-tags: iOS
+category:
+ - iOS
+tags: 
+- Firebase
+- DynamicLinks
 ---
 
 DynamicLinks 관련 R&D 하던 도중 괜찮았던 페이지 메모

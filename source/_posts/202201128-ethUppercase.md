@@ -1,7 +1,12 @@
 ---
 title: Is Ethereum wallet address case sensitive?
 date: 2022-11-28 14:02:41
-tags: BlockChain
+category:
+ - BlockChain
+tags: 
+- Ethereum
+- Wallet
+- Addresses
 ---
 
 Ethereum wallet addresses are in hex [0-9A-F]*. While the address itself is case-insensitive (A is the same as a to the network), the case sensitivity is used as a (optional) checksum. It was built as an after-thought to an addressing scheme that lacked basic checksum validation.

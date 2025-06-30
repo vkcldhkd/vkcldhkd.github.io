@@ -1,7 +1,12 @@
 ---
 title: RxSwift 메모리 누수
 date: 2020-01-15 13:08:34
-tags: RxSwift
+category:
+ - RxSwift
+tags: 
+- MemoryIssue
+- weak self
+- Binder
 ---
 
 이직한 회사에서 TagListView에 Rx를 extension 하다가 문득 바인더에서 메모리 누수에 대해 궁금했다

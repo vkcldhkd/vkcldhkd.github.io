@@ -1,7 +1,11 @@
 ---
 title: Enum Unknown Case
 date: 2020-06-17 13:42:35
-tags: iOS
+category:
+ - iOS
+tags: 
+- Enum
+- DefaultCase
 ---
 
 iOS에서 서버의 데이터를 파싱하는 과정에서 코더블을 많이 사용하게된다.

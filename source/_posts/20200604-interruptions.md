@@ -1,7 +1,11 @@
 ---
 title: Audio Session Interruptions
 date: 2020-06-04 13:37:17
-tags: iOS
+category:
+ - iOS
+tags: 
+- AudioSession
+- Interruptions
 ---
 
 클래식 매니저를 개발중에 버그리포트가 들어왔다.

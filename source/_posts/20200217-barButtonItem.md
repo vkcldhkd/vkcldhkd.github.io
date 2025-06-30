@@ -1,7 +1,11 @@
 ---
 title: UIBarButtonItem의 TintColor가 초기화 되는 현상
 date: 2020-02-17 13:18:24
-tags: iOS
+category:
+ - iOS
+tags: 
+- TintColor
+- UIBarButtonItem
 ---
 
 NavigationBar에 아래와 같이 설정을 해줬는데도 페이지 이동 시 설정한 UIBarButtonItem의 TintColor가 초기화 되는 이슈가 생겼다 -_____-

@@ -1,7 +1,10 @@
 ---
 title: ImageTintColor
 date: 2020-03-19 13:29:38
-tags:
+category:
+ - iOS
+tags: 
+- ImageTintColor
 ---
 
 가끔 이미지 하나로 UIColor를 입혀서 사용해야할 때가있다.

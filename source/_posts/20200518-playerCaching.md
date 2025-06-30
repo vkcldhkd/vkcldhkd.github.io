@@ -1,7 +1,11 @@
 ---
 title: AVPlayerItem Caching
 date: 2020-05-18 13:36:14
-tags: iOS
+category:
+ - iOS
+tags: 
+- AVPlayerItem
+- Cache
 ---
 
 플레이어에 캐시기능을 추가하기 위한 프로젝트 검색

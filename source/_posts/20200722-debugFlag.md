@@ -1,7 +1,10 @@
 ---
 title: Xcode에서 debug Flag 관리
 date: 2020-07-22 13:44:45
-tags: iOS
+category:
+ - iOS
+tags: 
+- DebugFlag
 ---
 
 ```

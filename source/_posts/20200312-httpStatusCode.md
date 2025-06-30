@@ -1,7 +1,10 @@
 ---
 title: Http Status Code
 date: 2020-03-12 13:23:58
-tags: Http
+category:
+ - Http
+tags: 
+- HttpStatusCode
 ---
 
 자꾸 까먹어서 정리된글을 올리기!
