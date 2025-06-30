@@ -1,7 +1,11 @@
 ---
 title: HashMapAndHashTable
 date: 2025-04-04 16:07:11
-tags: iOS
+category:
+ - iOS
+tags: 
+- HashMap
+- HashTable
 ---
 
 HashMap에 대해서 공부하던 중, 자세히 알지 못했던 부분들에 대해서 남겨놓기

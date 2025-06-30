@@ -1,7 +1,15 @@
 ---
 title: Observable과 Subject
 date: 2025-06-29 22:52:09
-tags: RxSwift, Observable, Subject, PublishSubject, BehaviorSubject, ReplaySubject, AsyncSubject
+category:
+ - RxSwift
+tags:
+- Observable
+- Subject
+- PublishSubject
+- BehaviorSubject
+- ReplaySubject
+- AsyncSubject
 ---
 
 # RxSwift: 

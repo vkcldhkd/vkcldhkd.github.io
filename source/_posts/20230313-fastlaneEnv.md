@@ -1,7 +1,11 @@
 ---
 title: Fastlane env
 date: 2023-03-13 14:10:14
-tags: Fastlane
+category:
+ - iOS
+tags: 
+- Fastlane
+- ENV
 ---
 
 얼마전부터 fastlane 키체인 관련해서 계속 로그인이 풀리고, 앱암호를 넣었는데도 불구하고 계속 패스워드를 다시 입력하라고 해서 찾다가 성공한 방법 메모!

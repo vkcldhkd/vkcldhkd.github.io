@@ -1,7 +1,13 @@
 ---
 title: LayoutPerformance
 date: 2025-06-19 22:25:30
-tags: iOS, SwiftUI, AutoLayout, FlexLayout, draw
+category:
+ - iOS
+tags:
+- SwiftUI
+- AutoLayout
+- FlexLayout
+- Draw
 ---
 
 

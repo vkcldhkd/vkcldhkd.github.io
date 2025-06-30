@@ -1,7 +1,11 @@
 ---
 title: Observable vs Observer
 date: 2025-06-24 14:16:18
-tags: RxSwift, Observable, Observer
+category:
+ - RxSwift
+tags: 
+- Observable
+- Observer
 ---
 
 # RxSwift에서 Observable vs Observer 차이

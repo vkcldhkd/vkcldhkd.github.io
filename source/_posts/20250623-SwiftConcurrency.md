@@ -1,7 +1,10 @@
 ---
 title: Swift Concurrency
 date: 2025-06-23 18:28:03
-tags: Swift, Concurrency
+category:
+ - Swift
+tags: 
+- Concurrency
 ---
 
 # Swift Concurrency: 

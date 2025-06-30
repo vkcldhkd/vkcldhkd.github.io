@@ -1,7 +1,10 @@
 ---
 title: 블록체인 용어정리
 date: 2022-06-27 13:52:06
-tags: BlockChain
+category:
+ - BlockChain
+tags: 
+- BlockChain
 ---
 
 블록체인

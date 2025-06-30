@@ -1,7 +1,12 @@
 ---
 title: Hot Observable, Cold Observable
 date: 2025-06-24 14:09:26
-tags: Rx, RxSwift, Observable
+category:
+ - RxSwift
+tags: 
+- Rx
+- RxSwift
+- Observable
 ---
 
 # RxSwift에서 Hot vs Cold Observable 차이

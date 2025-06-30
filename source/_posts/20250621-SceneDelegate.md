@@ -1,7 +1,12 @@
 ---
 title: SceneDelegate
 date: 2025-06-21 12:57:55
-tags: SceneDelegate, AppDelegate, iOS
+category:
+ - iOS
+tags: 
+- SceneDelegate
+- AppDelegate
+- iOS
 ---
 
 ### 📘 AppDelegate vs SceneDelegate Lifecycle 정보 (최신 기준 반영)

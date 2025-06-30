@@ -1,7 +1,12 @@
 ---
 title: Struct, Class
 date: 2025-06-30 01:06:10
-tags: Swift, Struct, Class
+category:
+ - Swift
+tags: 
+- Swift
+- Struct
+- Class
 ---
 
 # Swift:

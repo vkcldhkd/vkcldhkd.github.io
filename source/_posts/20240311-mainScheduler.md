@@ -1,7 +1,11 @@
 ---
 title: RxSwift Scheduler
 date: 2024-03-11 14:12:24
-tags: RxSwift
+category:
+ - RxSwift
+tags: 
+- RxSwift
+- Scheduler
 ---
 
 | 스케줄러 타입      | 용도 | 특징          |

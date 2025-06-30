@@ -1,7 +1,11 @@
 ---
 title: DisposeBag, Dispose()
 date: 2025-06-29 22:31:22
-tags: RxSwift, DisposeBag, Dispose
+category:
+ - RxSwift
+tags: 
+- DisposeBag
+- Dispose
 ---
 
 # RxSwift: 
