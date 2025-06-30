@@ -4,7 +4,7 @@ date: 2025-06-30 01:06:10
 tags: Swift, Struct, Class
 ---
 
-# # Swift:
+# Swift:
 `struct` vs `class` 차이점 정리
 
 두 타입은 문법적으로 유사하지만, ****복사 방식, 메모리 관리, 상속, 동시성**** 등의 차이로 사용 목적이 달라짐
