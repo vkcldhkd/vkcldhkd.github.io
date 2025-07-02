@@ -18,7 +18,7 @@ Swift에서 `Protocol`과 `Delegate`는 밀접한 관계가 있으며, 객체 �
 ---
 
 ## Protocol 이란?
-- **행동(기능)**을 정의하는 타입
+- **기능** 을 정의하는 타입
 - 구현을 강제하지 않음 (선언만 함)
 - 클래스, 구조체, 열거형 등에서 채택 가능
 ```swift
@@ -30,7 +30,7 @@ protocol SomeProtocol {
 ---
 
 ## Delegate 이란?
-- **대리자 패턴(Delegation Pattern)**을 의미
+- **Delegation Pattern** 을 의미
 - 하나의 객체가 특정 작업을 **다른 객체에 위임**할 때 사용
 - 위임 대상은 보통 Protocol을 채택
 - iOS에서 많이 사용하는 설계 방식 (`UITableViewDelegate`, `UITextFieldDelegate` 등)
