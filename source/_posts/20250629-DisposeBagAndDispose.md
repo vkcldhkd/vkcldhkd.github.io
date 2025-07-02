@@ -14,8 +14,8 @@ tags:
 ---
 
 ## DisposeBag이란?
-- `DisposeBag`은 RxSwift에서 ****Disposable 객체들을 담아두는 바구니**** 역할
-- 구독(Subscribe)이 끝날 때 자동으로 ****모든 리소스를 정리(dispose)****
+- `DisposeBag`은 RxSwift에서 **Disposable 객체들을 담아두는 바구니** 역할
+- DisposeBag이 deinit되는 시점에, 내부에 있던 모든 Disposable이 자동으로 .dispose() 된다.
 ```swift
 let disposeBag = DisposeBag()
 
@@ -27,12 +27,12 @@ Observable.of(1, 2, 3)
 ### 역할
 - `deinit` 시 내부의 모든 Disposable을 자동으로 해제
 - 수동으로 `dispose()`를 호출하지 않아도 됨
-- 보통 ****ViewController의 프로퍼티로 보관**** 
+- 보통 **ViewController의 프로퍼티로 보관** 
 
 ---
 
 ## dispose()란?
-- Rx의 구독은 Disposable을 반환하며, 이 객체에 대해 수동으로 `dispose()`를 호출하면 ****스트림을 해제****할 수 있음
+- Rx의 구독은 Disposable을 반환하며, 이 객체에 대해 수동으로 `dispose()`를 호출하면 **스트림을 해제**할 수 있음
 ```swift
 let subscription = Observable.of("A", "B", "C")
     .subscribe(onNext: { print($0) })
@@ -63,6 +63,6 @@ subscription.dispose() // 수동으로 메모리 해제
 ---
 
 ## 결론
-- `DisposeBag`은 메모리 누수 방지를 위한 ****자동 관리 도구****
-- `dispose()`는 ****직접 수동 해제****가 필요한 경우 사용
-- 대부분의 실무에서는 `DisposeBag`을 사용하여 ****명확하고 안전하게 메모리를 관리****
+- `DisposeBag`은 메모리 누수 방지를 위한 **자동 관리 도구**
+- `dispose()`는 **직접 수동 해제**가 필요한 경우 사용
+- 대부분의 실무에서는 `DisposeBag`을 사용하여 **명확하고 안전하게 메모리를 관리**
