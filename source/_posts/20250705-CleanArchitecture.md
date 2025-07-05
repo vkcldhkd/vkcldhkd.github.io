@@ -12,13 +12,13 @@ tags:
 
 # 클린 아키텍처 (Clean Architecture):
 
-클린 아키텍처는 소프트웨어 아키텍처 설계 원칙 중 하나로, **의존성 역전\(Dependency Inversion\)**을 핵심으로 하여 **비즈니스 로직과 외부 요소(UI, DB 등)**를 철저히 분리한다고한다.
- MVC, MVI와 어떤부분이 크게 다른지 알아보고 더 공부하기위해 작성!
+클린 아키텍처는 소프트웨어 아키텍처 설계 원칙 중 하나로, `의존성 역전(Dependency Inversion)`을 핵심으로 하여 `비즈니스 로직과 외부 요소(UI, DB 등)`를 철저히 분리한다고 한다.  
+MVC, MVI와 어떤 부분이 크게 다른지 알아보고 더 공부하기 위해 작성!
 
 ---
 
 ## 개념
-클린 아키텍처는 **계층별로 관심사(Responsibility)를 나누고**, 각 계층은 **안쪽 계층(도메인)**에만 의존하도록 구성
+클린 아키텍처는 `계층별로 관심사(Responsibility)를 나누고`, 각 계층은 `안쪽 계층(도메인)`에만 의존하도록 구성
 
 ### 계층 구조
 ```
@@ -34,7 +34,7 @@ tags:
 ```
 
 ### 의존성 방향
-- 모든 의존성은 **안쪽(Domain)**으로 향한다.
+- 모든 의존성은 `안쪽(Domain)`으로 향한다.
 - 외부(UI, DB, 프레임워크)는 언제든지 교체 가능!
 
 ---
@@ -60,32 +60,32 @@ tags:
 
 ## 예시 (Search)
 
-- **UI Layer**: `SearchViewController`
-- **Presentation Layer**: `SearchViewModel`, `SearchPresenter`
-- **Domain Layer**: `SearchUseCase`, `SearchEntity`
-- **Data Layer**: `SearchRepository`, `SearchAPI`
+- `UI Layer`: `SearchViewController`
+- `Presentation Layer`: `SearchViewModel`, `SearchPresenter`
+- `Domain Layer`: `SearchUseCase`, `SearchEntity`
+- `Data Layer`: `SearchRepository`, `SearchAPI`
 
 ---
 
 ## ReactorKit과 클린 아키텍처를 같이 사용하고싶다면?
-> `Reactor`는 **클린 아키텍처의 Presentation Layer(ViewModel 자리)**를 충분히 대체 가능할 것 같다!
-> `View ↔ Reactor ↔ UseCase` 흐름으로 단방향 데이터 흐름을 구현 가능 할 것 같다..
+> `Reactor`는 `클린 아키텍처의 Presentation Layer(ViewModel 자리)`를 충분히 대체 가능할 것 같다!  
+> `View ↔ Reactor ↔ UseCase` 흐름으로 단방향 데이터 흐름을 구현 가능 할 것 같다.
 
 ## Reactor가 ViewModel을 대체할 수 있는 이유
 | 역할         | 설명 |
 |--------------|------|
-| **입력 처리**    | `Action`으로 사용자 이벤트 전달 |
-| **상태 변환**    | `Mutate` → `Reduce` 패턴으로 상태 변화 처리 |
-| **상태 제공**    | `State`로 UI 업데이트 상태 제공 |
-| **의존성 주입**  | `UseCase`, `Service` 등 외부 주입 가능 |
+| `입력 처리`    | `Action`으로 사용자 이벤트 전달 |
+| `상태 변환`    | `Mutate → Reduce` 패턴으로 상태 변화 처리 |
+| `상태 제공`    | `State`로 UI 업데이트 상태 제공 |
+| `의존성 주입`  | `UseCase`, `Service` 등 외부 주입 가능 |
 
-→ Reactor는 ViewModel처럼 동작하면서도 **단방향 흐름을 명확히 구현**할 수 있지않을까?
+→ Reactor는 ViewModel처럼 동작하면서도 `단방향 흐름을 명확히 구현`할 수 있지 않을까?
 
 ---
 
 ## 주의할 점
 
-- **Reactor가 비대해지지 않도록**, 복잡한 비즈니스 로직은 `UseCase`로 위임하는것이 좋다고한다.
+- `Reactor가 비대해지지 않도록`, 복잡한 비즈니스 로직은 `UseCase`로 위임하는 것이 좋다고 한다.
 - `Reactor`는 단순히 액션을 받아서 상태를 변경하고, 상태를 View로 전달하는 역할에 집중하는 것이 이상적!
 
 ---
@@ -132,8 +132,9 @@ final class MyReactor: Reactor {
 }
 ```
 
-# ReactorKit 사용 시, 계층구조(?)
-아직 해본 부분이 아니라 예측으로 작성..! 맞는지 확인필요!
+---
+
+## ReactorKit 사용 시, 계층구조 예측
 
 ```
 +------------------------+  
