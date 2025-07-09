@@ -151,3 +151,13 @@ final class MyReactor: Reactor {
 | 외부 리소스 (네트워크, DB) 처리
 +------------------------+
 ```
+
+
+```
+ex) Counter https://github.com/vkcldhkd/NetflixStyleLayout/tree/main/NetflixStyleLayout/Sources/Pages/Counter
+
+CounterRepository : 데이터의 저장/불러오기 담당
+CounterUseCase : 비즈니스 로직 담당 (증감)
+CounterReactor : 사용자 액션 → 상태 변경 처리
+CounterViewController : UI 처리
+```
