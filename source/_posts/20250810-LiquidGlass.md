@@ -1,5 +1,5 @@
 ---
-title: 20250810-LiquidGlass
+title: Liquid Glass 대비 체크리스트
 date: 2025-08-10 23:31:10
 category: 
 - iOS
