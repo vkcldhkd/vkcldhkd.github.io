@@ -1,5 +1,5 @@
 ---
-title: Monaural Beats
+title: 모노럴 비트(Monaural Beat)
 date: 2025-08-25 22:52:59
 category:
 - iOS
