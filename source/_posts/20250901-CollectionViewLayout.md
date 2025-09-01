@@ -11,7 +11,7 @@ tags:
 
 # CompositionalLayout vs FlowLayout
 
-`UICollectionViewFlowLayout`(이하 **FlowLayout**)과 `UICollectionViewCompositionalLayout`(이하 **CompositionalLayout**)은 iOS 컬렉션 뷰 레이아웃을 구성하는 두 가지 대표 방식입니다. 이 문서는 두 레이아웃의 개념/기능 차이와 장단점, 선택 가이드, 실무 팁을 간단히 정리합니다.
+`UICollectionViewFlowLayout`(이하 **FlowLayout**)과 `UICollectionViewCompositionalLayout`(이하 **CompositionalLayout**)은 iOS 컬렉션 뷰 레이아웃을 구성하는 두 가지 대표 방식이다. 두 레이아웃의 개념/기능 차이와 장단점, 선택 가이드, 실무 팁을 간단히 정리!
 
 ---
 
