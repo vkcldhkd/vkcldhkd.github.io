@@ -1,5 +1,5 @@
 ---
-title: 20250905-UICollectionViewCompositionalLayout
+title: UICollectionViewCompositionalLayout
 date: 2025-09-05 23:25:20
 category:
 - iOS
