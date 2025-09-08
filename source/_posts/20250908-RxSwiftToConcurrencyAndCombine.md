@@ -32,8 +32,8 @@ tags:
    - Rx/Combine: 스트림 오류와 값이 같은 레벨.
    - Concurrency: `async throws`로 모델링, `do-catch` 필요.
 5. **테스트**
-   - Rx: `TestScheduler`\
-   - Combine: `CombineSchedulers`, `XCTest`\
+   - Rx: `TestScheduler`
+   - Combine: `CombineSchedulers`, `XCTest`
    - Concurrency: XCTest의 async 지원, `clock` 모킹.
 
 ------------------------------------------------------------------------
@@ -44,8 +44,7 @@ tags:
 2. **Reactor 계층**: Action → Mutation → State 파이프라인을 유지하되,
    - Action 처리: `Task` 기반 비동기 호출
    - State 반영: `@MainActor` 보장
-3. **View 계층**: UIKit은 Combine(`@Published`, `assign`)으로 바인딩,
-   SwiftUI는 `@StateObject`/`@ObservedObject` 활용.
+3. **View 계층**: UIKit은 Combine(`@Published`, `assign`)으로 바인딩, SwiftUI는 `@StateObject`/`@ObservedObject` 활용.
 
 ------------------------------------------------------------------------
 
@@ -54,8 +53,7 @@ tags:
 - `Observable<Action>` → `AsyncStream<Action>` 또는 `PassthroughSubject<Action, Never>`
 - `Observable<Mutation>` → `AsyncStream<Mutation>` 또는 `Publisher<Mutation, Never>`
 - `BehaviorSubject<State>` → `@Published var state`
-- `flatMapLatest` → Combine의 `switchToLatest` / Concurrency의 Task
-  취소 제어
+- `flatMapLatest` → Combine의 `switchToLatest` / Concurrency의 Task 취소 제어
 - `share(replay: 1)` → `CurrentValueSubject` or 상태 저장
 
 ------------------------------------------------------------------------
@@ -63,8 +61,6 @@ tags:
 ## 결론
 - **단발 비동기(네트워크, DB)**: Swift Concurrency(`async/await`) 권장
 - **지속 스트림(UI 입력, 이벤트)**: Combine 권장
-- **ReactorKit 스타일 유지**: Action-Mutation-State 파이프라인을
-  유지하면서, Rx 의존성을 줄이고 iOS 15 이상의 언어/런타임 기능으로
-  현대화 가능
+- **ReactorKit 스타일 유지**: Action-Mutation-State 파이프라인을 유지하면서, Rx 의존성을 줄이고 iOS 15 이상의 언어/런타임 기능으로 현대화 가능
 
 ------------------------------------------------------------------------
