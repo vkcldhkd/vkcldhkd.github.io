@@ -12,7 +12,7 @@ tags:
 # RxSwift → Swift Concurrency/Combine 전환 시 주의사항 (ReactorKit 관점, iOS 15 기준)
 
 ## 개요
-기존 RxSwift 기반 ReactorKit 코드는 비동기 처리와 스트림 관리에 **Observable/Subject**를 사용하지만, iOS 15부터는 **Swift Concurrency(async/await, Task)**와 **Combine(Publisher)**로 대체할 수 있다. 전환 시 주의해야 할 점들을 기록하기 위해 작성!
+기존 RxSwift 기반 ReactorKit 코드는 비동기 처리와 스트림 관리에 **Observable/Subject**를 사용하지만, iOS 15부터는 **Swift Concurrency(async/await, Task) **와 **Combine(Publisher) **로 대체할 수 있다. 전환 시 주의해야 할 점들을 기록하기 위해 작성!
 
 ------------------------------------------------------------------------
 
