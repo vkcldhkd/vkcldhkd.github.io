@@ -27,7 +27,7 @@ tags:
 
 ## 클레이튼(카이아, Klaytn → KAI) 기반에서 많이 쓰는 KIP
 
-클레이튼은 EIP를 확장한 **KIP(Klaytn Improvement Proposal)** 체계를 사용합니다.  
+클레이튼은 EIP를 확장한 **KIP(Klaytn Improvement Proposal)** 체계를 사용.  
 주요 표준은 이더리움과 거의 비슷하지만, 클레이튼 환경에 맞게 수정된 버전!!
 
 | 번호 | 이름 | 설명 | 비고 |
