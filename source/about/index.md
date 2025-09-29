@@ -7,10 +7,11 @@ title: About
 iOS 개발을 시작한 이후 지금까지, 단순히 기능을 구현하는 개발자보다는 ‘함께 일하고 싶은 동료’이자 ‘개발 문화를 긍정적으로 이끄는 사람’이 되고자 노력해왔습니다. 실무 프로젝트 경험은 물론, 개발 커뮤니티 활동과 다양한 직군과의 협업 속에서 기술과 소통, 책임감을 두루 갖춘 개발자로 성장해 왔습니다.
 
 - Email : vkcldhkd@gmail.com
-- Github:  github.com/vkcldhkd
+- Github: https://github.com/vkcldhkd
 - Phone : 010-4107-4942
 - Kakaotalk: https://open.kakao.com/o/sIsbXPJb
 - Linkedin: www.linkedin.com/in/SUNG9
+- 핵심 스택: Swift, RxSwift, ReactorKit, Swift Concurrency, AVFoundation, In-App Purchase, FCM, Blockchain, SDK 개발, REST API, GraphQL, SnapKit UI Codebase
 
 # 경력
 - 네오플라이
