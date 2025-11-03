@@ -15,16 +15,14 @@ tags:
 
 ### 1) 생성 AI (Generative AI)
 - 텍스트, 이미지, 영상 등 다양한 데이터를 생성하는 AI 기술.
-- iOS 앱에서는 사용자 맞춤 콘텐츠, 이미지 생성, 챗봇 대화 생성 등에
-  활용 가능.
+- iOS 앱에서는 사용자 맞춤 콘텐츠, 이미지 생성, 챗봇 대화 생성 등에 활용 가능.
 
 ### 2) 개인화 및 예측 분석 (Personalisation & Predictive Analytics)
 - 사용자 행동 데이터를 기반으로 개인화된 추천 및 예측 기능 구현.
 - 예: 사용자의 검색·구매·시청 이력을 분석하여 맞춤형 콘텐츠 제공.
 
 ### 3) 온디바이스 AI 및 엣지 컴퓨팅 (On‑device AI / Edge AI)
-- Core ML, TensorFlow Lite 등을 활용해 클라우드 의존 없이 기기 내에서
-  모델 추론.
+- Core ML, TensorFlow Lite 등을 활용해 클라우드 의존 없이 기기 내에서 모델 추론.
 - 오프라인 대응과 개인정보 보호 강화.
 
 ### 4) 음성·비전·멀티모달 인터페이스 (Voice, Vision, Multimodal)
