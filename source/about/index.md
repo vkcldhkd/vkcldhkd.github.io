@@ -25,7 +25,7 @@ title: About
 
 ---
 
-## 📌 Contact
+## Contact
 
 - Email: vkcldhkd@gmail.com  
 - GitHub: https://github.com/vkcldhkd  
@@ -35,14 +35,14 @@ title: About
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 Swift, RxSwift, ReactorKit, Swift Concurrency, AVFoundation,  
 In-App Purchase, FCM, Blockchain, SDK 개발, REST API, GraphQL, SnapKit  
 
 ---
 
-# 🚀 회사 프로젝트
+# 회사 프로젝트
 
 ---
 
@@ -192,7 +192,7 @@ In-App Purchase, FCM, Blockchain, SDK 개발, REST API, GraphQL, SnapKit
 
 ---
 
-# 🎯 개인 프로젝트
+# 개인 프로젝트
 
 ---
 
